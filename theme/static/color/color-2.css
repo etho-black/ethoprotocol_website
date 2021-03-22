@@ -1,0 +1,297 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name:TOVO APP
+    Template URI: http://themes.pixelstrap.com/tovo
+    Description: This is App Landing Page
+    Author: Pixelstrap
+    Author URI: https://themeforest.net/user/pixelstrap
+
+-----------------------------------------------------------------------------------*/
+.caption-img {
+  filter: hue-rotate(15deg); }
+
+.loader {
+  background-color: #cc0066; }
+
+h1 {
+  color: #cc0066; }
+
+.price-type {
+  background-image: url(/static/color/color/color-2/price-bg.png); }
+  .price-type h2 {
+    color: #cc0066; }
+
+.home {
+  background-image: url(/static/color/color/color-2/1.png); }
+
+.home-two {
+  background-image: url(/static/color/color/color-2/Homev2.png); }
+  .home-two .slide-cap-desc {
+    color: #f1f1f1; }
+
+.home-three {
+  background-image: url(/static/color/color/color-2/Homev3.png); }
+
+.home-style-two .home-two .slide-cap-desc {
+  color: white !important; }
+.home-style-two .navbar-nav .dropdown-menu .nav-link:hover {
+  color: #cc0066 !important; }
+
+.color-picker .settings-header {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%) !important; }
+  .color-picker .settings-header h3 {
+    color: white !important; }
+.color-picker .section {
+  border: 1px solid #cc0066; }
+.color-picker a.handle {
+  border: 1px solid #cc0066;
+  background: #cc0066; }
+
+.tap-top {
+  background: linear-gradient(to right, #cc0066, #b30086) !important;
+  color: white; }
+
+.slide-cap-desc {
+  color: #f1f1f1; }
+
+.about {
+  background-image: url(/static/color/color/color-2/about-bg.png); }
+
+.about-right {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%); }
+
+.address-bar {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%); }
+
+.feature {
+  background-image: url(/static/color/color/color-2/feature-bg1.png); }
+
+.screenshot {
+  background-image: url(/static/color/color/color-2/screenshot-bg.png); }
+
+.team {
+  background-image: url(/static/color/color/color-2/team-bg.png); }
+
+.team-block {
+  background-image: url(/static/color/color/color-2/team-img-bg.png); }
+  .team-block .team-social li a {
+    border: 1px solid #cc0066; }
+    .team-block .team-social li a:hover {
+      background-color: #cc0066;
+      border: 1px solid #cc0066; }
+
+.blog-block {
+  background-image: url(/static/color/color/color-2/team-img-bg.png); }
+
+.price {
+  background-image: url(/static/color/color/color-2/price.png); }
+
+.testimonial {
+  background-image: url(/static/color/color/color-2/Homev1.png); }
+
+.testimonial-avtar {
+  background-image: url(/static/color/color/color-2/Testimonial.png); }
+
+.contact {
+  background-image: url(/static/color/color/color-2/contact.png); }
+
+.navbar-brand img {
+  filter: hue-rotate(15deg); }
+
+.home-circle1 img {
+  filter: hue-rotate(15deg); }
+
+.home-circle2 img {
+  filter: hue-rotate(15deg); }
+
+.home-circle3 img {
+  filter: hue-rotate(15deg); }
+
+.home-right img {
+  filter: hue-rotate(15deg); }
+
+.about-phone img {
+  filter: hue-rotate(15deg); }
+
+.feature-phone img {
+  filter: hue-rotate(15deg); }
+
+.about-circle1 img {
+  filter: hue-rotate(15deg); }
+
+.about-circle2 img {
+  filter: hue-rotate(15deg); }
+
+.feature-style .feature-icon img {
+  filter: hue-rotate(15deg); }
+
+.feature-circle1 img {
+  filter: hue-rotate(15deg); }
+
+.feature-circle2 img {
+  filter: hue-rotate(15deg); }
+
+.screenshot-circle1 img {
+  filter: hue-rotate(15deg); }
+
+.screenshot-circle2 img {
+  filter: hue-rotate(15deg); }
+
+.screenshot-circle3 img {
+  filter: hue-rotate(15deg); }
+
+.screenshot-carousel img {
+  filter: hue-rotate(15deg); }
+
+.team-circle1 img {
+  filter: hue-rotate(15deg); }
+
+.team-circle2 img {
+  filter: hue-rotate(15deg); }
+
+.team-circle3 img {
+  filter: hue-rotate(15deg); }
+
+.testi-circle1 img {
+  filter: hue-rotate(15deg); }
+
+.testi-circle2 img {
+  filter: hue-rotate(15deg); }
+
+.testi-circle3 img {
+  filter: hue-rotate(15deg); }
+
+.contact-right img {
+  filter: hue-rotate(15deg); }
+
+.contact-circle1 img {
+  filter: hue-rotate(15deg); }
+
+.contact-circle2 img {
+  filter: hue-rotate(15deg); }
+
+.animated-circle img {
+  filter: hue-rotate(15deg); }
+
+.footer-text img {
+  filter: hue-rotate(15deg); }
+
+.testimonial-text h3 {
+  color: #cc0066; }
+
+.btn-custom.theme-color {
+  background-image: linear-gradient(to right, #b30086, #ff3399, #29ceff, #b30086); }
+  .btn-custom.theme-color:hover {
+    background-position: 100% 0; }
+
+#fp-nav ul li a span {
+  background: #cc0066 !important; }
+#fp-nav ul li a.active {
+  border: 1px solid #cc0066; }
+  #fp-nav ul li a.active span {
+    background: #cc0066 !important; }
+#fp-nav ul li:hover a.active span {
+  background: #cc0066 !important; }
+
+.fp-slidesNav ul li a span {
+  background: #cc0066 !important; }
+.fp-slidesNav ul li a.active span {
+  background: #cc0066 !important; }
+.fp-slidesNav ul li:hover a.active span {
+  background: #cc0066 !important; }
+
+.abt-hover:hover .icon-hover {
+  background: linear-gradient(to right, #cc0066, #b30086) !important; }
+
+.navbar-light .default-nav .navbar-nav .nav-link.active {
+  color: #cc0066; }
+.navbar-light.darkHeader .navbar-nav .nav-link.active {
+  color: #cc0066 !important; }
+
+.navbar-light .navbar-nav .nav-item.dropdown-menu .nav-link:hover {
+  color: #cc0066 !important; }
+.navbar-light .navbar-nav .nav-item.dropdown-menu .nav-link:focus {
+  color: #cc0066 !important; }
+
+.three .navbar-nav .dropdown-menu .nav-link:hover {
+  color: #cc0066 !important; }
+
+.icon-hover:hover {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%);
+  border: 1px solid #cc0066; }
+
+.team-carousel.owl-theme .owl-dots .owl-dot span {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%) !important; }
+.team-carousel.owl-theme .owl-dots .owl-dot.active span {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%); }
+
+.blog-carousel.owl-theme .owl-dots .owl-dot span {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%) !important; }
+.blog-carousel.owl-theme .owl-dots .owl-dot.active span {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%); }
+
+.testimonial-carousel.owl-theme .owl-dots .owl-dot span {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%) !important; }
+.testimonial-carousel.owl-theme .owl-dots .owl-dot.active span {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%); }
+
+.price-carousel.owl-theme .owl-dots .owl-dot span {
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%) !important; }
+
+.blog-pagin a.page-link {
+  color: #cc0066;
+  border: 1px solid #eee; }
+  .blog-pagin a.page-link:hover {
+    background-color: #b30086; }
+
+.page-item.active .page-link {
+  background-color: #b30086; }
+
+.tags .badge-theme {
+  background-color: #cc0066;
+  color: white; }
+
+.blog-cat-detail ul li a:hover {
+  color: #cc0066; }
+
+.price-block:hover .mrp h2, .manual-down {
+  color: #cc0066; }
+
+@media (max-width: 768px) {
+  .home-two, .home-three {
+    background-color: #b30086; } }
+.authentication-form {
+  filter: hue-rotate(15deg); }
+
+.innerpage-decor img {
+  filter: hue-rotate(15deg); }
+
+.review-box h5 {
+  color: #cc0066; }
+
+.theme-nav {
+  /*Dropdown css*/
+  /*dropdown css end*/ }
+  .theme-nav .nav-item:hover .nav-link {
+    color: #ff3399; }
+  .theme-nav .nav-item.dropdown .dropdown-menu .nav-item .nav-link.active {
+    color: #ff3399 !important; }
+  .theme-nav .nav-item.dropdown .dropdown-menu .nav-item .nav-link:hover {
+    color: #ff3399 !important;
+    transition: all 0.3s ease; }
+  .theme-nav.darkHeader .dropdown-menu .nav-item .nav-link.active {
+    color: #ff3399; }
+  .theme-nav .navbar-nav .active > .nav-link {
+    color: #ff3399; }
+/*slider dots*/
+.team-carousel.owl-theme .owl-dots .owl-dot.active span {
+  background: #ff3399;
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%) !important; }
+.testimonial   .owl-theme  .owl-dots .owl-dot span {
+  background: #ff3399;
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%) !important; }
+
+[classname=team-carousel].owl-theme .owl-dots .owl-dot span, [classname=blog-carousel].owl-theme .owl-dots .owl-dot span, [classname=price-carousel].owl-theme .owl-dots .owl-dot span {
+  background: #ff3399;
+  background: linear-gradient(to bottom, #cc0066 0, #b30086 99%) !important;
+}
