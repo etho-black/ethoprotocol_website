@@ -27,7 +27,8 @@
                   <div class="team-text">
                     <h3>Markets</h3>
                     <h6>ETHO/BTC</h6>
-                    <h6></h6>
+					<h6></h6>
+                    &nbsp;
                   </div>
                 </div>
               </div>
@@ -39,6 +40,7 @@
                     <h3>Markets</h3>
                     <h6>ETHO/BTC</h6>
                     <h6></h6>
+					&nbsp;
                   </div>
                 </div>
               </div>
@@ -63,6 +65,7 @@
                     <h3>Markets</h3>
                     <h6>ETHO/USDT</h6>
                     <h6></h6>
+					&nbsp;
                   </div>
                 </div>
               </div>
@@ -74,6 +77,7 @@
                     <h3>Markets</h3>
                     <h6>ETHO/BTC</h6>
                     <h6></h6>
+					&nbsp;
                   </div>
                 </div>
               </div>
