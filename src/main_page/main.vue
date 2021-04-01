@@ -47,7 +47,7 @@
          
            <div class="home-right" style="margin-left: 30%;">
              <!-- Tile js start -->
-             <Tile :image = '"../assets/images/etho/mainEthoImage.png"'/>
+             <img :src='"../assets/images/etho/mainEthoImage.png"'/>
              <!-- Tile js end -->
              
              <h1 style="font-size: 24px;">
