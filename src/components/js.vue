@@ -20,16 +20,16 @@ export default {
   methods: {
     getColor () {
       $(document).ready(function () {
-          (function (d, s, id) {
-              var js
-              var fjs = d.getElementsByTagName(s)[0]
-              if (d.getElementById(id)) return
-              js = d.createElement(s); js.id = id
-              js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1'
-              fjs.parentNode.insertBefore(js, fjs)
-          }(document, 'script', 'facebook-jssdk'))
+        (function (d, s, id) {
+          var js
+          var fjs = d.getElementsByTagName(s)[0]
+          if (d.getElementById(id)) return
+          js = d.createElement(s); js.id = id
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1'
+          fjs.parentNode.insertBefore(js, fjs)
+        }(document, 'script', 'facebook-jssdk'))
 
-          // ----------------------------------------
+        // ----------------------------------------
         //  Pre Loader
         // ----------------------------------------
         $(window).on('load', function () {
@@ -48,9 +48,7 @@ export default {
           }
         })
 
-
-
-        var mobilemenu = $(window).width ()
+        var mobilemenu = $(window).width()
         if (mobilemenu < 991) {
           $('nav a.nav-link').on('click',
             function (event) {
@@ -89,33 +87,33 @@ export default {
           return false
         })
       })
-      $(document).ready(function(){
-        if($( window ).width() >= 991 ) {
-          $("nav a").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
+      $(document).ready(function () {
+        if ($(window).width() >= 991) {
+          $('nav a').on('click', function (event) {
+            if (this.hash !== '') {
+              event.preventDefault()
+              var hash = this.hash
               $('html, body').animate({
                 scrollTop: $(hash).offset().top - 0
-              }, 1000, function(){
-              });
-              return false;
+              }, 1000, function () {
+              })
+              return false
             }
-          });
-        }else {
-          $("nav a").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
+          })
+        } else {
+          $('nav a').on('click', function (event) {
+            if (this.hash !== '') {
+              event.preventDefault()
+              var hash = this.hash
               $('html, body').animate({
                 scrollTop: $(hash).offset().top - 0
-              }, 1000, function(){
-              });
-              return false;
+              }, 1000, function () {
+              })
+              return false
             }
-          });
+          })
         }
-      });
+      })
     }
   }
 }

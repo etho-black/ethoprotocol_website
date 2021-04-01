@@ -10,8 +10,8 @@
           <div class="col-md-5">
             <div class="about-contain">
               <div>
-                <h2 class="title">Why was <span>The</span> 
-                 
+                <h2 class="title">Why was <span>The</span>
+
                  <span style="color:#971B45;">Etho</span>
 
                 <span>Protocol</span> built?</h2>
@@ -44,7 +44,6 @@
                   <p class="caption-about">Create and maintain a closed-loop economy around steps one and two to encourage participation, reward contribution and network utilization.</p>
                 </div>
 
-                
               </div>
             </div>
           </div>

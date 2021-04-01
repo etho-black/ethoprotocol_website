@@ -14,14 +14,15 @@
           </div>
           <div class="col-sm-12">
             <div>
-              <carousel :className='"team-carousel"':loop=true
-                        :margin=30
-                        :items=3
-                        :nav=false
-                        :dots=true
-                        :dotsEach=true
-                        :autoplay=false
-                        :responsive="{0:{items:1,margin:5},600:{items:1,margin:5},768:{items:2},992:{items:3},1000:{items:3}}"
+              <carousel :className='"team-carousel"'
+              :loop=true
+              :margin=30
+              :items=3
+              :nav=false
+              :dots=true
+              :dotsEach=true
+              :autoplay=false
+              :responsive="{0:{items:1,margin:5},600:{items:1,margin:5},768:{items:2},992:{items:3},1000:{items:3}}"
               >
                   <div class="team-item">
                     <div class="team-block">
@@ -46,7 +47,6 @@
                     </div>
                   </div>
 
-
                   <div class="team-item">
                     <div class="team-block">
                       <div class="team-box">
@@ -70,7 +70,6 @@
                     </div>
                   </div>
 
-
                   <div class="team-item">
                     <div class="team-block">
                       <div class="team-box">
@@ -93,7 +92,6 @@
                       </div>
                     </div>
                   </div>
-
 
                   <div class="team-item">
                     <div class="team-block">
@@ -183,7 +181,8 @@
           </div>
           <div class="col-sm-12">
             <div>
-              <carousel :className='"team-carousel"':loop=true
+              <carousel :className='"team-carousel"'
+                        :loop=true
                         :margin=30
                         :items=3
                         :nav=false
@@ -215,7 +214,6 @@
                     </div>
                   </div>
 
-
                   <div class="team-item">
                     <div class="team-block">
                       <div class="team-box">
@@ -238,7 +236,6 @@
                       </div>
                     </div>
                   </div>
-
 
                   <div class="team-item">
                     <div class="team-block">
@@ -263,9 +260,6 @@
                     </div>
                   </div>
 
-
-                
-
               </carousel>
             </div>
           </div>
@@ -285,7 +279,7 @@
           </div>
           <div class="col-sm-12">
             <div>
-              <carousel :className='"team-carousel"':loop=false
+              <carousel :className='"team-carousel"' :loop=false
                         :margin=30
                         :items=2
                         :nav=false
@@ -316,7 +310,6 @@
                       </div>
                     </div>
                   </div>
-
 
                   <div class="team-item">
                     <div class="team-block">

@@ -67,7 +67,7 @@
                   <div class="mrp">
                     <h6 class="user-type">Gateway Nodes provide storage and processing resources to the network, secure the Ether-1 blockchain, and act a gateway to decentrally hosted ethoFS data on the network</h6>
                     <div class="price-devide"></div>
-                    
+
                     <h2>30000</h2>
                     <h6 class="price-year">ETHO (Collateral)</h6>
                     <div class="price-devide"></div>
@@ -81,9 +81,9 @@
                     <li>Static Public IPv4 Address</li>
                   </ul>
                   <a href="https://nodes.ether1.org" class="btn btn-custom theme-color" role="button" >Deploy</a>
-                  
+
                 </div>
-                
+
                   </div>
             </carousel>
           </div>
@@ -95,6 +95,6 @@
 </template>
 <script>
 export default {
-  name: 'Price',
-  }
+  name: 'Price'
+}
 </script>

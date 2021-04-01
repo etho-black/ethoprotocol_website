@@ -36,7 +36,7 @@ export default new Router({
       name: 'Main_page',
       components: {
         default: Main,
-        navbar: Navbar,
+        navbar: Navbar
       }
     },
     {
