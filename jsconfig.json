@@ -11,11 +11,11 @@
         "components/*": [
           "src/components/*"
         ],
-        "layouts/*": [
-          "src/layouts/*"
+        "blog/*": [
+          "src/blog/*"
         ],
-        "pages/*": [
-          "src/pages/*"
+        "main_page/*": [
+          "src/main_page/*"
         ],
         "assets/*": [
           "src/assets/*"
