@@ -20,7 +20,8 @@
                  <span class="f-bold f-color">Protocol</span>
                </h1>
                <div style="width: 500px;">
-               <carousel :className='"intro-carousel"':loop=false
+               <carousel :className='"intro-carousel"'
+               :loop=false
                         :margin=30
                         :items=1
                         :nav=false
@@ -44,12 +45,12 @@
            </div>
          </div>
          <div class="col-sm-6 offset-md-1">
-         
+
            <div class="home-right" style="margin-left: 30%;">
              <!-- Tile js start -->
              <img :src='"../assets/images/etho/mainEthoImage.png"'/>
              <!-- Tile js end -->
-             
+
              <h1 style="font-size: 24px;">
                  <span class="f-bold f-color">The </span ><span class="f-bold">Ether-1 </span> <span class="f-bold f-color">Project is now The</span>
                  <span class="f-bold">ETHO</span>
@@ -106,11 +107,11 @@
  </div>
 </template>
 
-
+<script>
 export default {
   name: 'Main_page',
-  beforeCreate: function () {
-    document.body.className = ''
-  }
-}
+  beforeCreate() {
+    document.body.className = '';
+  },
+};
 </script>

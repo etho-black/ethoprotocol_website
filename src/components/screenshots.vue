@@ -5,7 +5,7 @@
         <div class="screenshot-circle1"><img :src='"../assets/images/feature-circle-two.png"' alt="feature-circle-two"></div>
         <div class="screenshot-circle2"><img :src='"../assets/images/feature-circle.png"' alt="feature-circle"></div>
         <div class="screenshot-circle3"><img :src='"../assets/images/main-banner1.png"' alt="feature-circle-three"></div>
-        
+
       </div>
       <div class="container">
         <div class="row">
@@ -38,7 +38,7 @@
                 <div class="screenshot-item"><img :src='"../assets/images/app/11.jpg"' alt="app"></div>
                 <div class="screenshot-item"><img :src='"../assets/images/app/1.jpg"' alt="app"></div>
               </carousel>
-              
+
             </div><center>
             <a href="#"><img :src='"../assets/images/appstore.png"' alt="appstore" class="store"></a>
             <a href="#"><img class="ml-10 store" :src='"../assets/images/play-store.png"' alt="play-store"></a></center>
@@ -49,9 +49,10 @@
     <!-- Screenshots Section End -->
 </template>
 <script>
-import carousel from 'v-owl-carousel'
+import carousel from 'v-owl-carousel';
+
 export default {
-  name:'Screenshot',
-  components: {'carousel': carousel},
-}
+  name: 'Screenshot',
+  components: { carousel },
+};
 </script>

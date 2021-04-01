@@ -166,6 +166,6 @@
 </template>
 <script>
 export default {
-  name: 'blog_list'
-}
+  name: 'blog_list',
+};
 </script>

@@ -26,16 +26,16 @@
 </template>
 
 <script>
-import $ from 'jquery'
+// import $ from 'jquery'
 export default {
   name: 'pagenotfound',
-  mounted () {
-    this.loader()
+  mounted() {
+    this.loader();
   },
   methods: {
 
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss">

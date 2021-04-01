@@ -6,9 +6,9 @@
         <div class="competitive-analysis"><img :src='"../assets/images/etho/analysis.png"' alt="" style="position:absolute; top: 200px; left: 5%;"></div>
       </div>
       <div class="container">
-      
+
         <div class="row">
-          
+
           <div class="offset-lg-4 col-lg-8">
             <div class="row">
               <div class="col-sm-12 mrgn-md-top">
@@ -38,13 +38,12 @@
                       <p>Upload data to the etho network utilizing the <a href="https://ethofs.com">ethoFS upload system</a>. Ethofs provides decentralized, censorship-proof storage and website hosting.</p>
                     </div>
                   </li>
-                  
 
                 </ul>
               </div>
               <div class="col-12 col-md-6 sm-m-top">
                 <ul class="feature-style">
-                  
+
                   <li>
                     <div class="feature-icon">
                       <img :src='"../assets/images/icon/3.png"' alt="icon">
@@ -78,6 +77,6 @@
 </template>
 <script>
 export default {
-  name: 'feature'
-}
+  name: 'feature',
+};
 </script>

@@ -1,12 +1,11 @@
 <template>
   <div>
 
-    
         <section id="exchanges">
         <div class="review-block" style="padding-top:100px;">
-         
+
           <div class="container">
-          
+
           <h2 class="title"><span> ETHO</span> Exchanges</h2>
             <div class="row margin-bottom">
               <div class="col-lg-4 col-md-6">
@@ -27,7 +26,7 @@
                   <div class="team-text">
                     <h3>Markets</h3>
                     <h6>ETHO/BTC</h6>
-					<h6></h6>
+                    <h6></h6>
                     &nbsp;
                   </div>
                 </div>
@@ -40,12 +39,11 @@
                     <h3>Markets</h3>
                     <h6>ETHO/BTC</h6>
                     <h6></h6>
-					&nbsp;
+                    &nbsp;
                   </div>
                 </div>
               </div>
 
-              
               <div class="col-lg-4 col-md-6">
                 <div class="review-box">
                   <a href="https://mercatox.com"><img :src='"../assets/images/etho/mercatox.png"' alt="review" class="img-fluid"></a>
@@ -65,7 +63,7 @@
                     <h3>Markets</h3>
                     <h6>ETHO/USDT</h6>
                     <h6></h6>
-					&nbsp;
+                    &nbsp;
                   </div>
                 </div>
               </div>
@@ -77,33 +75,31 @@
                     <h3>Markets</h3>
                     <h6>ETHO/BTC</h6>
                     <h6></h6>
-					&nbsp;
+                    &nbsp;
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          
         </div>
         </section>
 <br>
 <section id="swaps">
-        <div class="review-block" style="padding-top:100px;">
-
-          <div class="container">
-          <h2 class="title"><span> ETHO</span> Swaps</h2>
-            <div class="row margin-bottom">
-              <div class="col-lg-4 col-md-6">
-                <div class="review-box">
-                  <a href="https://info.uniswap.org/token/0x99676c9fA4c77848aEb2383fCFbD7e980dC25027"><img :src='"../assets/images/etho/uniswap.png"' alt="review" class="img-fluid"></a>
-                  <p>Swaps On Ethereum</p>
-                  <div class="team-text">
-                    <h3>Liquidity Pools</h3>
-                    <h6>ETHO/USDT</h6>
-                    <h6>ETHO/ETH</h6>
-                  </div>
-                </div>
+  <div class="review-block" style="padding-top:100px;">
+    <div class="container">
+      <h2 class="title"><span> ETHO</span> Swaps</h2>
+      <div class="row margin-bottom">
+        <div class="col-lg-4 col-md-6">
+          <div class="review-box">
+            <a href="https://info.uniswap.org/token/0x99676c9fA4c77848aEb2383fCFbD7e980dC25027"><img :src='"../assets/images/etho/uniswap.png"' alt="review" class="img-fluid"></a>
+            <p>Swaps On Ethereum</p>
+            <div class="team-text">
+              <h3>Liquidity Pools</h3>
+              <h6>ETHO/USDT</h6>
+              <h6>ETHO/ETH</h6>
+            </div>
+            </div>
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="review-box">
@@ -131,9 +127,6 @@
             </div>
           </div>
 
-          
-
-          
         </div>
         </section>
         <br>
@@ -165,22 +158,16 @@
             </div>
           </div>
 
-          
-
-          
         </div>
       </section>
       <!-- sign up -->
 
-      
-
     </div>
     <!--blog Section end-->
-  </div>
 </template>
 <script>
 
 export default {
-  name: 'Partners'
-}
+  name: 'Partners',
+};
 </script>

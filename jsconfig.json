@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "src/*": [
+          "src/*"
+        ],
+        "app/*": [
+          "*"
+        ],
+        "components/*": [
+          "src/components/*"
+        ],
+        "blog/*": [
+          "src/blog/*"
+        ],
+        "main_page/*": [
+          "src/main_page/*"
+        ],
+        "assets/*": [
+          "src/assets/*"
+        ],
+        "boot/*": [
+          "src/boot/*"
+        ],
+        "vue$": [
+          "node_modules/vue/dist/vue.esm.js"
+        ]
+      }
+    },
+    "exclude": [
+      "docs",
+      ".quasar",
+      "node_modules"
+    ]
+  }

@@ -10,8 +10,8 @@
           <div class="col-md-5">
             <div class="about-contain">
               <div>
-                <h2 class="title">Why was <span>The</span> 
-                 
+                <h2 class="title">Why was <span>The</span>
+
                  <span style="color:#971B45;">Etho</span>
 
                 <span>Protocol</span> built?</h2>
@@ -19,7 +19,7 @@
                 <div>
                   <h3>The Problem:</h3>
                 </div>
-                <p class="caption-about">Free-speech and anti-censorship are the cornerstones of any democracy but with the rise of de-platforming and online censorship, media platforms our society relies on are becoming more and more unreliable for the average user. </p>
+                <p class="caption-about" style="color: black;">Free-speech and anti-censorship are the cornerstones of any democracy but with the rise of de-platforming and online censorship, media platforms our society relies on are becoming more and more unreliable for the average user. </p>
                 <p class="caption-about">Free-flowing information and ideas are almost always catalysts for the next stages of societal evolution as well as exponential technological growth.</p>
                 <p class="caption-about">Online censorship today ranges from something as small as a single blocked tweet all the way up to a full corporate website being banned if the messaging doesn’t fit an individual platform’s definition of proper</p>
                 <div>
@@ -44,7 +44,6 @@
                   <p class="caption-about">Create and maintain a closed-loop economy around steps one and two to encourage participation, reward contribution and network utilization.</p>
                 </div>
 
-                
               </div>
             </div>
           </div>
@@ -63,6 +62,6 @@
 </template>
 <script>
 export default {
-  name: 'about'
-}
+  name: 'about',
+};
 </script>
