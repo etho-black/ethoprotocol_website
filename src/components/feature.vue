@@ -77,6 +77,6 @@
 </template>
 <script>
 export default {
-  name: 'feature'
-}
+  name: 'feature',
+};
 </script>

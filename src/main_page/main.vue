@@ -110,8 +110,8 @@
 <script>
 export default {
   name: 'Main_page',
-  beforeCreate: function () {
-    document.body.className = ''
-  }
-}
+  beforeCreate() {
+    document.body.className = '';
+  },
+};
 </script>

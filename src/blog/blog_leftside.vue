@@ -230,6 +230,6 @@
 </template>
 <script>
 export default {
-  name: 'Blog_details'
-}
+  name: 'Blog_details',
+};
 </script>

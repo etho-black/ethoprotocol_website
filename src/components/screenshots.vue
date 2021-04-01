@@ -49,9 +49,10 @@
     <!-- Screenshots Section End -->
 </template>
 <script>
-import carousel from 'v-owl-carousel'
+import carousel from 'v-owl-carousel';
+
 export default {
   name: 'Screenshot',
-  components: {'carousel': carousel}
-}
+  components: { carousel },
+};
 </script>

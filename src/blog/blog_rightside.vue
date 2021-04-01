@@ -229,6 +229,6 @@
 </template>
 <script>
 export default {
-  name: 'Blog_rightside'
-}
+  name: 'Blog_rightside',
+};
 </script>

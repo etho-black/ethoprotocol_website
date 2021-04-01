@@ -217,6 +217,6 @@
 </template>
 <script>
 export default {
-  name: 'BlogLeftSidebar'
-}
+  name: 'BlogLeftSidebar',
+};
 </script>

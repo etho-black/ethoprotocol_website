@@ -168,6 +168,6 @@
 <script>
 
 export default {
-  name: 'Partners'
-}
+  name: 'Partners',
+};
 </script>

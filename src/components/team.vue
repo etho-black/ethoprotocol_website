@@ -345,6 +345,6 @@
 <script>
 
 export default {
-  name: 'Team'
-}
+  name: 'Team',
+};
 </script>

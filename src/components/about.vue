@@ -19,7 +19,7 @@
                 <div>
                   <h3>The Problem:</h3>
                 </div>
-                <p class="caption-about">Free-speech and anti-censorship are the cornerstones of any democracy but with the rise of de-platforming and online censorship, media platforms our society relies on are becoming more and more unreliable for the average user. </p>
+                <p class="caption-about" style="color: black;">Free-speech and anti-censorship are the cornerstones of any democracy but with the rise of de-platforming and online censorship, media platforms our society relies on are becoming more and more unreliable for the average user. </p>
                 <p class="caption-about">Free-flowing information and ideas are almost always catalysts for the next stages of societal evolution as well as exponential technological growth.</p>
                 <p class="caption-about">Online censorship today ranges from something as small as a single blocked tweet all the way up to a full corporate website being banned if the messaging doesn’t fit an individual platform’s definition of proper</p>
                 <div>
@@ -62,6 +62,6 @@
 </template>
 <script>
 export default {
-  name: 'about'
-}
+  name: 'about',
+};
 </script>
