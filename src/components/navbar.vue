@@ -15,8 +15,8 @@
             <b-dropdown-item class="nav-link"  :to="{name:'blog_list'}" >Desktop Wallet</b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-item-dropdown right-alignment text="explorers" class="nav-link">
-		       <b-dropdown-item class="nav-link"   :href='"#blog"'>Explorer 1</b-dropdown-item>
-            <b-dropdown-item class="nav-link"  :to="{name:'blog_list'}" >Explorer 2</b-dropdown-item>
+		       <b-dropdown-item class="nav-link"   :href='"https://explorer.ether1.org/" '>Explorer 1</b-dropdown-item>
+            <b-dropdown-item class="nav-link"  :href='"https://blocks.ether1.org/home" '>Explorer 2</b-dropdown-item>
           </b-nav-item-dropdown>
 
           <b-nav-item href="#team">Team</b-nav-item>

@@ -16,7 +16,7 @@
                <h4>#Decentralize Everything</h4>
                <h1 style="font-size: 40px;">
                  <span class="f-bold f-color">The</span>
-                 E<span class="f-bold">t</span>h<span class="f-bold">o</span>
+                 <span class="f-bold">ETHO</span>
                  <span class="f-bold f-color">Protocol</span>
                </h1>
                <div style="width: 500px;">
@@ -51,11 +51,11 @@
              <!-- Tile js end -->
              
              <h1 style="font-size: 24px;">
-                 <span class="f-bold f-color">The </span>Ether-1 <span class="f-bold f-color">Project is now The</span>
-                 E<span class="f-bold">t</span>h<span class="f-bold">o</span>
+                 <span class="f-bold f-color">The </span ><span class="f-bold">Ether-1 </span> <span class="f-bold f-color">Project is now The</span>
+                 <span class="f-bold">ETHO</span>
                  <span class="f-bold f-color">Protocol</span>
                </h1>
-               <h6><a href="https://medium.com" style="color:#cc0066;">Read more about our rebranding effort</a></h6>
+               <h6><a href="https://medium.com" target="_blank" style="color:#cc0066;">Read more about our rebranding effort</a></h6>
              </div>
          </div>
        </div>
