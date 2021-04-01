@@ -93,11 +93,6 @@
    <Latest-blog/>
    <!-- blog Section End -->
 
-
-   <!--Subscribe section start-->
-   <Subscribe/>
-   <!--Subscribe section Ends-->
-
    <!--Map Section Start-->
    <Map/>
    <!--Map Section Ends-->

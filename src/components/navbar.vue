@@ -6,8 +6,8 @@
     <b-collapse class="default-nav"  is-nav id="nav_collapse">
       <b-navbar-nav class="navbar-nav ml-auto" id="mymenu">
           <b-nav-item href="#home">Home</b-nav-item>
-          <b-nav-item href="#about">Nodes</b-nav-item>
-          <b-nav-item href="#feature">Staking</b-nav-item>
+          <b-nav-item href="https://nodes.ether1.org">Nodes</b-nav-item>
+          <b-nav-item href="https://staking.ethofs.com">Staking</b-nav-item>
           
           <b-nav-item-dropdown right-alignment text="wallets" class="nav-link">
 		       <b-dropdown-item class="nav-link"   :href='"#blog"'>Mobile Wallet</b-dropdown-item>
@@ -20,12 +20,12 @@
           </b-nav-item-dropdown>
 
           <b-nav-item href="#team">Team</b-nav-item>
-          <b-nav-item href="#contact">Partners</b-nav-item>
+          <b-nav-item href="#partners">Partners</b-nav-item>
 
           <b-nav-item-dropdown right-alignment text="buy etho" class="nav-link">
-		        <b-dropdown-item class="nav-link"   :href='"#blog"'>Exchanges</b-dropdown-item>
-            <b-dropdown-item class="nav-link"  :to="{name:'blog_list'}" >Swaps</b-dropdown-item>
-            <b-dropdown-item class="nav-link"  :to="{name:'blog_list'}" >Bridges</b-dropdown-item>
+		        <b-dropdown-item class="nav-link"   :href='"#exchanges"'>Exchanges</b-dropdown-item>
+            <b-dropdown-item class="nav-link"  :to="'#swaps'" >Swaps</b-dropdown-item>
+            <b-dropdown-item class="nav-link"  :to="'#bridges'" >Bridges</b-dropdown-item>
           </b-nav-item-dropdown>
 
       </b-navbar-nav>

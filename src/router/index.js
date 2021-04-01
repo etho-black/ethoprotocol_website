@@ -7,7 +7,6 @@ import Feature from '@/components/feature'
 import Price from '@/components/price'
 import Screenshots from '@/components/screenshots'
 import Team from '@/components/team'
-import Subscribe from '@/components/subscribe'
 import Map from '@/components/map'
 import Footer from '@/components/footer'
 import PageNotFound from '@/components/pagenotfound'
@@ -21,7 +20,6 @@ Vue.component('Feature', Feature)
 Vue.component('Price', Price)
 Vue.component('Screenshots', Screenshots)
 Vue.component('Team', Team)
-Vue.component('Subscribe', Subscribe)
 Vue.component('Map', Map)
 Vue.component('Footer', Footer)
 Vue.component('js', js)

@@ -2,10 +2,11 @@
   <div>
 
     
-      <section>
+        <section id="exchanges">
         <div class="review-block" style="padding-top:100px;">
-
+         
           <div class="container">
+          
           <h2 class="title"><span> ETHO</span> Exchanges</h2>
             <div class="row margin-bottom">
               <div class="col-lg-4 col-md-6">
@@ -81,7 +82,9 @@
 
           
         </div>
+        </section>
 <br>
+<section id="swaps">
         <div class="review-block" style="padding-top:100px;">
 
           <div class="container">
@@ -128,7 +131,9 @@
 
           
         </div>
+        </section>
         <br>
+        <section id="bridges">
         <div class="review-block" style="padding-top:100px;">
 
           <div class="container">
