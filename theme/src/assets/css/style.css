@@ -2037,7 +2037,7 @@ iframe.video-play {
   background-color: white; }
   .review-box img {
     height: 60px;
-    border-radius: 100%; }
+    }
   .review-box h5 {
     color: #19d0de;
     font-size: 18px;

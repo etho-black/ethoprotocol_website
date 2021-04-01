@@ -744,7 +744,7 @@ ul {
   background-size: contain;
   background-position: top; }
   .home-three .home-right {
-    transform: translateY(175px); }
+    transform: translateY(75px); }
   .home-three .contain {
     position: absolute;
     top: calc(50% - 10px);
@@ -2037,7 +2037,7 @@ iframe.video-play {
   background-color: white; }
   .review-box img {
     height: 60px;
-    border-radius: 100%; }
+   }
   .review-box h5 {
     color: #19d0de;
     font-size: 18px;

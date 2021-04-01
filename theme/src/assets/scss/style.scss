@@ -101,7 +101,7 @@ h1 {
   font-size: 63px;
   margin-top: 25px;
   margin-bottom: 40px;
-  color: $color_bright_turquoise;
+  color: $color_bright_pink;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -2723,7 +2723,7 @@ iframe.video-play {
   background-color: $white;
   img{
     height: 60px;
-    border-radius: 100%;
+ 
   }
   h5 {
     color: $color_scooter;
@@ -2917,6 +2917,32 @@ iframe.video-play {
     position: absolute;
     top: -80px;
     right: 0; }
+  &.owl-theme {
+    .owl-dots {
+      .owl-dot {
+        &:focus{
+          outline: none;
+        }
+        &.active{
+          span{
+            width: 25px;
+          }
+        }
+        span {
+          border: 1px solid white;
+          background: #18e7d3;
+          background: linear-gradient(to bottom, $color_bright_turquoise 0,$color_scooter 100%);
+          transition: all 0.3s ease; }
+      }
+    }
+  }
+}
+[classname = intro-carousel]{
+  margin-top: 12px;
+  .owl-dots {
+    position: absolute;
+    top: -80px;
+    left: 500px; }
   &.owl-theme {
     .owl-dots {
       .owl-dot {

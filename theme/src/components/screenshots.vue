@@ -5,13 +5,14 @@
         <div class="screenshot-circle1"><img :src='"../assets/images/feature-circle-two.png"' alt="feature-circle-two"></div>
         <div class="screenshot-circle2"><img :src='"../assets/images/feature-circle.png"' alt="feature-circle"></div>
         <div class="screenshot-circle3"><img :src='"../assets/images/main-banner1.png"' alt="feature-circle-three"></div>
+        
       </div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 ">
             <div class="screenshot-contain">
               <img class="mobile-light-left" :src='"../assets/images/light.png"' alt="light">
-              <img class="mob-mocup img-fluid" :src='"../assets/images/screenshot-mob.png"' alt="screenshot-mob">
+              <img class="mob-mocup img-fluid" :src='"../assets/images/etho/screenshot-mob.png"' alt="screenshot-mob">
               <img class="mobile-light-right" :src='"../assets/images/light-right.png"' alt="light-right">
               <carousel :class='"screenshot-carousel"'
                         :loop=true
@@ -37,7 +38,10 @@
                 <div class="screenshot-item"><img :src='"../assets/images/app/11.jpg"' alt="app"></div>
                 <div class="screenshot-item"><img :src='"../assets/images/app/1.jpg"' alt="app"></div>
               </carousel>
-            </div>
+              
+            </div><center>
+            <a href="#"><img :src='"../assets/images/appstore.png"' alt="appstore" class="store"></a>
+            <a href="#"><img class="ml-10 store" :src='"../assets/images/play-store.png"' alt="play-store"></a></center>
           </div>
         </div>
       </div>

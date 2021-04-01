@@ -86,18 +86,28 @@
 }
 @media(min-width: 2000px) {
   .home-right {
-    transform: translateY(0px);
+    transform: translateY(90px);
+  }
+}
+@media(min-width: 2300px) {
+  .home-right {
+    transform: translateY(140px);
+  }
+}
+@media(min-width: 2500px) {
+  .home-right {
+    transform: translateY(220px);
   }
 }
 @media(min-width: 1500px) and (max-width: 1370px){
   .home-right {
-    margin-top: -30px;
+    display: none;
   }
 }
 @media(max-width: 1366px) {
 
   .home-right {
-    width: 90%;
+    display: none;
   }
   .back-img{
     .home-contain {

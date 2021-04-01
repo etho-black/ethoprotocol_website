@@ -18,69 +18,72 @@
             >
               <div class="price-item">
                 <div class="price-block">
-                  <div class="price-type">
-                    <h2>basic</h2>
+                  <div><h1 style="font-size: 28px;"><span class="f-bold">Service Node</span></h1>
                   </div>
                   <div class="mrp">
-                    <h6 class="user-type">Only the basic features</h6>
+                    <h6 class="user-type">Service Nodes act as a data relay and secure the Ether-1 blockchain</h6>
                     <div class="price-devide"></div>
-                    <h2>$969</h2>
-                    <h6 class="price-year">per year</h6>
+                    <h2>5000</h2>
+                    <h6 class="price-year">ETHO (Collateral)</h6>
+                    <div class="price-devide"></div>
+                    <h2>3.125</h2>
+                    <h6 class="price-year">ETHO (Daily Reward)</h6>
                     <div class="price-devide"></div>
                   </div>
                   <ul class="price-feature">
-                    <li>1 GB of space</li>
-                    <li>real time sync</li>
-                    <li>unlimited attachment</li>
-                    <li>customize theme</li>
-                    <li>priority email support</li>
+                    <li>20 GB Of SSD/HDD Storage</li>
+                    <li>1 GB Of Ram</li>
+                    <li>Static Public IPv4 Address</li>
                   </ul>
-                  <a href="#" class="btn btn-custom theme-color" role="button" >Select Plane</a>
+                  <a href="https://nodes.ether1.org" class="btn btn-custom theme-color" role="button" >Deploy</a>
                 </div>
               </div>
               <div class="price-item">
                 <div class="price-block">
-                  <div class="price-type">
-                    <h2>Standard</h2>
+                  <div><h1 style="font-size: 28px;"><span class="f-bold">Masternode</span></h1>
                   </div>
                   <div class="mrp">
-                    <h6 class="user-type">Take it to the next level</h6>
+                    <h6 class="user-type">Master Nodes provide storage and processing resources to the network and secure the Ether-1 blockchain</h6>
                     <div class="price-devide"></div>
-                    <h2>$969</h2>
-                    <h6 class="price-year">per year</h6>
+                    <h2>15000</h2>
+                    <h6 class="price-year">ETHO (Collateral)</h6>
+                    <div class="price-devide"></div>
+                    <h2>7.045</h2>
+                    <h6 class="price-year">ETHO (Daily Reward)</h6>
                     <div class="price-devide"></div>
                   </div>
                   <ul class="price-feature">
-                    <li>1 GB of space</li>
-                    <li>real time sync</li>
-                    <li>unlimited attachment</li>
-                    <li>customize theme</li>
-                    <li>priority email support</li>
+                    <li>40 GB Of SSD/HDD Storage</li>
+                    <li>2 GB Of Ram</li>
+                    <li>Static Public IPv4 Address</li>
                   </ul>
-                  <a href="#" class="btn btn-custom theme-color" role="button" >Select Plane</a>
+                  <a href="https://nodes.ether1.org" class="btn btn-custom theme-color" role="button" >Deploy</a>
                 </div>
                 </div>
               <div class="price-item">
                 <div class="price-block">
-                  <div class="price-type">
-                    <h2>Custom</h2>
+                  <div><h1 style="font-size: 28px;"><span class="f-bold">Gateway Node</span></h1>
                   </div>
                   <div class="mrp">
-                    <h6 class="user-type">Our biggest plan</h6>
+                    <h6 class="user-type">Gateway Nodes provide storage and processing resources to the network, secure the Ether-1 blockchain, and act a gateway to decentrally hosted ethoFS data on the network</h6>
                     <div class="price-devide"></div>
-                    <h2>$969</h2>
-                    <h6 class="price-year">per year</h6>
+                    
+                    <h2>30000</h2>
+                    <h6 class="price-year">ETHO (Collateral)</h6>
+                    <div class="price-devide"></div>
+                    <h2>14.265</h2>
+                    <h6 class="price-year">ETHO (Daily Reward)</h6>
                     <div class="price-devide"></div>
                   </div>
                   <ul class="price-feature">
-                    <li>1 GB of space</li>
-                    <li>real time sync</li>
-                    <li>unlimited attachment</li>
-                    <li>customize theme</li>
-                    <li>priority email support</li>
+                    <li>80 GB Of SSD/HDD Storage</li>
+                    <li>4 GB Of Ram</li>
+                    <li>Static Public IPv4 Address</li>
                   </ul>
-                  <a href="#" class="btn btn-custom theme-color" role="button" >Select Plane</a>
+                  <a href="https://nodes.ether1.org" class="btn btn-custom theme-color" role="button" >Deploy</a>
+                  
                 </div>
+                
                   </div>
             </carousel>
           </div>
