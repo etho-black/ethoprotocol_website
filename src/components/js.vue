@@ -18,7 +18,7 @@ export default {
     getColor() {
       $(document).ready(() => {
         // eslint-disable-next-line func-names
-        (function(d, s, id) {
+        (function (d, s, id) {
           const fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) return;
           const js = d.createElement(s);
@@ -50,7 +50,7 @@ export default {
         if (mobilemenu < 991) {
           $('nav a.nav-link').on('click',
             // eslint-disable-next-line func-names
-            function() {
+            function () {
               if (!$(this).hasClass('dropdown-toggle')) {
                 // console.log('click');
                 $('.navbar-collapse').collapse('hide');
@@ -72,7 +72,7 @@ export default {
         // ----------------------------------------
         //  GO to Home
         // ----------------------------------------
-        $(window).on('scroll', function() {
+        $(window).on('scroll', function () {
           if ($(this).scrollTop() > 500) {
             $('.tap-top').fadeIn();
           } else {
@@ -89,11 +89,11 @@ export default {
       $(document).ready(() => {
         if ($(window).width() >= 991) {
           // eslint-disable-next-line func-names
-          $('nav a').on('click', function(event) {
+          $('nav a').on('click', function (event) {
             if (this.hash !== '') {
               event.preventDefault();
               const {
-                hash
+                hash,
               } = this;
               $('html, body').animate({
                 scrollTop: $(hash).offset().top - 0,
@@ -104,11 +104,11 @@ export default {
           });
         } else {
           // eslint-disable-next-line func-names
-          $('nav a').on('click', function(event) {
+          $('nav a').on('click', function (event) {
             if (this.hash !== '') {
               event.preventDefault();
               const {
-                hash
+                hash,
               } = this;
               $('html, body').animate({
                 scrollTop: $(hash).offset().top - 0,

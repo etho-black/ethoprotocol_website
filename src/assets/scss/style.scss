@@ -1800,6 +1800,7 @@ ul {
 
 .testimonial-block {
   position: relative;
+  height: 300px;
   padding: 80px;
   padding-left: 30px;
   padding-right: 30px;
@@ -1853,10 +1854,10 @@ ul {
   text-align: center;
   box-shadow: 0 0 65px 0 $color_silver_chalice_25;
   background-color: $white;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   margin-bottom: 100px;
   h3 {
     color: $color_bright_turquoise;

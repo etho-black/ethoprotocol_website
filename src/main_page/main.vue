@@ -84,9 +84,10 @@
 
   <!-- Partners Section End -->
 
-  <!-- blog Section Start -->
-  <!--<Latest-blog/>-->
-  <!-- blog Section End -->
+  <!-- Bpsaa Section Start -->
+  <Bpsaa />
+
+  <!-- Bpsaa Section End -->
 
   <!--Map Section Start-->
   <Map />

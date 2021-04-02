@@ -47,7 +47,7 @@ import carousel from 'v-owl-carousel';
 export default {
   name: 'Screenshot',
   components: {
-    carousel
+    carousel,
   },
 };
 </script>
