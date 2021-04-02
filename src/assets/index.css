@@ -1675,9 +1675,9 @@ ul {
 
 .color-picker {
   position: fixed;
-  right: -190px;
+  right: -600px;
   top: 200px;
-  width: 190px;
+  width: 600px;
   z-index: 9;
   transition: all .3s ease; }
   .color-picker .settings-header {
@@ -1698,7 +1698,7 @@ ul {
       margin-right: 10px; }
   .color-picker a.handle {
     position: absolute;
-    right: 190px;
+    right: 600px;
     width: 50px;
     height: 49px;
     color: white;

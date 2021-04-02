@@ -2229,11 +2229,11 @@ ul {
 
 .color-picker {
   position: fixed;
-  right: -190px;
+  right: 600px;
   top: 200px;
-  width: 190px;
+  width: 600px;
   z-index: 9;
-  transition: all .3s ease;
+  transition: all .1s ease;
   .settings-header {
     background: linear-gradient($color_bright_turquoise, $color_bright_turquoise);
     padding: 5px 15px;
@@ -2256,8 +2256,8 @@ ul {
   }
   a.handle {
     position: absolute;
-    right: 190px;
-    width: 50px;
+    right: 600px;
+    width: 110px;
     height: 49px;
     color: $white;
     transition: all ease-in 0.3s;
@@ -2269,7 +2269,7 @@ ul {
     border-radius: 50%;
     text-decoration: none;
     background: $color_bright_turquoise;
-    top: -80px;
+    top: -20px;
     border: 1px solid $white;
   }
   .colors a {

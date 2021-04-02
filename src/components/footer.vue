@@ -12,7 +12,7 @@
       </div>
     </div>
     <!-- Tap on Ends -->
-    <color/>
+    <explorer/>
   </div>
 </template>
 <script>

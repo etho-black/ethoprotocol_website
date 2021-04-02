@@ -103,7 +103,6 @@
    <!-- Footer Section End -->
 
    <js/>
-
  </div>
 </template>
 
