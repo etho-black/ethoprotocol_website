@@ -27,7 +27,7 @@
                 </a>
               <div class="transactions">
                 <div class="section">
-                  <table id="transaction-table" class="hover" cellspacing="20" width="100%">
+                  <table id="transaction-table" class="hover" width="100%">
                     <thead>
                       <tr>
                         <th>Block</th>
@@ -133,33 +133,33 @@ function getTransactions(address, self) {
           data: 'txhash',
           render: function(data) {
             var str = data.toString();
-            return str.length < 10 ?
+            return str.length < 7 ?
               str :
-              str.substr(0, 9) +'&#8230;';
-          }
-        },
-        {
-          data: 'fromaddr',
-          render: function(data) {
-            var str = data.toString();
-            return str.length < 10 ?
-              str :
-              str.substr(0, 9) +'&#8230;';
+              str.substr(0, 6) +'&#8230;';
           }
         },
         {
           data: 'toaddr',
           render: function(data) {
             var str = data.toString();
-            return str.length < 10 ?
+            return str.length < 7 ?
               str :
-              str.substr(0, 9) +'&#8230;';
+              str.substr(0, 6) +'&#8230;';
+          }
+        },
+        {
+          data: 'fromaddr',
+          render: function(data) {
+            var str = data.toString();
+            return str.length < 7 ?
+              str :
+              str.substr(0, 6) +'&#8230;';
           }
         },
         {
           data: 'value',
           render: function(data) {
-            var value = (Number(data) / 1000000000000000000).toFixed(5);
+            var value = (Number(data) / 1000000000000000000).toFixed(3);
             return value;
           }
         },
