@@ -1,16 +1,16 @@
 <template>
-  <div id="app">
+<div id="app">
 
-    <!-- Preloader -->
-    <div class="loader-wrapper">
-      <div class="loader"></div>
-    </div>
-    <!-- Preloader end -->
-
-    <router-view name="navbar"></router-view>
-    <router-view/>
-    <vue-progress-bar></vue-progress-bar>
+  <!-- Preloader -->
+  <div class="loader-wrapper">
+    <div class="loader"></div>
   </div>
+  <!-- Preloader end -->
+
+  <router-view name="navbar"></router-view>
+  <router-view />
+  <vue-progress-bar></vue-progress-bar>
+</div>
 </template>
 <script>
 import $ from 'jquery';

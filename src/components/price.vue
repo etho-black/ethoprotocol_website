@@ -98,27 +98,27 @@ import $ from 'jquery';
 
 export default {
   name: 'Price',
-  data () {
+  data() {
     return {
       gn_reward: 0.000,
       mn_reward: 0.000,
       sn_reward: 0.000,
-    }
+    };
   },
   methods: {
-    GetRewards: function () {
-        getRewardJson(this);
-    }
-  },
-  mounted () {
-    this.GetRewards();
-  }
-};
-function getRewardJson(self) {
-  $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', function(data) {
+    GetRewards() {
+      this.getRewardJson(this);
+    },
+    getRewardJson(self) {
+      $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', (data) => {
         self.gn_reward = Number(data.gatewaynode_reward).toFixed(3);
         self.mn_reward = Number(data.masternode_reward).toFixed(3);
         self.sn_reward = Number(data.servicenode_reward).toFixed(3);
-  });
-}
+      });
+    },
+  },
+  mounted() {
+    this.GetRewards();
+  },
+};
 </script>
