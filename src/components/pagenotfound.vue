@@ -20,7 +20,6 @@
      </div>
    </div>
    <!-- start color select tag-->
-   <color/>
    <!-- end color select tag-->
  </div>
 </template>
