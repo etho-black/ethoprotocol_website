@@ -81,7 +81,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
   <br>
@@ -156,47 +155,40 @@
           </div>
 
         </div>
-<<<<<<< HEAD
-      </section>
-
-      <section id="partners">
-        <div class="review-block" style="padding-top:100px;">
-
-          <div class="container">
-          <h2 class="title"><span> ETHO</span> Partners</h2>
-            <div class="row margin-bottom">
-              <div class="col-lg-4 col-md-6">
-                <div class="review-box">
-                  <a href="https://opolo.io"><img :src='"../assets/images/etho/opolo.png"' alt="review" class="img-fluid"></a>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="review-box">
-                  <a href="https://myetherwallet.com"><img :src='"../assets/images/etho/mew.png"' alt="review" class="img-fluid"></a>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="review-box">
-                  <a href="https://ledger.com"><img :src='"../assets/images/etho/ledger.png"' alt="review" class="img-fluid"></a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </section>
-      <!-- sign up -->
-=======
       </div>
->>>>>>> caa9b92c6d42c6501d78d6f6c579a14a928db8ba
-
     </div>
   </section>
-  <!-- sign up -->
 
+  <section id="partners">
+    <div class="review-block" style="padding-top:100px;">
+
+      <div class="container">
+        <h2 class="title"><span> ETHO</span> Partners</h2>
+          <div class="row margin-bottom">
+            <div class="col-lg-4 col-md-6">
+              <div class="review-box">
+                <a href="https://opolo.io"><img :src='"../assets/images/etho/opolo.png"' alt="review" class="img-fluid"></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="review-box">
+                <a href="https://myetherwallet.com"><img :src='"../assets/images/etho/mew.png"' alt="review" class="img-fluid"></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="review-box">
+                <a href="https://ledger.com"><img :src='"../assets/images/etho/ledger.png"' alt="review" class="img-fluid"></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 </div>
-<!--blog Section end-->
+
 </template>
 <script>
 export default {

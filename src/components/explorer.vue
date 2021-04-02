@@ -10,42 +10,6 @@
         <div class="settings-header">
           <h3>Check Your ETHO Balance</h3>
         </div>
-<<<<<<< HEAD
-          <div class="section">
-            <form class="footer-form">
-                <div class="form-group">
-                  <input class="form-control" name="address" id="address" placeholder="Enter Your Address:" type="text" ref="etho_address" required="required" >
-                </div>
-                <div class="form-button">
-                  <button type="button" v-on:click="GetBalance()" class="btn btn-custom theme-color">Get Balance</button>
-                </div>
-              </form>
-              <br>
-              <div class="address_link">
-                <p align="center"><a href="https://explorer.ether1.org">Balance: {{ addressBalance }} ETHO</a></p>
-              </div>
-
-                <a href="#" class="expand">
-                    <button type="button" class="btn btn-custom theme-color">View Transactions</button>
-                </a>
-              <div class="transactions">
-                <div class="section">
-                  <table id="transaction-table" class="hover" width="100%">
-                    <thead>
-                      <tr>
-                        <th>Block</th>
-                        <th>Hash</th>
-                        <th>To</th>
-                        <th>From</th>
-                        <th>Amount</th>
-                      </tr>
-                    </thead> 
-                    <tbody>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-=======
         <div class="section">
           <form class="footer-form">
             <div class="form-group">
@@ -59,7 +23,6 @@
           <div class="address_link">
             <p align="center"><a href="https://explorer.ether1.org">Balance: {{ addressBalance }} ETHO</a></p>
           </div>
->>>>>>> caa9b92c6d42c6501d78d6f6c579a14a928db8ba
 
           <a href="#" class="expand">
             <button type="button" class="btn btn-custom theme-color">View Transactions</button>
@@ -81,7 +44,6 @@
               </table>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -161,55 +123,6 @@ export default {
         const table = $('#transaction-table').DataTable();
         table.destroy();
 
-<<<<<<< HEAD
-    $('#transaction-table').DataTable( {
-      ajax: 'https://richlist.ether1.org/transactions_list.php?address='+address+'&fromBlock=0&toBlock='+self.blockHeight,
-      columns: [
-        {
-          data: 'block'
-        },
-        {
-          data: 'txhash',
-          render: function(data) {
-            var str = data.toString();
-            return str.length < 7 ?
-              str :
-              str.substr(0, 6) +'&#8230;';
-          }
-        },
-        {
-          data: 'toaddr',
-          render: function(data) {
-            var str = data.toString();
-            return str.length < 7 ?
-              str :
-              str.substr(0, 6) +'&#8230;';
-          }
-        },
-        {
-          data: 'fromaddr',
-          render: function(data) {
-            var str = data.toString();
-            return str.length < 7 ?
-              str :
-              str.substr(0, 6) +'&#8230;';
-          }
-        },
-        {
-          data: 'value',
-          render: function(data) {
-            var value = (Number(data) / 1000000000000000000).toFixed(3);
-            return value;
-          }
-        },
-      ],
-      responsive: true,
-      "pageLength": 10
-    });
-  });
-  
-}
-=======
         $('#transaction-table').DataTable({
           ajax: `https://richlist.ether1.org/transactions_list.php?address=${address}&fromBlock=0&toBlock=${self.blockHeight}`,
           columns: [{
@@ -260,7 +173,6 @@ export default {
     },
   },
 };
->>>>>>> caa9b92c6d42c6501d78d6f6c579a14a928db8ba
 </script>
 <style>
 @import 'https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css';

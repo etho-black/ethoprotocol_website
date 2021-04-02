@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- testimonial Section start-->
-    <section id="testimonial" class="testimonial">
+    <section id="bpsaa" class="testimonial">
       <div class="testimonial-decor">
         <div class="testi-circle1"><img :src='"../assets/images/Testimonial2.png"' alt=""></div>
         <div class="testi-circle2"><img :src='"../assets/images/Testimonial1.png"' alt=""></div>
@@ -67,6 +67,6 @@
 <script>
 
 export default {
-  name:'Testimonial'
+  name:'Bpsaa'
 }
 </script>
