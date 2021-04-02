@@ -64,7 +64,7 @@ export default {
       this.currentTab = color;
     },
     GetBalance: function (address) {
-      $.getJSON('http://api.ether1.org/api.php?api=account_balance&address='+this.$refs.etho_address.value, function(data) {
+      $.getJSON('https://api.ether1.org/api.php?api=account_balance&address='+this.$refs.etho_address.value, function(data) {
         console.log('Balance: ' + data.account_balance);
         $('#actual_balance').text(Number(data.account_balance).toFixed(3));
       });
