@@ -26,7 +26,7 @@
                     <h2>5000</h2>
                     <h6 class="price-year">ETHO (Collateral)</h6>
                     <div class="price-devide"></div>
-                    <h2><span id="sn_reward">0.000</span></h2>
+                    <h2>{{ sn_reward }}</h2>
                     <h6 class="price-year">ETHO (Daily Reward)</h6>
                     <div class="price-devide"></div>
                   </div>
@@ -48,7 +48,7 @@
                     <h2>15000</h2>
                     <h6 class="price-year">ETHO (Collateral)</h6>
                     <div class="price-devide"></div>
-                    <h2><span id="mn_reward">0.000</span></h2>
+                    <h2>{{ mn_reward }}</h2>
                     <h6 class="price-year">ETHO (Daily Reward)</h6>
                     <div class="price-devide"></div>
                   </div>
@@ -71,7 +71,7 @@
                     <h2>30000</h2>
                     <h6 class="price-year">ETHO (Collateral)</h6>
                     <div class="price-devide"></div>
-                    <h2><span id="gn_reward">0.000</span></h2>
+                    <h2>{{ gn_reward }}</h2>
                     <h6 class="price-year">ETHO (Daily Reward)</h6>
                     <div class="price-devide"></div>
                   </div>
@@ -94,24 +94,31 @@
   </div>
 </template>
 <script>
-import $ from 'jquery'
+import $ from 'jquery';
 
 export default {
   name: 'Price',
-  methods: {
-    GetRewards: function () {
-      $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', function(data) {
-        console.log('Gateway Node Reward: ' + data.gatewaynode_reward);
-        $('#gn_reward').text(Number(data.gatewaynode_reward).toFixed(3));
-        console.log('Masternode Reward: ' + data.masternode_reward);
-        $('#mn_reward').text(Number(data.masternode_reward).toFixed(3));
-        console.log('Service Node Reward: ' + data.serviocenode_reward);
-        $('#sn_reward').text(Number(data.servicenode_reward).toFixed(3));
-      });
+  data () {
+    return {
+      gn_reward: 0.000,
+      mn_reward: 0.000,
+      sn_reward: 0.000,
     }
   },
-  beforeMount(){
-    this.GetRewards()
- },
+  methods: {
+    GetRewards: function () {
+        getRewardJson(this);
+    }
+  },
+  mounted () {
+    this.GetRewards();
+  }
 };
+function getRewardJson(self) {
+  $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', function(data) {
+        self.gn_reward = Number(data.gatewaynode_reward).toFixed(3);
+        self.mn_reward = Number(data.masternode_reward).toFixed(3);
+        self.sn_reward = Number(data.servicenode_reward).toFixed(3);
+  });
+}
 </script>
