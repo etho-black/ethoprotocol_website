@@ -26,7 +26,7 @@
                     <h2>5000</h2>
                     <h6 class="price-year">ETHO (Collateral)</h6>
                     <div class="price-devide"></div>
-                    <h2>3.125</h2>
+                    <h2><span id="sn_reward">0.000</span></h2>
                     <h6 class="price-year">ETHO (Daily Reward)</h6>
                     <div class="price-devide"></div>
                   </div>
@@ -48,7 +48,7 @@
                     <h2>15000</h2>
                     <h6 class="price-year">ETHO (Collateral)</h6>
                     <div class="price-devide"></div>
-                    <h2>7.045</h2>
+                    <h2><span id="mn_reward">0.000</span></h2>
                     <h6 class="price-year">ETHO (Daily Reward)</h6>
                     <div class="price-devide"></div>
                   </div>
@@ -71,7 +71,7 @@
                     <h2>30000</h2>
                     <h6 class="price-year">ETHO (Collateral)</h6>
                     <div class="price-devide"></div>
-                    <h2>14.265</h2>
+                    <h2><span id="gn_reward">0.000</span></h2>
                     <h6 class="price-year">ETHO (Daily Reward)</h6>
                     <div class="price-devide"></div>
                   </div>
@@ -94,7 +94,24 @@
   </div>
 </template>
 <script>
+import $ from 'jquery'
+
 export default {
   name: 'Price',
+  methods: {
+    GetRewards: function () {
+      $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', function(data) {
+        console.log('Gateway Node Reward: ' + data.gatewaynode_reward);
+        $('#gn_reward').text(Number(data.gatewaynode_reward).toFixed(3));
+        console.log('Masternode Reward: ' + data.masternode_reward);
+        $('#mn_reward').text(Number(data.masternode_reward).toFixed(3));
+        console.log('Service Node Reward: ' + data.serviocenode_reward);
+        $('#sn_reward').text(Number(data.servicenode_reward).toFixed(3));
+      });
+    }
+  },
+  beforeMount(){
+    this.GetRewards()
+ },
 };
 </script>
