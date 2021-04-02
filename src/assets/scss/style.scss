@@ -173,8 +173,9 @@ p {
 }
 
 a {
+  color: #777777;
   &:hover {
-    color: $white;
+    color: $color_bright_turquoise;
     text-decoration: none;
   }
   &:focus {

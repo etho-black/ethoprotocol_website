@@ -17,7 +17,11 @@
                   <button type="button" v-on:click="GetBalance()" class="btn btn-custom theme-color">Get Balance</button>
                 </div>
               </form>
-              <br><h4 align="center">Balance: <span id="actual_balance">0.000</span> ETHO</h4>
+              <br>
+              <div class="address_link">
+                <p align="center"><a href="https://explorer.ether1.org">Balance: <span id="actual_balance">0.000</span> ETHO</a></p>
+              </div>
+
           </div>
         </div>
       </div>
@@ -33,7 +37,7 @@ export default {
   name:'explorer',
   data () {
     return {
-      currentTab: 'color-1'// set color of website
+      currentTab: 'color-1',// set color of website
     }
   },
   mounted () {
