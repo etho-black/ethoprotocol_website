@@ -64,7 +64,7 @@ export default {
       this.currentTab = color;
     },
     GetBalance: function (address) {
-      $.getJSON('https://thingproxy.freeboard.io/fetch/http://api.ether1.org/api.php?api=account_balance&address='+this.$refs.etho_address.value, function(data) {
+      $.getJSON('http://api.ether1.org/api.php?api=account_balance&address='+this.$refs.etho_address.value, function(data) {
         console.log('Balance: ' + data.account_balance);
         $('#actual_balance').text(Number(data.account_balance).toFixed(3));
       });
