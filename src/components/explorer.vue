@@ -19,7 +19,28 @@
               </form>
               <br>
               <div class="address_link">
-                <p align="center"><a href="https://explorer.ether1.org">Balance: <span id="actual_balance">0.000</span> ETHO</a></p>
+                <p align="center"><a href="https://explorer.ether1.org">Balance: {{ addressBalance }} ETHO</a></p>
+              </div>
+
+                <a href="#" class="expand">
+                    <button type="button" class="btn btn-custom theme-color">View Transactions</button>
+                </a>
+              <div class="transactions">
+                <div class="section">
+                  <table id="transaction-table" class="hover" cellspacing="20" width="100%">
+                    <thead>
+                      <tr>
+                        <th>Block</th>
+                        <th>Hash</th>
+                        <th>To</th>
+                        <th>From</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead> 
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
           </div>
@@ -33,11 +54,16 @@
 <script>
 import Vue from 'vue'
 import $ from 'jquery'
+import DataTable from 'datatables.net';
+
 export default {
   name:'explorer',
   data () {
     return {
       currentTab: 'color-1',// set color of website
+      blockHeight: 0,
+      addressBalance: 0,
+      transactionArray: []
     }
   },
   mounted () {
@@ -53,13 +79,25 @@ export default {
     colorclass: function () {
       var bodyevent = $('body')
       $('.color-picker').animate({right: '-600px'})
+      $('.transactions').hide();
       bodyevent.on('click', '.color-picker a.handle', function (e) {
         e.preventDefault()
         var div = $('.color-picker')
         if (div.css('right') === '-600px') {
           $('.color-picker').animate({right: '0'})
         } else {
+          $('.transactions').hide();
           $('.color-picker').animate({right: '-600px'})
+        }
+      })
+      bodyevent.on('click', '.color-picker a.expand', function (e) {
+        console.log("EXPAND");
+        e.preventDefault()
+        var div = $('.transactions')
+        if (div.css('display') === 'none') {
+          $('.transactions').slideDown("slow");
+        } else {
+          $('.transactions').slideUp("slow")
         }
       })
     },
@@ -68,11 +106,72 @@ export default {
       this.currentTab = color;
     },
     GetBalance: function (address) {
-      $.getJSON('https://api.ether1.org/api.php?api=account_balance&address='+this.$refs.etho_address.value, function(data) {
-        console.log('Balance: ' + data.account_balance);
-        $('#actual_balance').text(Number(data.account_balance).toFixed(3));
-      });
+      getTransactions(this.$refs.etho_address.value, this)
     }
   }
 }
+
+function getTransactions(address, self) {
+  $.getJSON('https://api.ether1.org/api.php?api=account_balance&address='+address, function(data) {
+    console.log('Balance: ' + data.account_balance);
+    self.addressBalance = Number(data.account_balance).toFixed(3);
+  });
+  $.getJSON('https://api.ether1.org/api.php?api=network_stats', function(data) {
+    console.log('Block Height: ' + data.block_height);
+    self.blockHeight = Number(data.block_height);
+
+    var table = $('#transaction-table').DataTable();
+    table.destroy();
+
+    $('#transaction-table').DataTable( {
+      ajax: 'https://richlist.ether1.org/transactions_list.php?address='+address+'&fromBlock=0&toBlock='+self.blockHeight,
+      columns: [
+        {
+          data: 'block'
+        },
+        {
+          data: 'txhash',
+          render: function(data) {
+            var str = data.toString();
+            return str.length < 10 ?
+              str :
+              str.substr(0, 9) +'&#8230;';
+          }
+        },
+        {
+          data: 'fromaddr',
+          render: function(data) {
+            var str = data.toString();
+            return str.length < 10 ?
+              str :
+              str.substr(0, 9) +'&#8230;';
+          }
+        },
+        {
+          data: 'toaddr',
+          render: function(data) {
+            var str = data.toString();
+            return str.length < 10 ?
+              str :
+              str.substr(0, 9) +'&#8230;';
+          }
+        },
+        {
+          data: 'value',
+          render: function(data) {
+            var value = (Number(data) / 1000000000000000000).toFixed(5);
+            return value;
+          }
+        },
+      ],
+      responsive: true,
+      "pageLength": 10
+    });
+  });
+  
+}
 </script>
+<style>
+@import 'https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css';
+@import 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css';
+</style>

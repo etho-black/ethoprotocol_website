@@ -13,8 +13,6 @@ import PageNotFound from '@/components/pagenotfound';
 import js from '@/components/js';
 import Partners from '../components/partners';
 import Explorer from '../components/explorer';
-import VueModal from '@kouts/vue-modal';
-import '@kouts/vue-modal/dist/vue-modal.css';
 
 Vue.use(Router);
 Vue.component('Navbar', Navbar);
@@ -28,7 +26,6 @@ Vue.component('Footer', Footer);
 Vue.component('js', js);
 Vue.component('Partners', Partners);
 Vue.component('Explorer', Explorer);
-Vue.component('Modal', VueModal);
 
 export default new Router({
   mode: 'history',
