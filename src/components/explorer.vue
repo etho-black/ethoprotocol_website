@@ -57,13 +57,48 @@
           </form>
           <br>
           <div class="form-button">
-            <button type="button" v-on:click="ShowPersonalContracts()" class="btn btn-custom theme-color">My Contracts</button>
-            <button type="button" v-on:click="ShowAllContracts()" class="btn btn-custom theme-color">All Contracts</button>
+            <button type="button" v-on:click="ShowAllContracts()" class="btn btn-custom theme-color" style="font-size:12px;">All Contracts</button>
+            <button type="button" v-on:click="ShowPersonalLenderContracts()" class="btn btn-custom theme-color" style="font-size:12px;">My Lender Contracts</button>
+            <button type="button" v-on:click="ShowPersonalBorrowerContracts()" class="btn btn-custom theme-color" style="font-size:12px;">My Borrower Contracts</button>
           </div><br>
 
-          <div class="staking-contracts" style="overflow-y:auto !important;">
-            <div class="section" style="overflow-y:auto !important;">
-              <table id="staking-table" class="hover" cellspacing="20" width="100%" style="overflow-y:auto !important;">
+          <div class="staking-contracts">
+            <div class="section">
+              <table id="staking-table" class="hover" cellspacing="20" width="100%">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Fee</th>
+                    <th>Lender %</th>
+                    <th>Available</th>
+                    <th>Lender Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="borrower-staking-contracts">
+            <div class="section">
+              <table id="borrower-table" class="hover" cellspacing="20" width="100%">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Fee</th>
+                    <th>Lender %</th>
+                    <th>Available</th>
+                    <th>Lender Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="lender-staking-contracts">
+            <div class="section">
+              <table id="lender-table" class="hover" cellspacing="20" width="100%">
                 <thead>
                   <tr>
                     <th>Type</th>
@@ -130,7 +165,7 @@
 // import Vue from 'vue';
 import $ from 'jquery';
 import Web3 from 'web3';
-// import DataTable from 'datatables.net';
+import DataTable from 'datatables.net';
 
 export default {
   name: 'explorer',
@@ -140,6 +175,8 @@ export default {
       blockHeight: 0,
       addressBalance: 0,
       transactionArray: [],
+      borrowerContractArray: [],
+      lenderContractArray: [],
     };
   },
   mounted() {
@@ -167,6 +204,9 @@ export default {
       $('.staking').hide();
       $('.nodemap').hide();
       $('.uploads').hide();
+      $('.staking-contracts').hide();
+      $('.borrower-staking-contracts').hide();
+      $('.lender-staking-contracts').hide();
       bodyevent.on('click', '.color-picker a.handle', (e) => {
         e.preventDefault();
         const div = $('.color-picker');
@@ -238,6 +278,36 @@ export default {
         $('.staking').hide();
       }
     },
+    ShowAllContracts() {
+      const div = $('.staking-contracts');
+      if (div.css('display') === 'none') {
+        $('.borrower-staking-contracts').hide();
+        $('.lender-staking-contracts').hide();
+        $('.staking-contracts').show();
+      } else {
+        $('.staking-contracts').hide();
+      }
+    },
+    ShowPersonalBorrowerContracts() {
+      const div = $('.borrower-staking-contracts');
+      if (div.css('display') === 'none') {
+        $('.staking-contracts').hide();
+        $('.lender-staking-contracts').hide();
+        $('.borrower-staking-contracts').show();
+      } else {
+        $('.borrower-staking-contracts').hide();
+      }
+    },
+    ShowPersonalLenderContracts() {
+      const div = $('.lender-staking-contracts');
+      if (div.css('display') === 'none') {
+        $('.staking-contracts').hide();
+        $('.borrower-staking-contracts').hide();
+        $('.lender-staking-contracts').show();
+      } else {
+        $('.lender-staking-contracts').hide();
+      }
+    },
     async StakingLogin() {
       const web3 = new Web3('https://rpc.ether1.org');
       // const CONTRACT_ADDRESS = '0x7eE5B10cad23D36F8Ba9AD30aD1B67A741f39769';
@@ -253,11 +323,72 @@ export default {
       // console.log("Current Block Height: " + currentBlockHeight);
 
       const contractMapping = await controllerContract.methods.getLendingContractData().call();
-      const table = $('#staking-table').DataTable();
+      console.log(contractMapping);
+
+      const account = await web3.eth.accounts.privateKeyToAccount(this.$refs.etho_key.value);
+      console.log(`Login Address: ${account.address}`);
+
+      contractMapping.forEach(function (element) {
+        if (account.address === element.lenderAddress) {
+          this.lenderContractArray.push(element);
+        } else if (account.address === element.borrowerAddress) {
+          this.borrowerContractArray.push(element);
+        }
+      });
+
+      let table = $('#staking-table').DataTable();
       table.destroy();
 
       $('#staking-table').DataTable({
         data: contractMapping,
+        columns: [{
+          data: 'nodeType', title: 'Type',
+        },
+        {
+          data: 'originationFee', title: 'Fee',
+        },
+        {
+          data: 'lenderSplit', title: 'Lender %',
+        },
+        {
+          data: 'available', title: 'Available',
+        },
+        {
+          data: 'lenderAddress', title: 'Lender Address',
+        },
+        ],
+        responsive: true,
+        pageLength: 10,
+      });
+      table = $('#borrower-table').DataTable();
+      table.destroy();
+
+      $('#borrower-table').DataTable({
+        data: this.borrowerContractArray,
+        columns: [{
+          data: 'nodeType', title: 'Type',
+        },
+        {
+          data: 'originationFee', title: 'Fee',
+        },
+        {
+          data: 'lenderSplit', title: 'Lender %',
+        },
+        {
+          data: 'available', title: 'Available',
+        },
+        {
+          data: 'lenderAddress', title: 'Lender Address',
+        },
+        ],
+        responsive: true,
+        pageLength: 10,
+      });
+      table = $('#lender-table').DataTable();
+      table.destroy();
+
+      $('#lender-table').DataTable({
+        data: this.lenderContractArray,
         columns: [{
           data: 'nodeType', title: 'Type',
         },
