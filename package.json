@@ -34,6 +34,7 @@
     "vue-window-modal": "git+https://github.com/ropbla9/vue-window-modal.git",
     "vuejs-countdown": "^0.2.1",
     "vuetify": "^1.2.6",
+    "web3": "^1.2.9",
     "yarn": "^1.10.1"
   },
   "devDependencies": {
