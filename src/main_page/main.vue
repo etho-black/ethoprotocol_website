@@ -8,9 +8,9 @@
       <div class="home-circle2"><img :src='"../assets/images/main-banner12.png"' alt=""></div>
       <div class="home-circle3"><img :src='"../assets/images/main-banner1.png"' alt=""></div>
     </div>
-    <div class="container">
+    <div class="h-full" style="padding: 30px;">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-12 col-md-5">
           <div class="home-contain">
             <div class="w-full p-2">
               <h4>#Decentralize Everything</h4>
@@ -39,24 +39,45 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-2 d-none d-md-block" />
+        <div class="col-12 col-md-5 d-none d-md-block">
+          <div class="home-contain">
+            <div>
+              <!-- Tile js start -->
+              <div class="d-flex justify-content-center">
+                <img :src='"../assets/images/etho/mainEthoImage.png"' style="width: 50%;" />
+              </div>
+              <!-- Tile js end -->
 
-          <div class="home-right" style="margin-left: 30%;">
-            <!-- Tile js start -->
-            <img :src='"../assets/images/etho/mainEthoImage.png"' />
-            <!-- Tile js end -->
-
-            <h1 style="font-size: 24px;">
-              <span class="f-bold f-color">The </span><span class="f-bold">Ether-1 </span> <span class="f-bold f-color">Project is now The</span>
-              <span class="f-bold">ETHO</span>
-              <span class="f-bold f-color">Protocol</span>
-            </h1>
-            <h6><a href="https://medium.com" target="_blank" style="color:#cc0066;">Read more about our rebranding effort</a></h6>
+              <h1 style="font-size: 24px;">
+                <span class="f-bold f-color">The </span><span class="f-bold">Ether-1 </span> <span class="f-bold f-color">Project is now The</span>
+                <span class="f-bold">ETHO</span>
+                <span class="f-bold f-color">Protocol</span>
+              </h1>
+              <h6><a href="https://medium.com" target="_blank" style="color:#cc0066;">Read more about our rebranding effort</a></h6>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <div class="d-sm-block d-md-none p-2">
+    <!-- Tile js start -->
+    <div class="d-flex justify-content-center">
+      <img :src='"../assets/images/etho/mainEthoImage.png"' style="width: 50%;" />
+    </div>
+    <!-- Tile js end -->
+
+    <div class="d-flex justify-content-center">
+      <h1 style="font-size: 24px;">
+        <span class="f-bold f-color">The </span><span class="f-bold">Ether-1 </span> <span class="f-bold f-color">Project is now The</span>
+        <span class="f-bold">ETHO</span>
+        <span class="f-bold f-color">Protocol</span>
+      </h1>
+    </div>
+    <h6 style="padding: 0; margin: 0;"><a href="https://medium.com" target="_blank" style="color:#cc0066;">Read more about our rebranding effort</a></h6>
+  </div>
   <!--Home Section End -->
 
   <!-- About Start  -->
