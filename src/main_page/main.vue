@@ -20,7 +20,7 @@
                 <span class="f-bold f-color">Protocol</span>
               </h1>
               <div style="width: 500px;">
-                <carousel :className='"intro-carousel"' :loop=false :margin=30 :items=1 :nav=false :dots=true :dotsEach=true :autoplay=true :responsive="{0:{items:1,margin:5},600:{items:1,margin:5},768:{items:1},992:{items:1},1000:{items:1}}">
+                <carousel :className='"intro-carousel"' :loop=false :margin=30 :items=1 :nav=false :dots=true :dotsEach=true :autoplay=true :autoplayTimeout=10000 :responsive="{0:{items:1,margin:5},600:{items:1,margin:5},768:{items:1},992:{items:1},1000:{items:1}}">
                   <div>
                     <p>The Etho Protocol is a decentralized protocol and project to it’s core. The project was born out of a dream to build an entirely democratized internet free from the centralized hands of corporate greed, where all data and
                       information is completely held in the public domain, giving governance of this data back to the masses via consensus and democracy.</p>
