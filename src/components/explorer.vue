@@ -125,7 +125,7 @@
 // import Vue from 'vue';
 import $ from 'jquery';
 import Web3 from 'web3';
-// import DataTable from 'datatables.net';
+import DataTable from 'datatables.net';
 
 export default {
   name: 'explorer',
