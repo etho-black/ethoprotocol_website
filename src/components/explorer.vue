@@ -425,50 +425,37 @@ export default {
         const table = $('#transaction-table').DataTable();
         table.destroy();
 
-        $('#transaction-table').DataTable({
-          ajax: `https://richlist.ether1.org/transactions_list.php?address=${address}&fromBlock=0&toBlock=${self.blockHeight}`,
-          columns: [{
-            data: 'block',
-          },
-          {
-            txhash: 'txhash',
-            render(txhash) {
-              const str = txhash.toString();
-              return str.length < 10
-                ? str
-                : `${str.substr(0, 9)}&#8230;`;
-            },
-          },
-          {
-            fromaddr: 'fromaddr',
-            render(fromaddr) {
-              const str = fromaddr.toString();
-              return str.length < 10
-                ? str
-                : `${str.substr(0, 9)}&#8230;`;
-            },
-          },
-          {
-            toaddr: 'toaddr',
-            render(toaddr) {
-              const str = toaddr.toString();
-              return str.length < 10
-                ? str
-                : `${str.substr(0, 9)}&#8230;`;
-            },
-          },
-          {
-            value: 'value',
-            render(value) {
-              value = (Number(value) / 1000000000000000000).toFixed(5);
-              return value;
-            },
-          },
-          ],
-          responsive: true,
-          pageLength: 10,
+        $.ajax({
+          type: 'POST',
+          url: `https://richlist.ether1.org/transactions_list.php?address=${address}&fromBlock=0&toBlock=${self.blockHeight}`,
+          dataType: 'json',
+          cache: false,
+          success: function(result){
+            console.log(result);
+            $('#transaction-table').DataTable({
+              data: result.data,
+              columns: [{
+                data: 'block', title: 'Block',
+              },
+              {
+                data: 'txhash', title: 'Hash',
+              },
+              {
+                data: 'toaddr', title: 'To',
+              },
+              {
+                data: 'fromaddr', title: 'From',
+              },
+              {
+                data: 'value', title: 'Amount',
+              },
+              ],
+              responsive: true,
+              pageLength: 10,
+            });
+          }
         });
-      });
+      });  
     },
     GetBalance() {
       this.getTransactions(this.$refs.etho_address.value, this);
