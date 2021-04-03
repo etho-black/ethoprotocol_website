@@ -1,15 +1,89 @@
 <template>
 <div>
   <div>
-    <div class="color-picker">
+    <div class="color-picker" style="max-width: 100vw;">
       <a href="#" class="handle">
-        <button type="button" class="btn btn-custom theme-color">ETHO Balance</button>
-
+        <button type="button" class="btn btn-custom theme-color">Tools</button>
       </a>
+
       <div class="sec-position">
         <div class="settings-header">
-          <h3>Check Your ETHO Balance</h3>
+          <div class="d-flex justify-content-between">
+            <h3 class="p-2">ETHO Protocol Tools</h3>
+            <a href="#" @click="closeMenu">
+              <h3 class="p-2">X</h3>
+            </a>
+          </div>
         </div>
+        <div class="section">
+
+          <div class="form-button">
+            <center>
+              <button type="button" v-on:click="ShowExplorer()" class="btn-tools">Explorer</button>
+              <button type="button" v-on:click="ShowStaking()" class="btn-tools">Staking</button>
+              <button type="button" v-on:click="ShowUploads()" class="btn-tools">Upload Data</button>
+              <button type="button" v-on:click="ShowNodeMap()" class="btn-tools">Node Map</button>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="nodemap">
+        <div class="sec-position">
+          <div class="section">
+            <center><p>Coming Soon</p></center>
+          </div>
+        </div>
+      </div>
+
+      <div class="uploads">
+        <div class="sec-position">
+          <div class="section">
+            <center><p>Coming Soon</p></center>
+          </div>
+        </div>
+      </div>
+
+      <div class="staking">
+      <div class="sec-position">
+        <div class="section">
+          <form class="footer-form">
+            <div class="form-group">
+              <input class="form-control" name="private_key" id="private_key" placeholder="Enter Your Private Key:" type="text" ref="etho_key" required="required">
+            </div>
+            <div class="form-button">
+              <button type="button" v-on:click="StakingLogin()" class="btn btn-custom theme-color">Login</button>
+            </div>
+          </form>
+          <br>
+          <div class="form-button">
+            <button type="button" v-on:click="ShowPersonalContracts()" class="btn btn-custom theme-color">My Contracts</button>
+            <button type="button" v-on:click="ShowAllContracts()" class="btn btn-custom theme-color">All Contracts</button>
+          </div><br>
+
+          <div class="staking-contracts" style="overflow-y:auto !important;">
+            <div class="section" style="overflow-y:auto !important;">
+              <table id="staking-table" class="hover" cellspacing="20" width="100%" style="overflow-y:auto !important;">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Fee</th>
+                    <th>Lender %</th>
+                    <th>Available</th>
+                    <th>Lender Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="explorer">
+      <div class="sec-position">
         <div class="section">
           <form class="footer-form">
             <div class="form-group">
@@ -25,7 +99,7 @@
           </div>
 
           <a href="#" class="expand">
-            <button type="button" class="btn btn-custom theme-color">View Transactions</button>
+            <button type="button" class="btn btn-custom theme-color">Transactions</button>
           </a>
           <div class="transactions">
             <div class="section">
@@ -46,15 +120,16 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
   </div>
-  <!--<component v-bind:is="currentTab"></component>-->
 </div>
 </template>
 
 <script>
 // import Vue from 'vue';
 import $ from 'jquery';
+import Web3 from 'web3';
 // import DataTable from 'datatables.net';
 
 export default {
@@ -76,12 +151,22 @@ export default {
     }
   },
   methods: {
+    closeMenu() {
+      $('.transactions').hide();
+      $('.color-picker').animate({
+        right: '-600px',
+      });
+    },
     colorclass() {
       const bodyevent = $('body');
       $('.color-picker').animate({
         right: '-600px',
       });
       $('.transactions').hide();
+      $('.explorer').hide();
+      $('.staking').hide();
+      $('.nodemap').hide();
+      $('.uploads').hide();
       bodyevent.on('click', '.color-picker a.handle', (e) => {
         e.preventDefault();
         const div = $('.color-picker');
@@ -101,10 +186,96 @@ export default {
         e.preventDefault();
         const div = $('.transactions');
         if (div.css('display') === 'none') {
-          $('.transactions').slideDown('slow');
+          $('.transactions').show();
         } else {
-          $('.transactions').slideUp('slow');
+          $('.transactions').hide();
         }
+      });
+    },
+    ShowNodeMap() {
+      const div = $('.nodemap');
+      if (div.css('display') === 'none') {
+        $('.uploads').hide();
+        $('.explorer').hide();
+        $('.staking').hide();
+        $('.nodemap').show();
+      } else {
+        $('.nodemap').hide();
+      }
+    },
+    ShowUploads() {
+      const div = $('.uploads');
+      if (div.css('display') === 'none') {
+        $('.nodemap').hide();
+        $('.explorer').hide();
+        $('.staking').hide();
+        $('.uploads').show();
+      } else {
+        $('.uploads').hide();
+      }
+    },
+    ShowExplorer() {
+      const div = $('.explorer');
+      if (div.css('display') === 'none') {
+        $('.nodemap').hide();
+        $('.uploads').hide();
+        $('.staking').hide();
+        $('.explorer').show();
+      } else {
+        $('.transactions').hide();
+        $('.explorer').hide();
+      }
+    },
+    ShowStaking() {
+      const div = $('.staking');
+      if (div.css('display') === 'none') {
+        $('.nodemap').hide();
+        $('.uploads').hide();
+        $('.transactions').hide();
+        $('.explorer').hide();
+        $('.staking').show();
+      } else {
+        $('.staking').hide();
+      }
+    },
+    async StakingLogin() {
+      const web3 = new Web3('https://rpc.ether1.org');
+      // const CONTRACT_ADDRESS = '0x7eE5B10cad23D36F8Ba9AD30aD1B67A741f39769';
+      const CONTROLLER_ADDRESS = '0x921b2bcEE3e6e413A81150bda671b2b47c6EF944';
+      // const CONTRACT_ABI = JSON.parse('[{"constant":false,"inputs":[{"name":"contractAddress","type":"address"},{"name":"contractMessage","type":"string"},{"name":"messageSide","type":"string"}],"name":"addContractMessage","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"contractAddress","type":"address"}],"name":"borrowerContractSelection","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"contractAddress","type":"address"},{"name":"to","type":"address"},{"name":"value","type":"uint256"}],"name":"contractBorrowerTransfer","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"split","type":"uint256"},{"name":"nodeType","type":"string"},{"name":"fee","type":"uint256"},{"name":"contractText","type":"string"}],"name":"createLendingContract","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"contractAddress","type":"address"}],"name":"removeContract","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"contractAddress","type":"address"}],"name":"resetContract","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"setGnCollateralAmount","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"setMnCollateralAmount","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"setSnCollateralAmount","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"borrowerCountMapping","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"contractAddress","type":"address"}],"name":"getContractCollateralAmount","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"contractAddress","type":"address"}],"name":"getContractLastPaid","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"contractAddress","type":"address"}],"name":"getContractLastReward","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"gnCollateralRequirement","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"},{"name":"","type":"uint256"}],"name":"lenderContractMessaging","outputs":[{"name":"lendingContractAddress","type":"address"},{"name":"message","type":"string"},{"name":"blockHeight","type":"uint256"},{"name":"side","type":"string"},{"name":"timestamp","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"lenderCountMapping","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"lendingContractCount","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"lendingContractCountMapping","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"lendingContractMapping","outputs":[{"name":"nodeType","type":"string"},{"name":"index","type":"uint256"},{"name":"lenderIndex","type":"uint256"},{"name":"borrowerIndex","type":"uint256"},{"name":"lenderAddress","type":"address"},{"name":"borrowerAddress","type":"address"},{"name":"lendingContractAddress","type":"address"},{"name":"originationFee","type":"uint256"},{"name":"available","type":"bool"},{"name":"lenderSplit","type":"uint256"},{"name":"text","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"},{"name":"","type":"uint256"}],"name":"lendingContractsMappingByBorrower","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"},{"name":"","type":"uint256"}],"name":"lendingContractsMappingByLender","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"messageCountMapping","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"minOriginationFee","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"mnCollateralRequirement","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"snCollateralRequirement","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"contractAddress","type":"address"}],"name":"totalContractMessages","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}]');
+      // const INDIVIDUAL_CONTRACT_ABI = JSON.parse('[{"constant":true,"inputs":[],"name":"borrowerDeploymentBlock","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"nodeType","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"available","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"borrowerTxAllowance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"deleteContract","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"lenderSplit","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"borrower","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"resetContract","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"paymentThreshold","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"originationFee","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"lastRewardAmount","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"lender","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"to","type":"address"},{"name":"value","type":"uint256"}],"name":"borrowerTransfer","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"lastPaid","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"newBorrower","type":"address"}],"name":"setBorrower","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"nodeCollateralAmount","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"controller","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"split","type":"uint256"},{"name":"contractType","type":"string"},{"name":"fee","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"senderAddress","type":"address"}],"name":"logSender","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"receiverAddress","type":"address"}],"name":"logReceiver","type":"event"}]');
+      const CONTROLLER_ABI = JSON.parse('[{"inputs":[{"name":"lendingContractAddress","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"constant":true,"inputs":[],"name":"getLendingContractData","outputs":[{"components":[{"name":"nodeType","type":"string"},{"name":"index","type":"uint256"},{"name":"lenderIndex","type":"uint256"},{"name":"borrowerIndex","type":"uint256"},{"name":"lenderAddress","type":"address"},{"name":"borrowerAddress","type":"address"},{"name":"lendingContractAddress","type":"address"},{"name":"originationFee","type":"uint256"},{"name":"available","type":"bool"},{"name":"lenderSplit","type":"uint256"},{"name":"text","type":"string"},{"name":"collateralAmount","type":"uint256"},{"name":"lastPaid","type":"uint256"},{"name":"lastReward","type":"uint256"},{"name":"deploymentBlock","type":"uint256"}],"name":"","type":"tuple[]"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"lenderManagementContract","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"}]');
+      // var currentBlockHeight = await web3.eth.getBlockNumber();
+      // const contract = new web3.eth.Contract(CONTRACT_ABI, CONTRACT_ADDRESS);
+      const controllerContract = new web3.eth.Contract(CONTROLLER_ABI, CONTROLLER_ADDRESS);
+      // const totalContractCount = await contract.methods.lendingContractCount().call()
+      // console.log("Total Contract Count: " + totalContractCount);
+      // console.log("Current Block Height: " + currentBlockHeight);
+
+      const contractMapping = await controllerContract.methods.getLendingContractData().call();
+      const table = $('#staking-table').DataTable();
+      table.destroy();
+
+      $('#staking-table').DataTable({
+        data: contractMapping,
+        columns: [{
+          data: 'nodeType', title: 'Type',
+        },
+        {
+          data: 'originationFee', title: 'Fee',
+        },
+        {
+          data: 'lenderSplit', title: 'Lender %',
+        },
+        {
+          data: 'available', title: 'Available',
+        },
+        {
+          data: 'lenderAddress', title: 'Lender Address',
+        },
+        ],
+        responsive: true,
+        pageLength: 10,
       });
     },
     SetColor(color) {

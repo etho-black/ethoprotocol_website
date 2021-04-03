@@ -10,13 +10,14 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-6">
           <div class="home-contain">
-            <div>
+            <div class="w-full p-2">
               <h4>#Decentralize Everything</h4>
-              <h1 style="font-size: 40px;">
+              <h1 style="font-size: 40px;" class="wrap">
                 <span class="f-bold f-color">The</span>
-                <span class="f-bold">ETHO</span>
+                <span class="d-none d-md-inline f-bold">ETHO</span>
+                <div class="d-md-none f-bold pt-2 pb-2">ETHO</div>
                 <span class="f-bold f-color">Protocol</span>
               </h1>
               <div style="width: 500px;">
@@ -38,7 +39,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 offset-md-1">
+        <div class="col-md-6">
 
           <div class="home-right" style="margin-left: 30%;">
             <!-- Tile js start -->
@@ -109,3 +110,12 @@ export default {
   },
 };
 </script>
+
+<style>
+  .w-full {
+    width: 100%;
+  }
+  .h-full {
+    height: 100%;
+  }
+</style>
