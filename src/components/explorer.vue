@@ -1,14 +1,19 @@
 <template>
 <div>
   <div>
-    <div class="color-picker">
+    <div class="color-picker" style="max-width: 100vw;">
       <a href="#" class="handle">
         <button type="button" class="btn btn-custom theme-color">Tools</button>
       </a>
 
-      <div class="sec-position" >
+      <div class="sec-position">
         <div class="settings-header">
-          <h3>ETHO Protocol Tools</h3>
+          <div class="d-flex justify-content-between">
+            <h3 class="p-2">ETHO Protocol Tools</h3>
+            <a href="#" @click="closeMenu">
+              <h3 class="p-2">X</h3>
+            </a>
+          </div>
         </div>
         <div class="section">
 
@@ -125,7 +130,7 @@
 // import Vue from 'vue';
 import $ from 'jquery';
 import Web3 from 'web3';
-import DataTable from 'datatables.net';
+// import DataTable from 'datatables.net';
 
 export default {
   name: 'explorer',
@@ -146,6 +151,12 @@ export default {
     }
   },
   methods: {
+    closeMenu() {
+      $('.transactions').hide();
+      $('.color-picker').animate({
+        right: '-600px',
+      });
+    },
     colorclass() {
       const bodyevent = $('body');
       $('.color-picker').animate({
