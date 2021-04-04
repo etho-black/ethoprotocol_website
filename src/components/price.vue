@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-sm-12">
             <carousel :className='"price-carousel"'
-                      :loop=true
+                      :loop=false
                       :margin=30
                       :items=3
                       :center=false
@@ -96,29 +96,30 @@
 <script>
 import $ from 'jquery';
 
+function getRewardJson(self) {
+  $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', function(data) {
+        self.gn_reward = Number(data.gatewaynode_reward).toFixed(3);
+        self.mn_reward = Number(data.masternode_reward).toFixed(3);
+        self.sn_reward = Number(data.servicenode_reward).toFixed(3);
+  });
+}
+
 export default {
   name: 'Price',
-  data() {
+  data () {
     return {
       gn_reward: 0.000,
       mn_reward: 0.000,
       sn_reward: 0.000,
-    };
+    }
   },
   methods: {
-    GetRewards() {
-      this.getRewardJson(this);
-    },
-    getRewardJson(self) {
-      $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', (data) => {
-        self.gn_reward = Number(data.gatewaynode_reward).toFixed(3);
-        self.mn_reward = Number(data.masternode_reward).toFixed(3);
-        self.sn_reward = Number(data.servicenode_reward).toFixed(3);
-      });
-    },
+    GetRewards: function () {
+        getRewardJson(this);
+    }
   },
-  mounted() {
+  mounted () {
     this.GetRewards();
-  },
+  }
 };
 </script>
