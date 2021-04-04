@@ -2677,6 +2677,78 @@ iframe.video-play {
     background-image: linear-gradient(to right, #d85040, #ff6e63, #d85040, #f9695d);
   }
 }
+.upload-form{
+  padding-top: 10px;
+  padding-bottom: 0px;
+  .upload-data{
+    input{
+      border: none;
+    }
+  }
+  .or-saparator {
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 1px;
+      margin-top: 1px;
+      width: 100%;
+      content: '';
+      background: rgba(40,56,76,0.1);
+      z-index: 1;
+    }
+    span{
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 0.81em;
+      padding: 0 8px;
+      background: #fff;
+      color: #868686;
+      z-index: 2;
+    }
+  }
+  .card{
+    border: 0;
+    padding: 30px 50px 50px;
+    width: 500px;
+    margin: 0 auto;
+    border-top: 3px solid #1ad7dd;
+    border-radius: 0;
+  }
+  .title{
+    margin-bottom: 20px;
+  }
+  p{
+    width: 70%;
+    margin: 0 auto 30px;
+  }
+  .theme-form{
+    margin-top: 0;
+    .form-control{
+      box-shadow: 0 0 5px 0 rgba(170, 170, 170, 0.35);
+    }
+  }
+  min-height: 50vh;
+  display: flex;
+
+  justify-content: center;
+  background: #fafafa;
+  background-image: url(../assets/images/auth-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .innerpage-decor{
+    .innerpage-circle1{
+      bottom: 180px;
+    }
+    .innerpage-circle2{
+      bottom: 20px;
+    }
+  }
+}
 .authentication-form{
   .or-saparator {
     position: relative;

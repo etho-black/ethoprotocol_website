@@ -39,7 +39,53 @@
       <div class="uploads">
         <div class="sec-position">
           <div class="section">
-            <center><p>Coming Soon</p></center>
+            <div>
+    <!-- Forgetpassword Start -->
+    <section class="upload-form">
+      <div>
+        <h2 class="title text-center">UPLOAD<span> DATA</span></h2>
+        <div class="card">
+          <form class="theme-form">
+            <div class="form-group mt-2">
+              
+              
+              <div class="form-row">
+                
+                <div class="col-8">
+                  <h6 class="mt-0 mb-3">Contract Name:</h6>
+                  <input type="tel" class="form-control digits mb-1"  value="Name">
+                </div>
+                <div class="col-4">
+                  <h6 class="mt-0 mb-3">Length:</h6>
+                  <input type="text" class="form-control digits mb-1" value="100000">
+                </div>
+                  <div class="col-12 mt-4">
+                    <h6 class="mt-0 mb-3">Data:</h6>
+                    <input type="file" webkitdirectory multiple class="form-control digits mb-1">
+                  </div>
+                
+                
+                <div class="col-12 mt-4">
+                  <button type="button" v-on:click="UploadData()" class="btn btn-custom btn-block theme-color">Upload</button>
+                </div>
+
+                <div class="col-8">
+                  <h6 class="mt-0 mb-3">Size:</h6>
+                </div>
+                <div class="col-4">
+                  <h6 class="mt-0 mb-3">Cost:</h6>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--strat color change -->
+      <color/>
+      <!--end color change-->
+    </section>
+    <!-- Forgetpassword End -->
+  </div>
           </div>
         </div>
       </div>
