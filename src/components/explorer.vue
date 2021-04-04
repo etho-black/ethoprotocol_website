@@ -10,7 +10,7 @@
         <div class="settings-header">
           <div class="d-flex justify-content-between">
             <h3 class="p-2">ETHO Protocol Tools</h3>
-            <a href="#" @click="closeMenu">
+            <a style="cursor: pointer;" @click="closeMenu">
               <h3 class="p-2">X</h3>
             </a>
           </div>
