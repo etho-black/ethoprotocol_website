@@ -10,7 +10,7 @@
         </router-link>
 
         <ul class="footer-widget__list mt-2" style="padding: 0;">
-          <li><i class="fas fa-globe"></i>Decentralized</li>
+          <li>Freedom Of Data</li>
           <li><a href="mailto:admin@ether1.org" class="hover-style-link">admin@ether1.org</a></li>
           <li><a href="tel:888-700-3846" class="hover-style-link">+1.888.700.ETHO</a></li>
         </ul>
