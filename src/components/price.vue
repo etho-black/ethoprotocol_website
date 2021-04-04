@@ -96,6 +96,14 @@
 <script>
 import $ from 'jquery';
 
+function getRewardJson(self) {
+  $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', function(data) {
+        self.gn_reward = Number(data.gatewaynode_reward).toFixed(3);
+        self.mn_reward = Number(data.masternode_reward).toFixed(3);
+        self.sn_reward = Number(data.servicenode_reward).toFixed(3);
+  });
+}
+
 export default {
   name: 'Price',
   data () {
@@ -114,11 +122,4 @@ export default {
     this.GetRewards();
   }
 };
-function getRewardJson(self) {
-  $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', function(data) {
-        self.gn_reward = Number(data.gatewaynode_reward).toFixed(3);
-        self.mn_reward = Number(data.masternode_reward).toFixed(3);
-        self.sn_reward = Number(data.servicenode_reward).toFixed(3);
-  });
-}
 </script>
