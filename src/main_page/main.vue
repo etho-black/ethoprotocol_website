@@ -65,7 +65,7 @@
   <div class="d-sm-block d-md-none p-2">
     <!-- Tile js start -->
     <div class="d-flex justify-content-center">
-      <img :src='"../assets/images/etho/mainEthoImage.png"' style="width: 50%;" />
+      <img :src='"../assets/images/etho/mainEthoImage.png"' style="width: 50%; object-fit: contain;" />
     </div>
     <!-- Tile js end -->
 
