@@ -39,13 +39,13 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2 d-none d-md-block" />
+        <div class="col-2 d-none d-md-block" />
         <div class="col-12 col-md-5 d-none d-md-block">
-          <div class="home-contain">
+          <div class="home-contain p-2">
             <div>
               <!-- Tile js start -->
               <div class="d-flex justify-content-center">
-                <img :src='"../assets/images/etho/mainEthoImage.png"' style="width: 50%;" />
+                <img :src='"../assets/images/etho/mainEthoImage.png"' style="width: 50%; object-fit: contain;" />
               </div>
               <!-- Tile js end -->
 
