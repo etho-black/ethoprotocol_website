@@ -57,9 +57,11 @@
           </form>
           <br>
           <div class="form-button">
+          <center>
             <button type="button" v-on:click="ShowAllContracts()" class="btn btn-custom theme-color" style="font-size:12px;">All Contracts</button>
             <button type="button" v-on:click="ShowPersonalLenderContracts()" class="btn btn-custom theme-color" style="font-size:12px;">My Lender Contracts</button>
             <button type="button" v-on:click="ShowPersonalBorrowerContracts()" class="btn btn-custom theme-color" style="font-size:12px;">My Borrower Contracts</button>
+            </center>
           </div><br>
 
           <div class="staking-contracts">
@@ -134,7 +136,7 @@
           </div>
 
           <a href="#" class="expand">
-            <button type="button" class="btn btn-custom theme-color">Transactions</button>
+            <button type="button" v-on:click="ShowTransactions()" class="btn btn-custom theme-color" style="font-size:12px;">Transactions</button>
           </a>
           <div class="transactions">
             <div class="section">
@@ -221,16 +223,15 @@ export default {
           });
         }
       });
-      bodyevent.on('click', '.color-picker a.expand', (e) => {
-        console.log('EXPAND');
-        e.preventDefault();
+    },
+    ShowTransactions(){
+      e.preventDefault();
         const div = $('.transactions');
         if (div.css('display') === 'none') {
           $('.transactions').show();
         } else {
           $('.transactions').hide();
         }
-      });
     },
     ShowNodeMap() {
       const div = $('.nodemap');

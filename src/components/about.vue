@@ -14,7 +14,7 @@
 
               <span style="color:#971B45;">Etho</span>
 
-              <span>Protocol</span> built?
+              <span>Protocol</span> developed?
             </h2>
 
             <div>
