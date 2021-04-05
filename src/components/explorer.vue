@@ -3,7 +3,7 @@
   <div>
     <div class="color-picker" style="max-width: 100vw;">
       <a href="#" class="handle">
-        <button type="button" class="btn btn-custom theme-color">Tools</button>
+        <button type="button" class="btn btn-custom theme-color" style="background-color:#971B45;">Tools</button>
       </a>
 
       <div class="sec-position">
@@ -20,9 +20,9 @@
           <div class="form-button">
             <center>
               <button type="button" v-on:click="ShowExplorer()" class="btn-tools">Explorer</button>
-              <button type="button" v-on:click="ShowStaking()" class="btn-tools">Staking</button>
-              <button type="button" v-on:click="ShowUploads()" class="btn-tools">Upload Data</button>
-              <button type="button" v-on:click="ShowNodeMap()" class="btn-tools">Node Map</button>
+              <!--<button type="button" v-on:click="ShowStaking()" class="btn-tools">Staking</button>-->
+              <!--<button type="button" v-on:click="ShowUploads()" class="btn-tools">Upload Data</button>-->
+              <!--<button type="button" v-on:click="ShowNodeMap()" class="btn-tools">Node Map</button>-->
             </center>
           </div>
         </div>
@@ -33,6 +33,21 @@
           <div class="section">
             <center><p>Coming Soon</p></center>
           </div>
+        </div>
+      </div>
+
+      <div class="upload-registration">
+        <div class="card">
+          <form class="theme-form">
+            <div class="form-group">
+              <div class="md-fgrup-margin">
+                <input type="text" class="form-control" placeholder="Username" id="upload_username" ref="upload_username" required="required">
+              </div>
+            </div>
+            <div class="form-button text-center">
+              <button type="button" v-on:click="UploadData()" class="btn btn-custom btn-block theme-color">Register</button>
+            </div>
+          </form>
         </div>
       </div>
 
@@ -186,7 +201,7 @@
           </a>
           <div class="transactions">
             <div class="section">
-              <table id="transaction-table" class="hover" cellspacing="20" width="100%">
+              <table id="transaction-table" class="hover">
                 <thead>
                   <tr>
                     <th>Block</th>
@@ -214,6 +229,7 @@
 import $ from 'jquery';
 import Web3 from 'web3';
 import DataTable from 'datatables.net';
+//import ethofsSDK from'@ethofs/sdk';
 
 export default {
   name: 'explorer',
@@ -225,6 +241,7 @@ export default {
       transactionArray: [],
       borrowerContractArray: [],
       lenderContractArray: [],
+      uploadKey: '',
     };
   },
   mounted() {
@@ -247,6 +264,7 @@ export default {
       $('.color-picker').animate({
         right: '-600px',
       });
+      $('.upload-registration').hide();
       $('.transactions').hide();
       $('.explorer').hide();
       $('.staking').hide();
@@ -255,6 +273,24 @@ export default {
       $('.staking-contracts').hide();
       $('.borrower-staking-contracts').hide();
       $('.lender-staking-contracts').hide();
+      $('#staking-table').on('click', 'tbody tr', function() {
+          let table = $('#staking-table').DataTable();
+          console.log('Staking contract values : ', table.row(this).data());
+      });
+      $('#lender-table').on('click', 'tbody tr', function() {
+          let table = $('#lender-table').DataTable();
+          console.log('Staking contract values : ', table.row(this).data());
+      });
+      $('#borrower-table').on('click', 'tbody tr', function() {
+          let table = $('#borrower-table').DataTable();
+          console.log('Staking contract values : ', table.row(this).data());
+      });
+      $('#transaction-table').on('click', 'tbody tr', function(e) {
+          e.preventDefault(); 
+          let table = $('#transaction-table').DataTable();
+          var url = 'https://blocks.ether1.org/tx/'+table.row(this).data().txhash; 
+          window.open(url, '_blank');
+      });
       bodyevent.on('click', '.color-picker a.handle', (e) => {
         e.preventDefault();
         const div = $('.color-picker');
@@ -271,7 +307,6 @@ export default {
       });
     },
     ShowTransactions(){
-      e.preventDefault();
         const div = $('.transactions');
         if (div.css('display') === 'none') {
           $('.transactions').show();
@@ -355,6 +390,36 @@ export default {
         $('.lender-staking-contracts').hide();
       }
     },
+    UploadLogin(){
+     /* this.uploadKey = this.$refs.etho_upload_key.value;
+      var ethofs = ethofsSDK(this.uploadKey); 
+
+      ethofs.testAuthentication().then((result) => {
+        console.log(result);
+        this.ShowUploadData(ethofs);
+      }).catch((err) => {
+        console.log(err);
+        this.ShowUploadRegistration();
+      });*/
+    },
+    ShowUploadRegistration() {
+      $('.upload-registration').show();
+    },
+    RegisterUploadUser() {
+      var ethofs = ethofsSDK(this.uploadKey); 
+      var userName = this.$refs.etho_upload_user.value;
+
+      ethofs.addUser(userName).then((result) => {
+        //handle results here
+        console.log(result);
+      }).catch((err) => {
+        //handle error here
+        console.log(err);
+      });
+    },
+    ShowUploadRegistration() {
+      console.log('User Login Successful - Displaying Upload Data')
+    },
     async StakingLogin() {
       const web3 = new Web3('https://rpc.ether1.org');
       // const CONTRACT_ADDRESS = '0x7eE5B10cad23D36F8Ba9AD30aD1B67A741f39769';
@@ -407,6 +472,7 @@ export default {
         responsive: true,
         pageLength: 10,
       });
+
       table = $('#borrower-table').DataTable();
       table.destroy();
 
@@ -486,15 +552,42 @@ export default {
               },
               {
                 data: 'txhash', title: 'Hash',
-              },
-              {
-                data: 'toaddr', title: 'To',
+                render: function(data){
+                  if(data){
+                    return (data.length > 10)?data.substring(0, 5)+'...'+data.substring(data.length-5, data.length):data;
+                  } else {
+                    return '';
+                  }
+                },
               },
               {
                 data: 'fromaddr', title: 'From',
+                render: function(data){
+                  if(data){
+                    return (data.length > 10)?data.substring(0, 5)+'...'+data.substring(data.length-5, data.length):data;
+                  } else {
+                    return '';
+                  }
+                },
               },
               {
-                data: 'value', title: 'Amount',
+                data: 'toaddr', title: 'To',
+                render: function(data){
+                  if(data){
+                    return (data.length > 10)?data.substring(0, 5)+'...'+data.substring(data.length-5, data.length):data;
+                  } else {
+                    return '';
+                  }
+                },
+              },
+              {
+                data: 'value', title: 'Amount',render: function(data){
+                  if(data){
+                    return (Number(data)/1000000000000000000).toFixed(4);
+                  } else {
+                    return 0;
+                  }
+                },
               },
               ],
               responsive: true,

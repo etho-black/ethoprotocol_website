@@ -2271,10 +2271,6 @@ ul {
     border: 1px solid $color_bright_turquoise;
     overflow: auto;
     height: 600px;
-
-    table th:nth-child(3), td:nth-child(3) {
-      display: none;
-    }
   }
 }
 
