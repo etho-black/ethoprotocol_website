@@ -4,7 +4,7 @@
     <section id="price" class="price">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-12">
             <carousel :className='"price-carousel"'
                       :loop=false
                       :margin=30
@@ -16,8 +16,8 @@
                       :autoplay=true
                       :responsive="{0:{items:1, dots:true},600:{items:1,dots:true},768:{items:2,dots:true},992:{items:3,nav:false},1000:{items:3,nav:false}}"
             >
-              <div class="price-item">
-                <div class="price-block">
+              <div class="price-item h-full">
+                <div class="price-block h-full">
                   <div><h1 style="font-size: 28px;"><span class="f-bold">Service Node</span></h1>
                   </div>
                   <div class="mrp">
@@ -35,11 +35,12 @@
                     <li>1 GB Of Ram</li>
                     <li>Static Public IPv4 Address</li>
                   </ul>
+                  <div class="price-filler" />
                   <a href="https://nodes.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
                 </div>
               </div>
-              <div class="price-item">
-                <div class="price-block">
+              <div class="price-item h-full">
+                <div class="price-block h-full">
                   <div><h1 style="font-size: 28px;"><span class="f-bold">Masternode</span></h1>
                   </div>
                   <div class="mrp">
@@ -57,11 +58,12 @@
                     <li>2 GB Of Ram</li>
                     <li>Static Public IPv4 Address</li>
                   </ul>
+                  <div class="price-filler" />
                   <a href="https://nodes.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
                 </div>
                 </div>
-              <div class="price-item">
-                <div class="price-block">
+              <div class="price-item h-full">
+                <div class="price-block h-full">
                   <div><h1 style="font-size: 28px;"><span class="f-bold">Gateway Node</span></h1>
                   </div>
                   <div class="mrp">
@@ -80,6 +82,7 @@
                     <li>4 GB Of Ram</li>
                     <li>Static Public IPv4 Address</li>
                   </ul>
+                  <div class="price-filler" />
                   <a href="https://nodes.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
 
                 </div>
@@ -123,3 +126,18 @@ export default {
   }
 };
 </script>
+
+<style>
+[classname="price-carousel"] .owl-stage {
+  display: flex;
+}
+.price-block {
+  display: flex;
+  flex-direction: column;
+}
+.price-filler {
+  flex-grow: 1;
+  width: 100%;
+}
+</style>
+
