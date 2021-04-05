@@ -196,10 +196,10 @@
             <p align="center"><a href="https://explorer.ether1.org">Balance: {{ addressBalance }} ETHO</a></p>
           </div>
 
-          <a href="#" class="expand">
-            <button type="button" v-on:click="ShowTransactions()" class="btn btn-custom theme-color" style="font-size:12px;">Transactions</button>
+          <a href="#" class="expand transaction-button">
+            <button type="button" v-on:click="ShowTransactions()" class="btn btn-custom theme-color transaction-button" style="font-size:12px;">Transactions</button>
           </a>
-          <div class="transactions">
+          <div class="transactions" style="overflow-y:auto;">
             <div class="section">
               <table id="transaction-table" class="hover">
                 <thead>

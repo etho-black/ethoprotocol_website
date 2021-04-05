@@ -105,6 +105,15 @@
   }
 }
 @media(max-width: 1366px) {
+  a.expand{
+    display: none;
+  }
+  .transaction-button{
+    display: none;
+  }
+  .screenshot{
+    display: none;
+  }
   .w-full .container .desktop-wallet{
     display: none;
   }

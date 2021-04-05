@@ -10,7 +10,8 @@
         <b-nav-item style="cursor: pointer;" @click="openStaking">Staking</b-nav-item>
 
         <b-nav-item-dropdown right-alignment text="wallets" class="nav-link">
-          <b-dropdown-item class="nav-link" :href='"#screenshot"'>Mobile Wallet</b-dropdown-item>
+          <b-dropdown-item class="nav-link" :href='"https://apps.apple.com/us/app/nextshore-ether-1-wallet/id1521802485#?platform=iphone"'>Wallet (iOS)</b-dropdown-item>
+          <b-dropdown-item class="nav-link" :href='"https://play.google.com/store/apps/details?id=app.web.nextshore_ether1&hl=en&gl=US"'>Wallet (Android)</b-dropdown-item>
           <b-dropdown-item class="nav-link" :href='"https://wallet.ether1.org/"' target="_blank">Web Wallet</b-dropdown-item>
           <b-dropdown-item class="nav-link" :href='"https://github.com/Ether1Project/Ether1DesktopWallet"' target="_blank">Desktop Wallet</b-dropdown-item>
         </b-nav-item-dropdown>
@@ -20,7 +21,6 @@
         </b-nav-item-dropdown>
 
         <b-nav-item href="#team">Team</b-nav-item>
-        <b-nav-item href="#partnerships">Partners</b-nav-item>
 
         <b-nav-item-dropdown right-alignment text="buy etho" class="nav-link">
           <b-dropdown-item class="nav-link" :href='"#exchanges"'>Exchanges</b-dropdown-item>
