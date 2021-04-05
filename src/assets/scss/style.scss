@@ -444,6 +444,9 @@ ul {
   border: none;
   background-size: 300% 100%;
   transition: all .4s ease-in-out;
+  &.logo-color {
+    background-color:#971B45;
+  }
   &.theme-color {
     background-image: linear-gradient(to right, #19d3dc, #18e7d3, #18e7d3, #19d2dd);
   }

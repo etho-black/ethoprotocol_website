@@ -3,7 +3,7 @@
   <div>
     <div class="color-picker" style="max-width: 100vw;">
       <a href="#" class="handle">
-        <button type="button" class="btn btn-custom theme-color" style="background-color:#971B45;">Tools</button>
+        <button type="button" class="btn btn-custom logo-color"">Tools</button>
       </a>
 
       <div class="sec-position">
