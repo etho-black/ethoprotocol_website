@@ -2567,19 +2567,6 @@ iframe.video-play {
   margin-top: 8px;
 }
 
-.screenshot-carousel .owl-item {
-  &.active {
-    filter: grayscale(100%);
-    &.center {
-      opacity: 1;
-      filter: grayscale(0%);
-    }
-  }
-  &.cloned {
-    filter: grayscale(100%);
-  }
-}
-
 .blog-list>div+div+div .blog-item {
   margin-top: 50px;
 }
