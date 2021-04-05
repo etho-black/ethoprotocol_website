@@ -9,25 +9,50 @@
   </div>
   <div class="w-full" style="padding: 30px; height: calc(100vh - 70px);">
     <div class="w-full h-full" style="position: relative;">
-      <div class="w-full h-full" style="position: absolute; left: 0; top: 0; padding-top: 50px;">
-        <div class="d-flex justify-content-center h-full">
-          <img :src='"../assets/images/etho/screenshot-mob.png"' alt="screenshot-mob" style="height: 480px;">
+      <div class="container">
+        <div class="column" style="display: inline-block; width:33%; margin: 0 auto;">
+           
+          <div class="row" style="padding-left:20%;">
+            <h2 class="title" style="font-size: 24px;">Desktop<span> Wallet</span></h2>
+    
+          </div>
+          <div class="row">
+   
+            <img :src='"../assets/images/etho/desktopWallet.png"' alt="screenshot-mob" style="height: 250px;">
+          </div>
+          <div class="row" style="padding-left:30%;">
+            <a href="https://github.com/Ether1Project/Ether1DesktopWallet" target="_blank" class="btn btn-custom theme-color" role="button" >Download</a>
+          </div>
+          
+        </div>
+
+        <div class="column" style="display: inline-block; width:33%; margin: 0 auto; padding-left:7%;">
+          <div class="row">
+            <h2 class="title" style="font-size: 24px;">Mobile<span> Wallet</span></h2>
+          </div>
+          <div class="row">
+            <img :src='"../assets/images/etho/screenshot-mob.png"' alt="screenshot-mob" style="height: 480px;">
+          </div>
+          <div class="row">
+            <a style="cursor: pointer;" @click="goAppleStore"><img :src='"../assets/images/appstore.png"' alt="appstore" class="store"></a>
+            <a style="cursor: pointer;" @click="goPlayStore"><img class="ml-10 store" :src='"../assets/images/play-store.png"' alt="play-store"></a>
+          </div>
+        </div>
+
+        <div class="column" style="display: inline-block; width:33%; margin: 0 auto; padding-left:5%;">
+          <div class="row" style="padding-left:30%;">
+            <h2 class="title" style="font-size: 24px;">Web<span> Wallet</span></h2>
+          </div>
+          <div class="row">
+            <img :src='"../assets/images/etho/webWallet.png"' alt="screenshot-mob" style="height: 250px;">
+          </div>
+          <div class="row" style="padding-left:30%;">
+            <a href="https://wallet.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Download</a>
+          </div>
         </div>
       </div>
-      <div class="h-full w-full">
-        <carousel class="screenshot-carousel h-full" :loop=true :items=1 :center=true :nav=false :dots=false :dotsEach=false :autoplay=true
-          :responsive="{0:{items:1,nav:false}}">
-          <div class="app-screenshot"><img :src='"../assets/images/app/1.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/2.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/3.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/4.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/5.jpg"' alt="app"></div>
-        </carousel>
-      </div>
-      <center style="padding-top: 30px;">
-        <a style="cursor: pointer;" @click="goAppleStore"><img :src='"../assets/images/appstore.png"' alt="appstore" class="store"></a>
-        <a style="cursor: pointer;" @click="goPlayStore"><img class="ml-10 store" :src='"../assets/images/play-store.png"' alt="play-store"></a>
-      </center>
+    </div>
+        
     </div>
   </div>
 </section>

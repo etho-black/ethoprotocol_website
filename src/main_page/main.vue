@@ -20,22 +20,20 @@
                 <div class="d-md-none f-bold pt-2 pb-2">ETHO</div>
                 <span class="f-bold f-color">Protocol</span>
               </h1>
-			  <h4>#Freedom Of Data</h4>
+			        
               <div class="w-full">
-                <carousel className="intro-carousel" :loop=false :margin=30 :items=1 :nav=false :dots=true :dotsEach=true :autoplay=true :autoplayTimeout=15000 :responsive="{0:{items:1,margin:5},600:{items:1,margin:5},768:{items:1},992:{items:1},1000:{items:1}}">
-                  <div class="paragraph-text">
-                    <p>The Etho Protocol is a decentralized protocol and project to it’s core. The project was born out of a dream to build an entirely democratized internet free from the centralized hands of corporate greed, where all data and
-                      information is completely held in the public domain, giving governance of this data back to the masses via consensus and democracy.</p>
-                  </div>
-                  <div class="paragraph-text">
-                    <p>From development, to funding and platforms, everything we build revolves around the project ethos of decentralizing everything. The technology that sets the project apart is the decentralized storage network integrated with an
-                      EVM blockchain and an economic model around it to keep the engine running! </p>
-                  </div>
-                  <div class="paragraph-text">
-                    <p>The project itself is managed by several decentralized contributing teams: etho.black (core development & project management), etho.pink (marketing & community management), etho.blue (business development) and was founded by
-                      several members in the etho.black core development team.</p>
-                  </div>
-                </carousel>
+                <h4>#FREEDOM OF DATA</h4>
+                <div class="paragraph-text">
+                  <p>The Etho Protocol is a decentralized protocol and project to it’s core. The project was born out of a dream to build an entirely democratized internet free from the centralized hands, where all data and information is completely held in the public domain, giving governance of data back to the masses via consensus and democracy.</p>
+                </div>
+                <h4>#DATA DISTRIBUTED VIA IPFS</h4>
+                <div class="paragraph-text">
+                  <p>In order to provide distributed data following the principles of blockchain we are utilizing IPFS on more than 600 Etho nodes distributed around the world. As uploaded data is replicated across our network of distributed nodes, DDOS attacks and outages are no longer a threat!</p>
+                </div>
+                <h4>#NFTS</h4>
+                <div class="paragraph-text">
+                  <p>Creating Non Fungible Tokens (NFTs) is as simple as using Ethereum because the Etho protocol uses the latest solidity EVM but the storage of the content/data behind your NFTs is what sets Etho apart. Storing NFT data on the same network they were minted on creates a level of permanence not seen anywhere else. This is how NFTS were meant to be minted, stored and collected!</p>
+                </div>
               </div>
             </div>
           </div>
