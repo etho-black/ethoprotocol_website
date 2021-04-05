@@ -105,7 +105,9 @@
   }
 }
 @media(max-width: 1366px) {
-
+  .desktop-wallet{
+    display: none;
+  }
   .home-right {
     display: none;
   }
