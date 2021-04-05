@@ -32,8 +32,8 @@
         </carousel>
       </div>
       <center style="padding-top: 30px;">
-        <a href="#"><img :src='"../assets/images/appstore.png"' alt="appstore" class="store"></a>
-        <a href="#"><img class="ml-10 store" :src='"../assets/images/play-store.png"' alt="play-store"></a>
+        <a style="cursor: pointer;" @click="goAppleStore"><img :src='"../assets/images/appstore.png"' alt="appstore" class="store"></a>
+        <a style="cursor: pointer;" @click="goPlayStore"><img class="ml-10 store" :src='"../assets/images/play-store.png"' alt="play-store"></a>
       </center>
     </div>
   </div>
@@ -47,6 +47,14 @@ export default {
   name: 'Screenshot',
   components: {
     carousel,
+  },
+  methods: {
+    goAppleStore() {
+      window.open('https://apps.apple.com/us/app/nextshore-ether-1-wallet/id1521802485#?platform=iphone');
+    },
+    goPlayStore() {
+      window.open('https://play.google.com/store/apps/details?id=app.web.nextshore_ether1&hl=en&gl=US');
+    },
   },
 };
 </script>
