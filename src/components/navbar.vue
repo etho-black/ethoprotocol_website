@@ -10,9 +10,9 @@
         <b-nav-item style="cursor: pointer;" @click="openStaking">Staking</b-nav-item>
 
         <b-nav-item-dropdown right-alignment text="wallets" class="nav-link">
-          <b-dropdown-item class="nav-link" :href='"#blog"'>Mobile Wallet</b-dropdown-item>
-          <b-dropdown-item class="nav-link" :to="{name:'blog_list'}">Web Wallet</b-dropdown-item>
-          <b-dropdown-item class="nav-link" :to="{name:'blog_list'}">Desktop Wallet</b-dropdown-item>
+          <b-dropdown-item class="nav-link" :href='"#screenshot"'>Mobile Wallet</b-dropdown-item>
+          <b-dropdown-item class="nav-link" :href='"https://wallet.ether1.org/"' target="_blank">Web Wallet</b-dropdown-item>
+          <b-dropdown-item class="nav-link" :href='"https://github.com/Ether1Project/Ether1DesktopWallet"' target="_blank">Desktop Wallet</b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item-dropdown right-alignment text="explorers" class="nav-link">
           <b-dropdown-item class="nav-link" style="cursor: pointer;" @click="openExplorer1">Explorer 1</b-dropdown-item>
@@ -20,7 +20,7 @@
         </b-nav-item-dropdown>
 
         <b-nav-item href="#team">Team</b-nav-item>
-        <b-nav-item href="#partners">Partners</b-nav-item>
+        <b-nav-item href="#partnerships">Partners</b-nav-item>
 
         <b-nav-item-dropdown right-alignment text="buy etho" class="nav-link">
           <b-dropdown-item class="nav-link" :href='"#exchanges"'>Exchanges</b-dropdown-item>

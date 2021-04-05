@@ -35,7 +35,7 @@
                     <li>1 GB Of Ram</li>
                     <li>Static Public IPv4 Address</li>
                   </ul>
-                  <a href="https://nodes.ether1.org" class="btn btn-custom theme-color" role="button" >Deploy</a>
+                  <a href="https://nodes.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
                 </div>
               </div>
               <div class="price-item">
@@ -57,7 +57,7 @@
                     <li>2 GB Of Ram</li>
                     <li>Static Public IPv4 Address</li>
                   </ul>
-                  <a href="https://nodes.ether1.org" class="btn btn-custom theme-color" role="button" >Deploy</a>
+                  <a href="https://nodes.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
                 </div>
                 </div>
               <div class="price-item">
@@ -80,7 +80,7 @@
                     <li>4 GB Of Ram</li>
                     <li>Static Public IPv4 Address</li>
                   </ul>
-                  <a href="https://nodes.ether1.org" class="btn btn-custom theme-color" role="button" >Deploy</a>
+                  <a href="https://nodes.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
 
                 </div>
 
