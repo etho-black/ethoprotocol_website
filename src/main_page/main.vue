@@ -20,6 +20,7 @@
                 <div class="d-md-none f-bold pt-2 pb-2">ETHO</div>
                 <span class="f-bold f-color">Protocol</span>
               </h1>
+			  <h4>#Freedom Of Data</h4>
               <div class="w-full">
                 <carousel className="intro-carousel" :loop=false :margin=30 :items=1 :nav=false :dots=true :dotsEach=true :autoplay=true :autoplayTimeout=15000 :responsive="{0:{items:1,margin:5},600:{items:1,margin:5},768:{items:1},992:{items:1},1000:{items:1}}">
                   <div class="paragraph-text">

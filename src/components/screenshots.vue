@@ -17,18 +17,11 @@
       <div class="h-full w-full">
         <carousel class="screenshot-carousel h-full" :loop=true :items=3 :center=true :nav=false :dots=false :dotsEach=false :autoplay=true
           :responsive="{0:{items:1,nav:false},768:{items:3,nav:false},1200:{items:5,nav:false}}">
-          <div class="app-screenshot"><img :src='"../assets/images/app/12.jpg"' alt="app"></div>
+          <div class="app-screenshot"><img :src='"../assets/images/app/1.jpg"' alt="app"></div>
           <div class="app-screenshot"><img :src='"../assets/images/app/2.jpg"' alt="app"></div>
           <div class="app-screenshot"><img :src='"../assets/images/app/3.jpg"' alt="app"></div>
           <div class="app-screenshot"><img :src='"../assets/images/app/4.jpg"' alt="app"></div>
           <div class="app-screenshot"><img :src='"../assets/images/app/5.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/6.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/7.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/8.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/9.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/10.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/11.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/1.jpg"' alt="app"></div>
         </carousel>
       </div>
       <center style="padding-top: 30px;">

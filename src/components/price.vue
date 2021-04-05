@@ -13,7 +13,7 @@
                       :nav=false
                       :dots=false
                       :dotsEach=false
-                      :autoplay=false
+                      :autoplay=true
                       :responsive="{0:{items:1, dots:true},600:{items:1,dots:true},768:{items:2,dots:true},992:{items:3,nav:false},1000:{items:3,nav:false}}"
             >
               <div class="price-item">
