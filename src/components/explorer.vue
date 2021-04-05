@@ -6,8 +6,8 @@
         <button type="button" class="btn btn-custom logo-color"">Tools</button>
       </a>
 
-      <div class="sec-position">
-        <div class="settings-header">
+      <div class="sec-position" >
+        <div class="settings-header" >
           <div class="d-flex justify-content-between">
             <h3 class="p-2">ETHO Protocol Tools</h3>
             <a style="cursor: pointer;" @click="closeMenu">
@@ -590,8 +590,19 @@ export default {
                 },
               },
               ],
+              createdRow: (row, data, dataIndex, cells) => {
+                //$(cells[3]).css('background-color', '#18e7d3')
+                $(row).on('mouseover', function(){
+                  $(this).css("background", "#18e7d3");
+                }).on('mouseout', function(){ 
+                   $(this).css("background", "#ffffff");
+                })
+              },
+              processing: true,
+              lengthChange: false,
               responsive: true,
-              pageLength: 10,
+              searching: false,
+              pageLength: 5,
             });
           }
         });

@@ -2285,7 +2285,7 @@ ul {
   z-index: 9;
   transition: all .1s ease;
   .settings-header {
-    background: linear-gradient($color_bright_turquoise, $color_bright_turquoise);
+    background-color: #971B45;
     padding: 5px 15px;
     h3 {
       color: $white;
@@ -2306,7 +2306,7 @@ ul {
   }
   a.handle {
     position: absolute;
-    right: 600px;
+    right: 602px;
     width: 90px;
     height: 10px;
     color: $white;
