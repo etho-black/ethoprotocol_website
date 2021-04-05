@@ -20,8 +20,9 @@
                 <div class="d-md-none f-bold pt-2 pb-2">ETHO</div>
                 <span class="f-bold f-color">Protocol</span>
               </h1>
+			  <h4>#Freedom Of Data</h4>
               <div class="w-full">
-                <carousel className="intro-carousel" :loop=false :margin=30 :items=1 :nav=false :dots=true :dotsEach=true :autoplay=true :autoplayTimeout=10000 :responsive="{0:{items:1,margin:5},600:{items:1,margin:5},768:{items:1},992:{items:1},1000:{items:1}}">
+                <carousel className="intro-carousel" :loop=false :margin=30 :items=1 :nav=false :dots=true :dotsEach=true :autoplay=true :autoplayTimeout=15000 :responsive="{0:{items:1,margin:5},600:{items:1,margin:5},768:{items:1},992:{items:1},1000:{items:1}}">
                   <div class="paragraph-text">
                     <p>The Etho Protocol is a decentralized protocol and project to it’s core. The project was born out of a dream to build an entirely democratized internet free from the centralized hands of corporate greed, where all data and
                       information is completely held in the public domain, giving governance of this data back to the masses via consensus and democracy.</p>
@@ -65,7 +66,7 @@
   <div class="d-sm-block d-md-none p-2">
     <!-- Tile js start -->
     <div class="d-flex justify-content-center">
-      <img :src='"../assets/images/etho/mainEthoImage.png"' style="width: 50%;" />
+      <img :src='"../assets/images/etho/mainEthoImage.png"' style="width: 50%; object-fit: contain;" />
     </div>
     <!-- Tile js end -->
 

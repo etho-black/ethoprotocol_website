@@ -15,25 +15,18 @@
         </div>
       </div>
       <div class="h-full w-full">
-        <carousel class="screenshot-carousel h-full" :loop=true :items=3 :center=true :nav=false :dots=false :dotsEach=false :autoplay=true
-          :responsive="{0:{items:1,nav:false},768:{items:3,nav:false},1200:{items:5,nav:false}}">
-          <div class="app-screenshot"><img :src='"../assets/images/app/12.jpg"' alt="app"></div>
+        <carousel class="screenshot-carousel h-full" :loop=true :items=1 :center=true :nav=false :dots=false :dotsEach=false :autoplay=true
+          :responsive="{0:{items:1,nav:false}}">
+          <div class="app-screenshot"><img :src='"../assets/images/app/1.jpg"' alt="app"></div>
           <div class="app-screenshot"><img :src='"../assets/images/app/2.jpg"' alt="app"></div>
           <div class="app-screenshot"><img :src='"../assets/images/app/3.jpg"' alt="app"></div>
           <div class="app-screenshot"><img :src='"../assets/images/app/4.jpg"' alt="app"></div>
           <div class="app-screenshot"><img :src='"../assets/images/app/5.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/6.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/7.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/8.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/9.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/10.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/11.jpg"' alt="app"></div>
-          <div class="app-screenshot"><img :src='"../assets/images/app/1.jpg"' alt="app"></div>
         </carousel>
       </div>
       <center style="padding-top: 30px;">
-        <a href="#"><img :src='"../assets/images/appstore.png"' alt="appstore" class="store"></a>
-        <a href="#"><img class="ml-10 store" :src='"../assets/images/play-store.png"' alt="play-store"></a>
+        <a style="cursor: pointer;" @click="goAppleStore"><img :src='"../assets/images/appstore.png"' alt="appstore" class="store"></a>
+        <a style="cursor: pointer;" @click="goPlayStore"><img class="ml-10 store" :src='"../assets/images/play-store.png"' alt="play-store"></a>
       </center>
     </div>
   </div>
@@ -47,6 +40,14 @@ export default {
   name: 'Screenshot',
   components: {
     carousel,
+  },
+  methods: {
+    goAppleStore() {
+      window.open('https://apps.apple.com/us/app/nextshore-ether-1-wallet/id1521802485#?platform=iphone');
+    },
+    goPlayStore() {
+      window.open('https://play.google.com/store/apps/details?id=app.web.nextshore_ether1&hl=en&gl=US');
+    },
   },
 };
 </script>
