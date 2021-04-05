@@ -10,7 +10,7 @@
         <div class="row">
           <div class="col-12">
             <div class="d-flex justify-content-center p-4">
-              <img :src='"../assets/images/etho/ethoBlackLogo.png"' style="width: 30vw; object-fit: contain;" alt="Etho Black">
+              <img :src='"../assets/images/etho/ethoBlackLogo.png"' style="max-width: 260px; width: 30vw; object-fit: contain;" alt="Etho Black">
             </div>
             <h2 class="title">Core Development<span> Team</span></h2>
           </div>
@@ -179,7 +179,7 @@
         <div class="row ">
           <div class="col-12">
             <div class="d-flex justify-content-center p-4">
-              <img :src='"../assets/images/etho/ethoPinkLogo.png"' style="width: 30vw; object-fit: contain;" alt="Etho Pink">
+              <img :src='"../assets/images/etho/ethoPinkLogo.png"' style="max-width: 260px; width: 30vw; object-fit: contain;" alt="Etho Pink">
             </div>
             <h2 class="title">Marketing & Community Managament<span> Team</span></h2>
           </div>
@@ -279,7 +279,7 @@
         <div class="row ">
           <div class="col-12">
             <div class="d-flex justify-content-center p-4">
-              <img :src='"../assets/images/etho/ethoBlueLogo.png"' style="width: 30vw; object-fit: contain;" alt="Etho Blue">
+              <img :src='"../assets/images/etho/ethoBlueLogo.png"' style="max-width: 260px; width: 30vw; object-fit: contain;" alt="Etho Blue">
             </div>
             <h2 class="title">Business Development<span> Team</span></h2>
           </div>
