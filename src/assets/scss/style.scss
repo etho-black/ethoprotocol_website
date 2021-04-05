@@ -3233,3 +3233,10 @@ iframe.video-play {
     color: #18e7d3 !important;
   }
 }
+
+@media (max-width: 1124px) {
+  .desktop-wallet{
+    display: none;
+  }
+}
+

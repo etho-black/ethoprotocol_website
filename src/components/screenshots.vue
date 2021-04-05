@@ -7,10 +7,10 @@
     <div class="screenshot-circle3"><img :src='"../assets/images/main-banner1.png"' alt="feature-circle-three"></div>
 
   </div>
-  <div class="w-full" style="padding: 30px; height: calc(100vh - 70px);">
+  <div class="w-full" style="padding: 30px;">
     <div class="w-full h-full" style="position: relative;">
       <div class="container">
-        <div class="column" style="display: inline-block; width:33%; margin: 0 auto;">
+        <div class="desktop-wallet" style="display: inline-block; width:33%; margin: 0 auto;">
            
           <div class="row" style="padding-left:20%;">
             <h2 class="title" style="font-size: 24px;">Desktop<span> Wallet</span></h2>
@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class="column" style="display: inline-block; width:33%; margin: 0 auto; padding-left:5%;">
+        <div class="desktop-wallet" style="display: inline-block; width:33%; margin: 0 auto; padding-left:5%;">
           <div class="row" style="padding-left:30%;">
             <h2 class="title" style="font-size: 24px;">Web<span> Wallet</span></h2>
           </div>
