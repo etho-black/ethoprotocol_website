@@ -9,8 +9,8 @@
   </div>
   <div class="w-full" style="padding: 30px;">
     <div class="w-full h-full" style="position: relative;">
-      <div class="container">
-        <div class="desktop-wallet" style="display: inline-block; width:33%; margin: 0 auto;">
+      <div class="container wallet-container">
+        <div class="desktop-wallet">
            
           <div class="row" style="padding-left:20%;">
             <h2 class="title" style="font-size: 24px;">Desktop<span> Wallet</span></h2>
@@ -26,20 +26,22 @@
           
         </div>
 
-        <div class="column" style="display: inline-block; width:33%; margin: 0 auto; padding-left:7%;">
+        <div class="mobile-wallet" >
           <div class="row">
             <h2 class="title" style="font-size: 24px;">Mobile<span> Wallet</span></h2>
           </div>
           <div class="row">
             <img :src='"../assets/images/etho/screenshot-mob.png"' alt="screenshot-mob" style="height: 480px;">
           </div>
-          <div class="row">
-            <a style="cursor: pointer;" @click="goAppleStore"><img :src='"../assets/images/appstore.png"' alt="appstore" class="store"></a>
-            <a style="cursor: pointer;" @click="goPlayStore"><img class="ml-10 store" :src='"../assets/images/play-store.png"' alt="play-store"></a>
+          <div class="row mobile-buttons">
+            <center>
+              <a style="cursor: pointer;" @click="goAppleStore"><img :src='"../assets/images/appstore.png"' alt="appstore" class="store"></a>
+              <a style="cursor: pointer;" @click="goPlayStore"><img class="ml-10 store" :src='"../assets/images/play-store.png"' alt="play-store"></a>
+            </center>
           </div>
         </div>
 
-        <div class="desktop-wallet" style="display: inline-block; width:33%; margin: 0 auto; padding-left:5%;">
+        <div class="desktop-wallet" style="padding-left:5%;">
           <div class="row" style="padding-left:30%;">
             <h2 class="title" style="font-size: 24px;">Web<span> Wallet</span></h2>
           </div>
