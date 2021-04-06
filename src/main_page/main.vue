@@ -54,7 +54,7 @@
                 <span class="f-bold">ETHO</span>
                 <span class="f-bold f-color">Protocol</span>
               </h1>
-              <h6><a href="https://medium.com" target="_blank" style="color:#cc0066;">Join us on <a href="https://discordapp.com/invite/MFn9Tmz">Discord</a> to learn more about our rebranding effort</a></h6>
+              <h6><a href="https://medium.com" target="_blank" style="color:#cc0066;">Join us on <a href="https://discordapp.com/invite/MFn9Tmz" target="_blank">Discord</a> to learn more about our rebranding effort</a></h6>
             </div>
           </div>
         </div>
