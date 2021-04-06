@@ -21,7 +21,7 @@
             <img :src='"../assets/images/etho/desktopWallet.png"' alt="screenshot-mob" style="height: 250px;">
           </div>
           <div class="row" style="padding-left:30%;">
-            <a href="https://github.com/Ether1Project/Ether1DesktopWallet" target="_blank" class="btn btn-custom theme-color" role="button" >Download</a>
+            <a href="https://github.com/Ether1Project/Ether1DesktopWallet" target="_blank" class="btn btn-custom theme-color" role="button" >View</a>
           </div>
           
         </div>
@@ -51,7 +51,7 @@
             <img :src='"../assets/images/etho/webWallet.png"' alt="screenshot-mob" style="height: 250px;">
           </div>
           <div class="row" style="padding-left:30%;">
-            <a href="https://wallet.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Download</a>
+            <a href="https://wallet.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >View</a>
           </div>
         </div>
       </div>
