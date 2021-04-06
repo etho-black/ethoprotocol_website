@@ -27,7 +27,7 @@
                 <div class="testimonial-block">
 
                   <div class="testimonial-text">
-                    <a href="https://ether1.org"><img :src='"../assets/images/etho/ethoprotocol.png"' alt=""></a>
+                    <a href="https://ether1.org" target="_blank"><img :src='"../assets/images/etho/ethoprotocol.png"' alt=""></a>
                     <h6>Etho Protocol</h6>
                   </div>
                 </div>
@@ -36,7 +36,7 @@
                 <div class="testimonial-block">
 
                   <div class="testimonial-text">
-                    <a href="https://turtlenetwork.eu"><img :src='"../assets/images/etho/turtle.png"' alt=""></a>
+                    <a href="https://turtlenetwork.eu" target="_blank"><img :src='"../assets/images/etho/turtle.png"' alt=""></a>
                     <h6>Turtle Network</h6>
                   </div>
                 </div>
@@ -45,7 +45,7 @@
                 <div class="testimonial-block">
 
                   <div class="testimonial-text">
-                    <a href="https://ergoplatform.org"><img :src='"../assets/images/etho/ergo.png"' alt=""></a>
+                    <a href="https://ergoplatform.org" target="_blank"><img :src='"../assets/images/etho/ergo.png"' alt=""></a>
                     <h6>Ergo Platform</h6>
                   </div>
                 </div>
@@ -54,7 +54,7 @@
                 <div class="testimonial-block">
 
                   <div class="testimonial-text">
-                    <a href="https://pirate.black"><img :src='"../assets/images/etho/pirate.png"' alt=""></a>
+                    <a href="https://pirate.black" target="_blank"><img :src='"../assets/images/etho/pirate.png"' alt=""></a>
                     <h6>Pirate Network</h6>
                   </div>
                 </div>
@@ -63,7 +63,7 @@
                 <div class="testimonial-block">
 
                   <div class="testimonial-text">
-                    <a href="https://burst-coin.org"><img :src='"../assets/images/etho/burst.png"' alt=""></a>
+                    <a href="https://burst-coin.org" target="_blank"><img :src='"../assets/images/etho/burst.png"' alt=""></a>
                     <h6>Burst Platform</h6>
                   </div>
                 </div>
@@ -72,7 +72,7 @@
                 <div class="testimonial-block">
 
                   <div class="testimonial-text">
-                    <a href="https://dragonchain.com"><img :src='"../assets/images/etho/dragon.png"' alt=""></a>
+                    <a href="https://dragonchain.com" target="_blank"><img :src='"../assets/images/etho/dragon.png"' alt=""></a>
                     <h6>Dragonchain Network</h6>
                   </div>
                 </div>
@@ -81,7 +81,7 @@
                 <div class="testimonial-block">
 
                   <div class="testimonial-text">
-                    <a href="https://bittube.tv"><img :src='"../assets/images/etho/bittube.png"' alt=""></a>
+                    <a href="https://bittube.tv" target="_blank"><img :src='"../assets/images/etho/bittube.png"' alt=""></a>
                     <h6>Bittube Platform</h6>
                   </div>
                 </div>
@@ -90,7 +90,7 @@
                 <div class="testimonial-block">
 
                   <div class="testimonial-text">
-                    <a href="https://komodoplatform.com"><img :src='"../assets/images/etho/komodo.png"' alt=""></a>
+                    <a href="https://komodoplatform.com" target="_blank"><img :src='"../assets/images/etho/komodo.png"' alt=""></a>
                     <h6>Komodo Platform</h6>
                   </div>
                 </div>
@@ -98,7 +98,7 @@
             </carousel>
 
           </div>
-           <a href="https://bpsaa.vision"><img :src='"../assets/images/etho/bpsaa.png"' alt=""></a>
+           <a href="https://bpsaa.vision" target="_blank"><img :src='"../assets/images/etho/bpsaa.png"' alt=""></a>
         </div>
       </div>
     </section>

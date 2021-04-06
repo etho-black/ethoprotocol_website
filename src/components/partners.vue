@@ -10,7 +10,7 @@
         <div class="row margin-bottom">
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://probit.com"><img :src='"../assets/images/etho/probit.png"' alt="review" class="img-fluid"></a>
+              <a href="https://probit.com" target="_blank"><img :src='"../assets/images/etho/probit.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
               <div class="team-text">
                 <h3>Markets</h3>
@@ -21,7 +21,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://stex.com"><img :src='"../assets/images/etho/stex.png"' alt="review" class="img-fluid"></a>
+              <a href="https://stex.com" target="_blank"><img :src='"../assets/images/etho/stex.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
               <div class="team-text">
                 <h3>Markets</h3>
@@ -33,7 +33,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://graviex.net"><img :src='"../assets/images/etho/graviex.png"' alt="review" class="img-fluid"></a>
+              <a href="https://graviex.net" target="_blank"><img :src='"../assets/images/etho/graviex.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
               <div class="team-text">
                 <h3>Markets</h3>
@@ -46,7 +46,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://mercatox.com"><img :src='"../assets/images/etho/mercatox.png"' alt="review" class="img-fluid"></a>
+              <a href="https://mercatox.com" target="_blank"><img :src='"../assets/images/etho/mercatox.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
               <div class="team-text">
                 <h3>Markets</h3>
@@ -57,7 +57,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://polarity.exchange"><img :src='"../assets/images/etho/polarity.png"' alt="review" class="img-fluid"></a>
+              <a href="https://polarity.exchange target="_blank""><img :src='"../assets/images/etho/polarity.png"' alt="review" class="img-fluid"></a>
               <p>Decentralized Exchange</p>
               <div class="team-text">
                 <h3>Markets</h3>
@@ -69,7 +69,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://asymetrex.com"><img :src='"../assets/images/etho/asymetrex.png"' alt="review" class="img-fluid"></a>
+              <a href="https://asymetrex.com target="_blank""><img :src='"../assets/images/etho/asymetrex.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
               <div class="team-text">
                 <h3>Markets</h3>
@@ -91,7 +91,7 @@
         <div class="row margin-bottom">
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://info.uniswap.org/token/0x99676c9fA4c77848aEb2383fCFbD7e980dC25027"><img :src='"../assets/images/etho/uniswap.png"' alt="review" class="img-fluid"></a>
+              <a href="https://info.uniswap.org/token/0x99676c9fA4c77848aEb2383fCFbD7e980dC25027" target="_blank"><img :src='"../assets/images/etho/uniswap.png"' alt="review" class="img-fluid"></a>
               <p>Swaps On Ethereum</p>
               <div class="team-text">
                 <h3>Liquidity Pools</h3>
@@ -102,7 +102,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://pancakeswap.info/token/0x0e900aa6ed4244c43d597e6d2f8fb3994303ed99"><img :src='"../assets/images/etho/pancakeswap.png"' alt="review" class="img-fluid"></a>
+              <a href="https://pancakeswap.info/token/0x0e900aa6ed4244c43d597e6d2f8fb3994303ed99" target="_blank"><img :src='"../assets/images/etho/pancakeswap.png"' alt="review" class="img-fluid"></a>
               <p>Swaps On Binance Smart Chain</p>
               <div class="team-text">
                 <h3>Liquidity Pools</h3>
@@ -113,7 +113,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://info.honeyswap.org/token/0xb17d999e840e0c1b157ca5ab8039bd958b5fa317"><img :src='"../assets/images/etho/honeyswap.png"' alt="review" class="img-fluid"></a>
+              <a href="https://info.honeyswap.org/token/0xb17d999e840e0c1b157ca5ab8039bd958b5fa317" target="_blank"><img :src='"../assets/images/etho/honeyswap.png"' alt="review" class="img-fluid"></a>
               <p>Swaps On xDai</p>
               <div class="team-text">
                 <h3>Liquidity Pools</h3>
@@ -137,19 +137,19 @@
         <div class="row margin-bottom">
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://eth.ether1.org"><img :src='"../assets/images/etho/eth.png"' alt="review" class="img-fluid"></a>
+              <a href="https://eth.ether1.org" target="_blank"><img :src='"../assets/images/etho/eth.png"' alt="review" class="img-fluid"></a>
               <p>ETHO to ETH Blockchain Bridge</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://bsc.ether1.org"><img :src='"../assets/images/etho/bsc.png"' alt="review" class="img-fluid"></a>
+              <a href="https://bsc.ether1.org" target="_blank"><img :src='"../assets/images/etho/bsc.png"' alt="review" class="img-fluid"></a>
               <p>ETHO to BSC Blockchain Bridge</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://honeyswap.ether1.org"><img :src='"../assets/images/etho/xdai.png"' alt="review" class="img-fluid"></a>
+              <a href="https://honeyswap.ether1.org" target="_blank"><img :src='"../assets/images/etho/xdai.png"' alt="review" class="img-fluid"></a>
               <p>ETHO to xDAI Blockchain Bridge</p>
             </div>
           </div>
@@ -165,17 +165,17 @@
         <div class="row margin-bottom">
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://opolo.io"><img :src='"../assets/images/etho/opolo.png"' alt="review" class="img-fluid"></a>
+              <a href="https://opolo.io" target="_blank"><img :src='"../assets/images/etho/opolo.png"' alt="review" class="img-fluid"></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://myetherwallet.com"><img :src='"../assets/images/etho/mew.png"' alt="review" class="img-fluid"></a>
+              <a href="https://myetherwallet.com" target="_blank"><img :src='"../assets/images/etho/mew.png"' alt="review" class="img-fluid"></a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://ledger.com"><img :src='"../assets/images/etho/ledger.png"' alt="review" class="img-fluid"></a>
+              <a href="https://ledger.com" target="_blank"><img :src='"../assets/images/etho/ledger.png"' alt="review" class="img-fluid"></a>
             </div>
           </div>
         </div>
