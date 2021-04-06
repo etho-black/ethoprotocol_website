@@ -39,7 +39,7 @@
                         <div class="overlay">
                           <ul class="team-social">
                             <li><a href="https://twitter.com/FallenGrav1ty" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/fallengravity" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/fallengravity" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
                       </div>
@@ -59,7 +59,7 @@
                         <div class="overlay">
                           <ul class="team-social">
                             <li><a href="https://twitter.com/jamespreilly" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/Dev-JamesR" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/Dev-JamesR" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
                       </div>
@@ -79,7 +79,7 @@
                         <div class="overlay">
                           <ul class="team-social">
                             <li><a href="https://twitter.com/CryptoDylie" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/dylie" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/dylie" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
                       </div>
@@ -99,7 +99,7 @@
                         <div class="overlay">
                           <ul class="team-social">
                             <li><a href="https://twitter.com/TeAmExlo" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/Exlo84" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/Exlo84" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
                       </div>
@@ -119,7 +119,7 @@
                         <div class="overlay">
                           <ul class="team-social">
                             <li><a href="https://twitter.com/cryptolegacytrx" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/Legacytrx" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/Legacytrx" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
                       </div>
@@ -138,7 +138,7 @@
                         </div>
                         <div class="overlay">
                           <ul class="team-social">
-							<li><a href="https://github.com/newCodeRunner" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                          <li><a href="https://github.com/newCodeRunner" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
                       </div>
@@ -189,7 +189,7 @@
                         <div class="overlay">
                           <ul class="team-social">
                             <li><a href="https://twitter.com/pistolcrypt" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/pistol22cal" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/pistol22cal" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
                       </div>
@@ -276,7 +276,7 @@
                         <div class="overlay">
                           <ul class="team-social">
                             <li><a href="https://twitter.com/chrisjterry" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/hashratez" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/hashratez" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
                       </div>

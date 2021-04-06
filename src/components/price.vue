@@ -100,30 +100,30 @@
 import $ from 'jquery';
 
 function getRewardJson(self) {
-  $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', function(data) {
-        self.gn_reward = Number(data.gatewaynode_reward).toFixed(3);
-        self.mn_reward = Number(data.masternode_reward).toFixed(3);
-        self.sn_reward = Number(data.servicenode_reward).toFixed(3);
+  $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', (data) => {
+    self.gn_reward = Number(data.gatewaynode_reward).toFixed(3);
+    self.mn_reward = Number(data.masternode_reward).toFixed(3);
+    self.sn_reward = Number(data.servicenode_reward).toFixed(3);
   });
 }
 
 export default {
   name: 'Price',
-  data () {
+  data() {
     return {
       gn_reward: 0.000,
       mn_reward: 0.000,
       sn_reward: 0.000,
-    }
+    };
   },
   methods: {
-    GetRewards: function () {
-        getRewardJson(this);
-    }
+    GetRewards() {
+      getRewardJson(this);
+    },
   },
-  mounted () {
+  mounted() {
     this.GetRewards();
-  }
+  },
 };
 </script>
 
@@ -140,4 +140,3 @@ export default {
   width: 100%;
 }
 </style>
-

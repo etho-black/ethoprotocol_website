@@ -3,7 +3,7 @@
   <div>
     <div class="color-picker" style="max-width: 100vw;">
       <a href="#" class="handle">
-        <button type="button" class="btn btn-custom logo-color"">Tools</button>
+        <button type="button" class="btn btn-custom logo-color">Tools</button>
       </a>
 
       <div class="sec-position" >
@@ -62,10 +62,9 @@
         <div class="card">
           <form class="theme-form">
             <div class="form-group mt-2">
-              
-              
+
               <div class="form-row">
-                
+
                 <div class="col-8">
                   <h6 class="mt-0 mb-3">Contract Name:</h6>
                   <input type="tel" class="form-control digits mb-1"  value="Name">
@@ -78,8 +77,7 @@
                     <h6 class="mt-0 mb-3">Data:</h6>
                     <input type="file" webkitdirectory multiple class="form-control digits mb-1">
                   </div>
-                
-                
+
                 <div class="col-12 mt-4">
                   <button type="button" v-on:click="UploadData()" class="btn btn-custom btn-block theme-color">Upload</button>
                 </div>
@@ -229,7 +227,7 @@
 import $ from 'jquery';
 import Web3 from 'web3';
 import DataTable from 'datatables.net';
-//import ethofsSDK from'@ethofs/sdk';
+// import ethofsSDK from'@ethofs/sdk';
 
 export default {
   name: 'explorer',
@@ -273,23 +271,23 @@ export default {
       $('.staking-contracts').hide();
       $('.borrower-staking-contracts').hide();
       $('.lender-staking-contracts').hide();
-      $('#staking-table').on('click', 'tbody tr', function() {
-          let table = $('#staking-table').DataTable();
-          console.log('Staking contract values : ', table.row(this).data());
+      $('#staking-table').on('click', 'tbody tr', function () {
+        const table = $('#staking-table').DataTable();
+        console.log('Staking contract values : ', table.row(this).data());
       });
-      $('#lender-table').on('click', 'tbody tr', function() {
-          let table = $('#lender-table').DataTable();
-          console.log('Staking contract values : ', table.row(this).data());
+      $('#lender-table').on('click', 'tbody tr', function () {
+        const table = $('#lender-table').DataTable();
+        console.log('Staking contract values : ', table.row(this).data());
       });
-      $('#borrower-table').on('click', 'tbody tr', function() {
-          let table = $('#borrower-table').DataTable();
-          console.log('Staking contract values : ', table.row(this).data());
+      $('#borrower-table').on('click', 'tbody tr', function () {
+        const table = $('#borrower-table').DataTable();
+        console.log('Staking contract values : ', table.row(this).data());
       });
-      $('#transaction-table').on('click', 'tbody tr', function(e) {
-          e.preventDefault(); 
-          let table = $('#transaction-table').DataTable();
-          var url = 'https://blocks.ether1.org/tx/'+table.row(this).data().txhash; 
-          window.open(url, '_blank');
+      $('#transaction-table').on('click', 'tbody tr', function (e) {
+        e.preventDefault();
+        const table = $('#transaction-table').DataTable();
+        const url = `https://blocks.ether1.org/tx/${table.row(this).data().txhash}`;
+        window.open(url, '_blank');
       });
       bodyevent.on('click', '.color-picker a.handle', (e) => {
         e.preventDefault();
@@ -306,13 +304,13 @@ export default {
         }
       });
     },
-    ShowTransactions(){
-        const div = $('.transactions');
-        if (div.css('display') === 'none') {
-          $('.transactions').show();
-        } else {
-          $('.transactions').hide();
-        }
+    ShowTransactions() {
+      const div = $('.transactions');
+      if (div.css('display') === 'none') {
+        $('.transactions').show();
+      } else {
+        $('.transactions').hide();
+      }
     },
     ShowNodeMap() {
       const div = $('.nodemap');
@@ -390,9 +388,9 @@ export default {
         $('.lender-staking-contracts').hide();
       }
     },
-    UploadLogin(){
-     /* this.uploadKey = this.$refs.etho_upload_key.value;
-      var ethofs = ethofsSDK(this.uploadKey); 
+    UploadLogin() {
+      /* this.uploadKey = this.$refs.etho_upload_key.value;
+      var ethofs = ethofsSDK(this.uploadKey);
 
       ethofs.testAuthentication().then((result) => {
         console.log(result);
@@ -400,25 +398,23 @@ export default {
       }).catch((err) => {
         console.log(err);
         this.ShowUploadRegistration();
-      });*/
+      }); */
     },
     ShowUploadRegistration() {
       $('.upload-registration').show();
+      console.log('User Login Successful - Displaying Upload Data');
     },
     RegisterUploadUser() {
-      var ethofs = ethofsSDK(this.uploadKey); 
-      var userName = this.$refs.etho_upload_user.value;
+      // const ethofs = ethofsSDK(this.uploadKey);
+      // const userName = this.$refs.etho_upload_user.value;
 
-      ethofs.addUser(userName).then((result) => {
-        //handle results here
-        console.log(result);
-      }).catch((err) => {
-        //handle error here
-        console.log(err);
-      });
-    },
-    ShowUploadRegistration() {
-      console.log('User Login Successful - Displaying Upload Data')
+      // ethofs.addUser(userName).then((result) => {
+      // handle results here
+      //  console.log(result);
+      // }).catch((err) => {
+      // handle error here
+      //  console.log(err);
+      // });
     },
     async StakingLogin() {
       const web3 = new Web3('https://rpc.ether1.org');
@@ -543,7 +539,7 @@ export default {
           url: `https://richlist.ether1.org/transactions_list.php?address=${address}&fromBlock=0&toBlock=${self.blockHeight}`,
           dataType: 'json',
           cache: false,
-          success: function(result){
+          success(result) {
             console.log(result);
             $('#transaction-table').DataTable({
               data: result.data,
@@ -551,52 +547,53 @@ export default {
                 data: 'block', title: 'Block',
               },
               {
-                data: 'txhash', title: 'Hash',
-                render: function(data){
-                  if(data){
-                    return (data.length > 10)?data.substring(0, 5)+'...'+data.substring(data.length-5, data.length):data;
-                  } else {
-                    return '';
+                data: 'txhash',
+                title: 'Hash',
+                render(data) {
+                  if (data) {
+                    return (data.length > 10) ? `${data.substring(0, 5)}...${data.substring(data.length - 5, data.length)}` : data;
                   }
+                  return '';
                 },
               },
               {
-                data: 'fromaddr', title: 'From',
-                render: function(data){
-                  if(data){
-                    return (data.length > 10)?data.substring(0, 5)+'...'+data.substring(data.length-5, data.length):data;
-                  } else {
-                    return '';
+                data: 'fromaddr',
+                title: 'From',
+                render(data) {
+                  if (data) {
+                    return (data.length > 10) ? `${data.substring(0, 5)}...${data.substring(data.length - 5, data.length)}` : data;
                   }
+                  return '';
                 },
               },
               {
-                data: 'toaddr', title: 'To',
-                render: function(data){
-                  if(data){
-                    return (data.length > 10)?data.substring(0, 5)+'...'+data.substring(data.length-5, data.length):data;
-                  } else {
-                    return '';
+                data: 'toaddr',
+                title: 'To',
+                render(data) {
+                  if (data) {
+                    return (data.length > 10) ? `${data.substring(0, 5)}...${data.substring(data.length - 5, data.length)}` : data;
                   }
+                  return '';
                 },
               },
               {
-                data: 'value', title: 'Amount',render: function(data){
-                  if(data){
-                    return (Number(data)/1000000000000000000).toFixed(4);
-                  } else {
-                    return 0;
+                data: 'value',
+                title: 'Amount',
+                render(data) {
+                  if (data) {
+                    return (Number(data) / 1000000000000000000).toFixed(4);
                   }
+                  return 0;
                 },
               },
               ],
               createdRow: (row, data, dataIndex, cells) => {
-                //$(cells[3]).css('background-color', '#18e7d3')
-                $(row).on('mouseover', function(){
-                  $(this).css("background", "#18e7d3");
-                }).on('mouseout', function(){ 
-                   $(this).css("background", "#ffffff");
-                })
+                // $(cells[3]).css('background-color', '#18e7d3')
+                $(row).on('mouseover', function () {
+                  $(this).css('background', '#18e7d3');
+                }).on('mouseout', function () {
+                  $(this).css('background', '#ffffff');
+                });
               },
               processing: true,
               lengthChange: false,
@@ -604,9 +601,9 @@ export default {
               searching: false,
               pageLength: 5,
             });
-          }
+          },
         });
-      });  
+      });
     },
     GetBalance() {
       this.getTransactions(this.$refs.etho_address.value, this);

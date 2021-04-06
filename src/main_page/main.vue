@@ -21,7 +21,7 @@
                 <div class="d-md-none f-bold pt-2 pb-2">ETHO</div>
                 <span class="f-bold f-color">Protocol</span>
               </h1>
-			        
+
               <div class="w-full">
                 <h4>#FREEDOM OF DATA</h4>
                 <div class="paragraph-text">

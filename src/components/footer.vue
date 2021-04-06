@@ -2,9 +2,6 @@
 <div>
   <!-- Footer Section start -->
 
-              
-     
-        
   <div class="copyright-section index-footer bg-light">
     <center>
       <a href="https://www.facebook.com/Ether1Project/" target="_blank" class="social-link"> <i class="fa fa-facebook"></i> </a>
@@ -21,7 +18,6 @@
     <p>© 2021 The ETHO Protocol | Ether-1 All Rights Reserved.</p>
   </div>
 
-  
   <!-- Footer Section End -->
   <!-- Tap on Top -->
   <div class="tap-top">

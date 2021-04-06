@@ -5,9 +5,9 @@ import BootstrapVue from 'bootstrap-vue';
 import vueVimeoPlayer from 'vue-vimeo-player';
 import carousel from 'v-owl-carousel';
 import VueProgressBar from 'vue-progressbar';
+import VueAnalytics from 'vue-analytics';
 import router from './router';
 import App from './App';
-import VueAnalytics from 'vue-analytics';
 
 // css and scss files include
 import 'bootstrap/dist/css/bootstrap.css';
@@ -40,7 +40,7 @@ Vue.use(VueProgressBar, options);
 // Configuration VueAnalytics
 Vue.use(VueAnalytics, {
   id: 'UA-132755795-3',
-  router
+  router,
 });
 
 export const vues = new Vue();

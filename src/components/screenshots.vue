@@ -11,19 +11,19 @@
     <div class="w-full h-full" style="position: relative;">
       <div class="container wallet-container">
         <div class="desktop-wallet">
-           
+
           <div class="row" style="padding-left:20%;">
             <h2 class="title" style="font-size: 24px;">Desktop<span> Wallet</span></h2>
-    
+
           </div>
           <div class="row">
-   
+
             <img :src='"../assets/images/etho/desktopWallet.png"' alt="screenshot-mob" style="height: 250px;">
           </div>
           <div class="row" style="padding-left:30%;">
             <a href="https://github.com/Ether1Project/Ether1DesktopWallet" target="_blank" class="btn btn-custom theme-color" role="button" >View</a>
           </div>
-          
+
         </div>
 
         <div class="mobile-wallet" >
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-        
+
     </div>
   </div>
 </section>
