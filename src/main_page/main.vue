@@ -25,7 +25,7 @@
               <div class="w-full">
                 <h4>#FREEDOM OF DATA</h4>
                 <div class="paragraph-text">
-                  <p>The Etho Protocol is a decentralized protocol and project to it’s core. The project was born out of a dream to build an entirely democratized internet free from the centralized hands, where all data and information is completely held in the public domain, giving governance of data back to the masses via consensus and democracy.</p>
+                  <p>The Etho Protocol is a decentralized protocol and project to its core. The project was born out of a dream to build an entirely democratized internet free from the centralized hands, where all data and information is completely held in the public domain, giving governance of data back to the masses via consensus and democracy.</p>
                 </div>
                 <h4>#DATA DISTRIBUTED VIA IPFS</h4>
                 <div class="paragraph-text">
