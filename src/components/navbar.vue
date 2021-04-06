@@ -23,7 +23,7 @@
 
         <b-nav-item href="#team">Team</b-nav-item>
 
-        <b-nav-item-dropdown right-alignment text="buy etho" class="nav-link">
+        <b-nav-item-dropdown right-alignment text="get etho" class="nav-link">
           <b-dropdown-item class="nav-link" :href='"#exchanges"'>Exchanges</b-dropdown-item>
           <b-dropdown-item class="nav-link" :to="'#swaps'">Swaps</b-dropdown-item>
           <b-dropdown-item class="nav-link" :to="'#bridges'">Bridges</b-dropdown-item>

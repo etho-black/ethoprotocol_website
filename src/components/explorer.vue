@@ -188,7 +188,7 @@
               <input class="form-control" name="address" id="address" placeholder="Enter Your Address:" type="text" ref="etho_address" required="required">
             </div>
             <div class="form-button">
-              <button type="button" v-on:click="GetBalance()" class="btn btn-custom theme-color">Get Balance</button>
+              <button type="button" v-on:click="GetBalance()" class="btn btn-custom logo-color">Get Balance</button>
             </div>
           </form>
           <br>
@@ -197,7 +197,7 @@
           </div>
 
           <a href="#" class="expand transaction-button">
-            <button type="button" v-on:click="ShowTransactions()" class="btn btn-custom theme-color transaction-button" style="font-size:12px;">Transactions</button>
+            <button type="button" v-on:click="ShowTransactions()" class="btn btn-custom logo-color transaction-button" style="font-size:12px;">Transactions</button>
           </a>
           <div class="transactions" style="overflow-y:auto;">
             <div class="section">

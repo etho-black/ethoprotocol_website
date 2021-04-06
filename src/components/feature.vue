@@ -20,10 +20,10 @@
                 <img :src='"../assets/images/icon/4.png"' alt="icon">
               </div>
               <div class="feature-subtitle">
-                <h3><a href="https://nodes.ether1.org">Deploy a Node and Earn Revenue</a></h3>
+                <h3><a href="https://nodes.ether1.org">Deploy a Node</a></h3>
               </div>
               <div>
-                <p>Help secure the network and provide decentralized storage resources by deploying a node. In return for deploying a node you will earn a reward and share in data hosting revenue. </p>
+                <p>Help secure the network and provide decentralized storage resources by deploying a node. In return for deploying a node you will earn a portion of the block reward and for providing decentralized storage resources. </p>
               </div>
             </li>
             <li>
@@ -51,7 +51,7 @@
                 <h3><a href="https://staking.ethofs.com">Participate in Staking or Lending</a></h3>
               </div>
               <div>
-                <p>If you hold ETHO and want to earn a return on it you can lend it out as collateral or if you are intersted in running a node but need collateral you can borrow it on the <a href="https://staking.ethofs.com">staking dashboard.</a>
+                <p>If you hold ETHO and want to put it to work you can lend it out as node collateral or if you are intersted in running a node but need collateral you can borrow it on the <a href="https://staking.ethofs.com">staking dashboard.</a>
                 </p>
               </div>
             </li>
