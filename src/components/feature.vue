@@ -23,7 +23,7 @@
                 <h3><a href="https://nodes.ether1.org">Deploy a Node</a></h3>
               </div>
               <div>
-                <p>Help secure the network and provide decentralized storage resources by deploying a node. In return for deploying a node you will earn a portion of the block reward and for providing decentralized storage resources. </p>
+                <p>Help secure the network and provide decentralized storage resources by deploying a node. In return for deploying a node you will earn a portion of the block reward for providing decentralized storage resources. </p>
               </div>
             </li>
             <li>
