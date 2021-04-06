@@ -57,7 +57,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://polarity.exchange target="_blank""><img :src='"../assets/images/etho/polarity.png"' alt="review" class="img-fluid"></a>
+              <a href="https://polarity.exchange" target="_blank"><img :src='"../assets/images/etho/polarity.png"' alt="review" class="img-fluid"></a>
               <p>Decentralized Exchange</p>
               <div class="team-text">
                 <h3>Markets</h3>
@@ -69,7 +69,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://asymetrex.com target="_blank""><img :src='"../assets/images/etho/asymetrex.png"' alt="review" class="img-fluid"></a>
+              <a href="https://asymetrex.com" target="_blank"><img :src='"../assets/images/etho/asymetrex.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
               <div class="team-text">
                 <h3>Markets</h3>
