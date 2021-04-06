@@ -7,6 +7,7 @@
       <b-navbar-nav class="navbar-nav ml-auto" id="mymenu">
         <b-nav-item href="#home">Home</b-nav-item>
         <b-nav-item style="cursor: pointer;" @click="openNodes">Nodes</b-nav-item>
+        <b-nav-item style="cursor: pointer;" @click="openUploads">Uploads</b-nav-item>
         <b-nav-item style="cursor: pointer;" @click="openStaking">Staking</b-nav-item>
 
         <b-nav-item-dropdown right-alignment text="wallets" class="nav-link">
@@ -39,6 +40,9 @@ export default {
   methods: {
     openStaking() {
       window.open('https://staking.ethofs.com');
+    },
+    openUploads() {
+      window.open('https://ethofs.com');
     },
     openNodes() {
       window.open('https://nodes.ether1.org');

@@ -1,4 +1,5 @@
 <template>
+
 <div id="main_div">
 
   <!-- Home Section start-->
