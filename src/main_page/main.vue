@@ -23,18 +23,35 @@
               </h1>
 
               <div class="w-full">
-                <h4>#FREEDOM OF DATA</h4>
+                <div style="width: 500px;">
+               <carousel :className='"intro-carousel"':loop=false
+                        :margin=30
+                        :items=1
+                        :nav=false
+                        :dots=true
+                        :dotsEach=true
+                        :autoplay=true
+                        :responsive="{0:{items:1,margin:5},600:{items:1,margin:5},768:{items:1},992:{items:1},1000:{items:1}}"
+                        :autoplayTimeout=15000
+              >
+
                 <div class="paragraph-text">
+                  <h4>#FREEDOM OF DATA</h4>
                   <p>The Etho Protocol is a decentralized protocol and project to its core. The project was born out of a dream to build an entirely democratized internet free from the centralized hands, where all data and information is completely held in the public domain, giving governance of data back to the masses via consensus and democracy.</p>
                 </div>
-                <h4>#DATA DISTRIBUTED VIA IPFS</h4>
+
                 <div class="paragraph-text">
+                   <h4>#DATA DISTRIBUTED VIA IPFS</h4>
                   <p>In order to provide distributed data following the principles of blockchain we are utilizing IPFS on more than 600 Etho nodes distributed around the world. As uploaded data is replicated across our network of distributed nodes, DDOS attacks and outages are no longer a threat!</p>
                 </div>
-                <h4>#NFTS</h4>
+
                 <div class="paragraph-text">
+                  <h4>#NFTS</h4>
                   <p>Creating Non Fungible Tokens (NFTs) is as simple as using Ethereum because the Etho protocol uses the latest solidity EVM but the storage of the content/data behind your NFTs is what sets Etho apart. Storing NFT data on the same network they were minted on creates a level of permanence not seen anywhere else. This is how NFTS were meant to be minted, stored and collected!</p>
                 </div>
+                </carousel>
+                </div>
+
               </div>
             </div>
           </div>

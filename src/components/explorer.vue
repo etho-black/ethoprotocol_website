@@ -191,7 +191,7 @@
           </form>
           <br>
           <div class="address_link">
-            <p align="center"><a href="https://explorer.ether1.org">Balance: {{ addressBalance }} ETHO</a></p>
+            <p align="center">Balance: {{ addressBalance }} ETHO</p>
           </div>
 
           <a href="#" class="expand transaction-button">
@@ -590,7 +590,7 @@ export default {
               createdRow: (row, data, dataIndex, cells) => {
                 // $(cells[3]).css('background-color', '#18e7d3')
                 $(row).on('mouseover', function () {
-                  $(this).css('background', '#18e7d3');
+                  $(this).css('background', '#f7d4e0');
                 }).on('mouseout', function () {
                   $(this).css('background', '#ffffff');
                 });
