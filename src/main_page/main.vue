@@ -107,6 +107,10 @@
   <Feature />
   <!-- Feature Section End -->
 
+  <!-- Feature Section start -->
+  <NodeMap />
+  <!-- Feature Section End -->
+
   <!-- Price Section start-->
   <Price />
   <!-- Price Section End -->

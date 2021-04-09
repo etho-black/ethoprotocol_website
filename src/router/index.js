@@ -14,6 +14,7 @@ import js from '@/components/js';
 import Partners from '../components/partners';
 import Explorer from '../components/explorer';
 import Bpsaa from '../components/bpsaa';
+import NodeMap from '../components/nodemap';
 
 Vue.use(Router);
 Vue.component('Navbar', Navbar);
@@ -28,6 +29,7 @@ Vue.component('js', js);
 Vue.component('Partners', Partners);
 Vue.component('Explorer', Explorer);
 Vue.component('Bpsaa', Bpsaa);
+Vue.component('NodeMap', NodeMap);
 
 export default new Router({
   mode: 'history',
