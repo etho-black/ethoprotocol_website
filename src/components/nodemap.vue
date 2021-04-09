@@ -90,7 +90,7 @@ export default {
       });
     },
     getNodeCoordinates(self) {
-      $.getJSON('http://api.ether1.org/ethofsapi.php?api=node_locations', (data) => {
+      $.getJSON('https://api.ether1.org/ethofsapi.php?api=node_locations', (data) => {
         data.forEach(function(node) {
           var numSwitch = 1;
           if(Math.floor(Math.random() * 2) == 1) {
