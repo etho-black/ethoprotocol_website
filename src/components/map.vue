@@ -28,7 +28,7 @@
       <div class="col-6 col-md-3">
         <h6 class="footer-widget__title mb-20">Quick links</h6>
         <ul class="footer-widget__list" style="padding: 0;">
-          <li><a @click="openLink('https://ether1.org/whitepaper.pdf')" class="hover-style-link">Whitepaper</a></li>
+          <li><a @click="openLink('https://ethoprotocol.com/whitepaper.pdf')" class="hover-style-link">Whitepaper</a></li>
           <li><a @click="openLink('https://github.com/etho-black/ethopay')" class="hover-style-link">ETHOPay</a></li>
           <li><a @click="openLink('https://explorer.ether1.org/')" class="hover-style-link">Explorer 1</a></li>
           <li><a @click="openLink('https://blocks.ether1.org/')" class="hover-style-link">Explorer 2</a></li>

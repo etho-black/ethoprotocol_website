@@ -23,7 +23,7 @@
 
         <b-nav-item href="#team">Team</b-nav-item>
 
-        <b-nav-item-dropdown right-alignment text="get etho" class="nav-link">
+        <b-nav-item-dropdown right-alignment text="Where to buy etho" class="nav-link">
           <b-dropdown-item class="nav-link" :href='"#exchanges"'>Exchanges</b-dropdown-item>
           <b-dropdown-item class="nav-link" :to="'#swaps'">Swaps</b-dropdown-item>
           <b-dropdown-item class="nav-link" :to="'#bridges'">Bridges</b-dropdown-item>
@@ -42,7 +42,7 @@ export default {
       window.open('https://staking.ethofs.com');
     },
     openUploads() {
-      window.open('https://ethofs.com');
+      window.open('https://uploads.ethoprotocol.com');
     },
     openNodes() {
       window.open('https://nodes.ether1.org');
