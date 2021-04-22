@@ -15,7 +15,7 @@
          </h3>
        </div>
        <div class="mt-5">
-         <a :href='"/tovo"' class="btn btn-custom theme-color theme-color pt-2 pb-2">BACK TO HOME PAGE</a>
+         <a :href='"/"' class="btn btn-custom theme-color theme-color pt-2 pb-2">BACK TO HOME PAGE</a>
        </div>
      </div>
    </div>

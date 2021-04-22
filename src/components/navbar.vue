@@ -28,6 +28,11 @@
           <b-dropdown-item class="nav-link" :to="'#swaps'">Swaps</b-dropdown-item>
           <b-dropdown-item class="nav-link" :to="'#bridges'">Bridges</b-dropdown-item>
         </b-nav-item-dropdown>
+		
+		<b-nav-item-dropdown right-alignment text="Links" class="nav-link">
+          <b-dropdown-item class="nav-link" :href='"https://ethoprotocol.com/ethoblack2021roadmap.jpeg"' target="_blank">Roadmap</b-dropdown-item>
+          <b-dropdown-item class="nav-link" :href='"https://ethoprotocol.com/pitchdeck.pdf"' target="_blank">Pitchdeck</b-dropdown-item>
+        </b-nav-item-dropdown>
 
       </b-navbar-nav>
     </b-collapse>
