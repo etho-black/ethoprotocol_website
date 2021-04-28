@@ -30,9 +30,9 @@
         </b-nav-item-dropdown>
 		
 		<b-nav-item-dropdown right-alignment text="Links" class="nav-link">
-          <b-dropdown-item class="nav-link" :href='"../assets/images/whitepaper.pdf"' target="_blank">Whitepaper</b-dropdown-item>
-          <b-dropdown-item class="nav-link" :href='"../assets/images/ethoblack2021roadmap.jpeg"' target="_blank">Roadmap</b-dropdown-item>
-          <b-dropdown-item class="nav-link" :href='"../assets/images/pitchdeck.pdf"' target="_blank">Pitchdeck</b-dropdown-item>
+          <b-dropdown-item class="nav-link" :href='"whitepaper.pdf"' target="_blank">Whitepaper</b-dropdown-item>
+          <b-dropdown-item class="nav-link" :href='"ethoblack2021roadmap.jpg"' target="_blank">Roadmap</b-dropdown-item>
+          <b-dropdown-item class="nav-link" :href='"pitchdeck.pdf"' target="_blank">Pitchdeck</b-dropdown-item>
         </b-nav-item-dropdown>
 
       </b-navbar-nav>
