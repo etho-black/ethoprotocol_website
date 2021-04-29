@@ -5,7 +5,7 @@
   <div class="copyright-section index-footer bg-light">
     <center>
       <a href="https://www.facebook.com/Ether1Project/" target="_blank" class="social-link"> <i class="fa fa-facebook"></i> </a>
-      <a href="https://twitter.com/Ether1Official" target="_blank" class="social-link"> <i class="fa fa-twitter" style="padding:10px;"></i> </a>
+      <a href="https://twitter.com/EthoProtocol" target="_blank" class="social-link"> <i class="fa fa-twitter" style="padding:10px;"></i> </a>
       <a href="https://www.instagram.com/ether1official/" target="_blank" class="social-link"> <i class="fa fa-instagram" style="padding:10px;"></i> </a>
       <a href="https://github.com/Ether1Project" target="_blank" class="social-link"> <i class="fa fa-github" style="padding:10px;"></i> </a>
       <a href="https://play.google.com/store/apps/details?id=com.ether1.trust.wallet" target="_blank" class="social-link"> <i class="fa fa-android" style="padding:10px;"></i> </a>
