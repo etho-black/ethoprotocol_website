@@ -178,6 +178,21 @@
               <a href="https://ledger.com" target="_blank"><img :src='"../assets/images/etho/ledger.png"' alt="review" class="img-fluid"></a>
             </div>
           </div>
+		  <div class="col-lg-4 col-md-6">
+            <div class="review-box">
+              <a href="https://cryptocurrencycheckout.com/coin/etho" target="_blank"><img :src='"../assets/images/etho/ccc.png"' alt="review" class="img-fluid"></a>
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6">
+            <div class="review-box">
+              <a href="" target="_blank"><img :src='"../assets/images/etho/comingsoon.png"' alt="review" class="img-fluid"></a>
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6">
+            <div class="review-box">
+              <a href="" target="_blank"><img :src='"../assets/images/etho/comingsoon.png"' alt="review" class="img-fluid"></a>
+            </div>
+          </div>		  
         </div>
       </div>
     </div>
