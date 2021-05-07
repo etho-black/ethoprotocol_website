@@ -11,7 +11,7 @@
       <a href="https://play.google.com/store/apps/details?id=com.ether1.trust.wallet" target="_blank" class="social-link"> <i class="fa fa-android" style="padding:10px;"></i> </a>
       <a href="https://t.me/Ether_1" target="_blank" class="social-link"> <i class="fa fa-telegram" style="padding:10px;"></i> </a>
       <a href="https://old.reddit.com/r/etho1/" target="_blank" class="social-link"> <i class="fa fa-reddit" style="padding:10px;"></i> </a>
-      <a href="https://medium.com/@Ether1Official" target="_blank" class="social-link"> <i class="fa fa-medium" style="padding:10px;"></i> </a>
+      <a href="https://ethoprotocol.medium.com/" target="_blank" class="social-link"> <i class="fa fa-medium" style="padding:10px;"></i> </a>
       <a href="https://www.youtube.com/c/ether1" target="_blank" class="social-link"> <i class="fa fa-youtube" style="padding:10px;"></i> </a>
       <a href="https://discordapp.com/invite/MFn9Tmz" target="_blank" class="social-link"> <i class="fa fa-discord" style="padding:10px;"></i> </a>
     </center>
