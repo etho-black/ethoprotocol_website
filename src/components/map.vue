@@ -32,7 +32,7 @@
           <li><a @click="openLink('https://github.com/etho-black/ethopay')" class="hover-style-link">ETHOPay</a></li>
           <li><a @click="openLink('https://explorer.ethoprotocol.com/')" class="hover-style-link">Explorer 1</a></li>
           <li><a @click="openLink('https://blocks.ethoprotocol.com/')" class="hover-style-link">Explorer 2</a></li>
-          <li><a @click="openLink('https://docs.ether1.org')" class="hover-style-link">Documentation</a></li>
+          <li><a @click="openLink('https://docs.ethoprotocol.com')" class="hover-style-link">Documentation</a></li>
           <li><a @click="openLink('https://nodes.ethoprotocol.com')" class="hover-style-link">Node Dashboard</a></li>
           <li><a @click="openLink('https://bitcointalk.org/index.php?topic=3725742.0')" class="hover-style-link">Bitcointalk Thread</a></li>
         </ul>

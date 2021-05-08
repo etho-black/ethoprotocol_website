@@ -36,7 +36,7 @@
                     <li>Static Public IPv4 Address</li>
                   </ul>
                   <div class="price-filler" />
-                  <a href="https://nodes.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
+                  <a href="https://nodes.ethoprotocol.com" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
                 </div>
               </div>
               <div class="price-item h-full">
@@ -59,7 +59,7 @@
                     <li>Static Public IPv4 Address</li>
                   </ul>
                   <div class="price-filler" />
-                  <a href="https://nodes.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
+                  <a href="https://nodes.ethoprotocol.com" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
                 </div>
                 </div>
               <div class="price-item h-full">
@@ -83,7 +83,7 @@
                     <li>Static Public IPv4 Address</li>
                   </ul>
                   <div class="price-filler" />
-                  <a href="https://nodes.ether1.org" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
+                  <a href="https://nodes.ethoprotocol.com" target="_blank" class="btn btn-custom theme-color" role="button" >Deploy</a>
 
                 </div>
 
@@ -100,7 +100,7 @@
 import $ from 'jquery';
 
 function getRewardJson(self) {
-  $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', (data) => {
+  $.getJSON('https://ethoprotocol.com/api/ethofsapi.php?api=network_stats', (data) => {
     self.gn_reward = Number(data.gatewaynode_reward).toFixed(3);
     self.mn_reward = Number(data.masternode_reward).toFixed(3);
     self.sn_reward = Number(data.servicenode_reward).toFixed(3);
@@ -111,9 +111,9 @@ export default {
   name: 'Price',
   data() {
     return {
-      gn_reward: 0.000,
-      mn_reward: 0.000,
-      sn_reward: 0.000,
+      gn_reward: 9.954,
+      mn_reward: 4.763,
+      sn_reward: 2.376,
     };
   },
   methods: {

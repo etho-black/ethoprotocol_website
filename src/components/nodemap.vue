@@ -121,12 +121,12 @@ export default {
   },
   data () {
     return {
-      gn_count: 0,
-      mn_count: 0,
-      sn_count: 0,
-      active_contracts: 0,
-      available_storage: 0,
-      used_storage: 0,
+      gn_count: 448,
+      mn_count: 127,
+      sn_count: 40,
+      active_contracts: 590,
+      available_storage: 44737.59,
+      used_storage: 58.92,
       chartData: [
         ['LATITUDE', 'LONGITUDE'],
       ],
