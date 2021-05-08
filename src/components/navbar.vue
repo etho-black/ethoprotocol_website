@@ -51,13 +51,13 @@ export default {
       window.open('https://uploads.ethoprotocol.com');
     },
     openNodes() {
-      window.open('https://nodes.ether1.org');
+      window.open('https://nodes.ethoprotocol.com');
     },
     openExplorer1() {
-      window.open('https://explorer.ether1.org/');
+      window.open('https://explorer.ethoprotocol.com/');
     },
     openExplorer2() {
-      window.open('https://blocks.ether1.org/home');
+      window.open('https://blocks.ethoprotocol.com/home');
     },
   },
 };
