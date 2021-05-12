@@ -185,7 +185,7 @@
           </div>
 		  <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="" target="_blank"><img :src='"../assets/images/etho/comingsoon.jpg"' alt="review" class="img-fluid"></a>
+              <a href="https://wallet.vidulum.app/wallet" target="_blank"><img :src='"../assets/images/etho/Vidulum.png"' alt="review" class="img-fluid"></a>
             </div>
           </div>
 		  <div class="col-lg-4 col-md-6">
