@@ -62,16 +62,16 @@
             <div>
               <!-- Tile js start -->
               <div class="d-flex justify-content-center">
-                <img :src='"../assets/images/etho/mainEthoImage.png"' style="width: 50%; object-fit: contain;" />
+                <img :src='"../assets/images/etho/logo-only.png"' style="width: 50%; object-fit: contain;" />
               </div>
               <!-- Tile js end -->
 
               <h1 style="font-size: 24px;">
-                <span class="f-bold f-color">The </span><span class="f-bold">Ether-1 </span> <span class="f-bold f-color">Project is now The</span>
+                <span class="f-bold f-color" style="color:white;">The </span><span class="f-bold">Ether-1 </span> <span class="f-bold f-color" style="color:white;">Project is now The</span>
                 <span class="f-bold">ETHO</span>
-                <span class="f-bold f-color">Protocol</span>
+                <span class="f-bold f-color" style="color:white;">Protocol</span>
               </h1>
-              <h6>Join us on <a href="https://discordapp.com/invite/MFn9Tmz" target="_blank" style="color:#971B45;">Discord</a> to learn more about our rebranding effort</h6>
+              <h6 style="color:white;">Join us on <a href="https://discordapp.com/invite/MFn9Tmz" target="_blank" style="color:#971B45;">Discord</a> to learn more about our rebranding effort</h6>
             </div>
           </div>
         </div>
@@ -99,6 +99,10 @@
   </div>
   <!--Home Section End -->
 
+  <!-- Medium Section start -->
+  <Medium />
+  <!-- Medium Section End -->
+
   <!-- About Start  -->
   <About />
   <!-- About End -->
@@ -115,10 +119,13 @@
   <Price />
   <!-- Price Section End -->
 
+
+
   <!-- Screenshots Section Start -->
   <Screenshots />
   <!-- Screenshots Section End -->
 
+ 
   <!-- Team Section Start -->
   <Team />
 
@@ -151,8 +158,9 @@ export default {
   name: 'Main_page',
   beforeCreate() {
     document.body.className = '';
-  },
+  }, 
 };
+    
 </script>
 
 <style>
