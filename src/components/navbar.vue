@@ -33,6 +33,7 @@
           <b-dropdown-item class="nav-link" :href='"whitepaper.pdf"' target="_blank">Whitepaper</b-dropdown-item>
           <b-dropdown-item class="nav-link" :href='"ethoblack2021roadmap.jpg"' target="_blank">Roadmap</b-dropdown-item>
           <b-dropdown-item class="nav-link" :href='"pitchdeck.pdf"' target="_blank">Pitchdeck</b-dropdown-item>
+          <b-dropdown-item class="nav-link" :href='"https://info.ethoprotocol.com/"' target="_blank">Data Dashboard</b-dropdown-item>
         </b-nav-item-dropdown>
 
       </b-navbar-nav>
