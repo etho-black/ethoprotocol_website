@@ -79,7 +79,7 @@ export default {
   },
   methods: {
     getNetworkStats(self) {
-      $.getJSON('https://ethoprotocol.com/api/ethofsapi.php?api=network_stats', (data) => {
+      $.getJSON('https://api.ether1.org/ethofsapi.php?api=network_stats', (data) => {
         self.gn_count = Number(data.active_gatewaynodes);
         self.mn_count = Number(data.active_masternodes);
         self.sn_count = Number(data.active_servicenodes);
@@ -89,7 +89,7 @@ export default {
       });
     },
     getNodeCoordinates(self) {
-      $.getJSON('https://ethoprotocol.com/api/ethofsapi.php?api=node_locations', (data) => {
+      $.getJSON('https://api.ether1.org/ethofsapi.php?api=node_locations', (data) => {
         data.forEach(function(node) {
           var numSwitch = 1;
           if(Math.floor(Math.random() * 2) == 1) {
