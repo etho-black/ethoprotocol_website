@@ -536,7 +536,7 @@ export default {
 
         $.ajax({
           type: 'POST',
-          url: `https://ethoprotocol.com/richlist/transactions_list.php?address=${address}&fromBlock=0&toBlock=${self.blockHeight}`,
+          url: `https://richlist.ether1.org/transactions_list.php?address=${address}&fromBlock=0&toBlock=${self.blockHeight}`,
           dataType: 'json',
           cache: false,
           success(result) {
