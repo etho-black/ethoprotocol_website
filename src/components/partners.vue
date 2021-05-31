@@ -91,12 +91,11 @@
         <div class="row margin-bottom">
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://info.uniswap.org/token/0x99676c9fA4c77848aEb2383fCFbD7e980dC25027" target="_blank"><img :src='"../assets/images/etho/uniswap.png"' alt="review" class="img-fluid"></a>
+              <a href="https://info.uniswap.org/#/tokens/0x99676c9fa4c77848aeb2383fcfbd7e980dc25027" target="_blank"><img :src='"../assets/images/etho/uniswap.png"' alt="review" class="img-fluid"></a>
               <p>Swaps On Ethereum</p>
               <div class="team-text">
                 <h3>Liquidity Pools</h3>
                 <h6>ETHO/USDT</h6>
-                <h6>ETHO/ETH</h6>
               </div>
             </div>
           </div>
@@ -137,7 +136,7 @@
         <div class="row margin-bottom">
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://eth.ether1.org" target="_blank"><img :src='"../assets/images/etho/eth.png"' alt="review" class="img-fluid"></a>
+              <a href="https://bridge.ethoprotocol.com" target="_blank"><img :src='"../assets/images/etho/eth.png"' alt="review" class="img-fluid"></a>
               <p>ETHO to ETH Blockchain Bridge</p>
             </div>
           </div>
