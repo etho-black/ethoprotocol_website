@@ -142,7 +142,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="https://bsc.ether1.org" target="_blank"><img :src='"../assets/images/etho/bsc.png"' alt="review" class="img-fluid"></a>
+              <a href="https://bridge.ethoprotocol.com" target="_blank"><img :src='"../assets/images/etho/bsc.png"' alt="review" class="img-fluid"></a>
               <p>ETHO to BSC Blockchain Bridge</p>
             </div>
           </div>
