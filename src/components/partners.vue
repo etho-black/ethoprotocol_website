@@ -11,8 +11,9 @@
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
               <a href="https://www.kucoin.com/" target="_blank"><img :src='"../assets/images/etho/kucoin.png"' alt="review" class="img-fluid"></a>
-              <p>Centralized Exchange (ETH/ERC20 Network)</p>
-              <p>Bridging Required</p>
+              <p>Centralized Exchange</p>
+              <p>Ethereum/ERC20 Network</p>
+              <a href="https://bridge.ethoprotocol.com"><p style="color:red;">Bridging Required</p></a>
               <div class="team-text">
                 <h3>Markets</h3>
                 <h6>Wrapped ETHO/BTC (ERC20)</h6>
@@ -24,6 +25,7 @@
             <div class="review-box">
               <a href="https://probit.com" target="_blank"><img :src='"../assets/images/etho/probit.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
+              <p>Main Etho Protocol Network</p>
               <div class="team-text">
                 <h3>Markets</h3>
                 <h6>ETHO/BTC</h6>
@@ -35,6 +37,7 @@
             <div class="review-box">
               <a href="https://stex.com" target="_blank"><img :src='"../assets/images/etho/stex.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
+              <p>Main Etho Protocol Network</p>
               <div class="team-text">
                 <h3>Markets</h3>
                 <h6>ETHO/BTC</h6>
@@ -47,6 +50,7 @@
             <div class="review-box">
               <a href="https://graviex.net" target="_blank"><img :src='"../assets/images/etho/graviex.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
+              <p>Main Etho Protocol Network</p>
               <div class="team-text">
                 <h3>Markets</h3>
                 <h6>ETHO/BTC</h6>
@@ -60,6 +64,7 @@
             <div class="review-box">
               <a href="https://mercatox.com" target="_blank"><img :src='"../assets/images/etho/mercatox.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
+              <p>Main Etho Protocol Network</p>
               <div class="team-text">
                 <h3>Markets</h3>
                 <h6>ETHO/BTC</h6>
@@ -71,6 +76,7 @@
             <div class="review-box">
               <a href="https://polarity.exchange" target="_blank"><img :src='"../assets/images/etho/polarity.png"' alt="review" class="img-fluid"></a>
               <p>Decentralized Exchange</p>
+              <p>Main Etho Protocol Network</p>
               <div class="team-text">
                 <h3>Markets</h3>
                 <h6>ETHO/USDT</h6>
@@ -83,6 +89,7 @@
             <div class="review-box">
               <a href="https://asymetrex.com" target="_blank"><img :src='"../assets/images/etho/asymetrex.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
+              <p>Main Etho Protocol Network</p>
               <div class="team-text">
                 <h3>Markets</h3>
                 <h6>ETHO/BTC</h6>
