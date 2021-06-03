@@ -148,7 +148,7 @@
                 <h6>ETHO/BNB</h6>
               </div>
          
-                <a href="https://etherscan.io/token/0x99676c9fa4c77848aeb2383fcfbd7e980dc25027" target="_blank"><img :src='"../assets/images/etho/bscscan.svg"' height="30px" alt="review" class="img-fluid" style="height:35px; padding-top: 10px;"></a>
+                <a href="https://bscscan.com/token/0x0e900aa6ed4244c43d597e6d2f8fb3994303ed99" target="_blank"><img :src='"../assets/images/etho/bscscan.svg"' height="30px" alt="review" class="img-fluid" style="height:35px; padding-top: 10px;"></a>
 
             </div>
           </div>
