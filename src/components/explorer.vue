@@ -19,7 +19,7 @@
 
           <div class="form-button">
             <center>
-              <button type="button" v-on:click="ShowExplorer()" class="btn-tools">Explorer</button>
+              <button type="button" v-on:click="ShowExplorer()" class="btn-tools">Check Address Balance</button>
               <!--<button type="button" v-on:click="ShowStaking()" class="btn-tools">Staking</button>-->
               <!--<button type="button" v-on:click="ShowUploads()" class="btn-tools">Upload Data</button>-->
               <!--<button type="button" v-on:click="ShowNodeMap()" class="btn-tools">Node Map</button>-->
@@ -195,7 +195,7 @@
           </div>
 
           <a href="#" class="expand transaction-button">
-            <button type="button" v-on:click="ShowTransactions()" class="btn btn-custom logo-color transaction-button" style="font-size:12px;">Transactions</button>
+            <button type="button" v-on:click="ShowTransactions()" class="btn btn-custom logo-color transaction-button" style="font-size:12px; display: none;">Transactions</button>
           </a>
           <div class="transactions" style="overflow-y:auto;">
             <div class="section">
