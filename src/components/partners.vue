@@ -7,7 +7,18 @@
       <div class="container">
 
         <h2 class="title"><span> ETHO</span> Exchanges</h2>
-        <div class="row margin-bottom">
+		<div class="row margin-bottom">
+          <div class="col-lg-4 col-md-6">
+            <div class="review-box">
+              <a href="https://www.kucoin.com/" target="_blank"><img :src='"../assets/images/etho/kucoin.png"' alt="review" class="img-fluid"></a>
+              <p>Centralized Exchange</p>
+              <div class="team-text">
+                <h3>Markets</h3>
+                <h6>ETHO/BTC</h6>
+                <h6>ETHO/USDT</h6>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
               <a href="https://probit.com" target="_blank"><img :src='"../assets/images/etho/probit.png"' alt="review" class="img-fluid"></a>
@@ -74,6 +85,30 @@
               <div class="team-text">
                 <h3>Markets</h3>
                 <h6>ETHO/BTC</h6>
+                <h6></h6>
+                &nbsp;
+              </div>
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6">
+            <div class="review-box">
+              <a href="" target="_blank"><img :src='"../assets/images/etho/comingsoon.jpg"' alt="review" class="img-fluid"></a>
+              <p>Upcoming Exchange</p>
+              <div class="team-text">
+                <h3>Markets</h3>
+                <h6></h6>
+                <h6></h6>
+                &nbsp;
+              </div>
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-6">
+            <div class="review-box">
+              <a href="" target="_blank"><img :src='"../assets/images/etho/comingsoon.jpg"' alt="review" class="img-fluid"></a>
+              <p>Upcoming Exchange</p>
+              <div class="team-text">
+                <h3>Markets</h3>
+                <h6></h6>
                 <h6></h6>
                 &nbsp;
               </div>
