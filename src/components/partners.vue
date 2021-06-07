@@ -241,7 +241,7 @@
           </div>
 		  <div class="col-lg-4 col-md-6">
             <div class="review-box">
-              <a href="" target="_blank"><img :src='"../assets/images/etho/comingsoon.jpg"' alt="review" class="img-fluid"></a>
+              <a href="https://www.hup.life/" target="_blank"><img :src='"../assets/images/etho/huplife.png"' alt="huplife" class="img-fluid"></a>
             </div>
           </div>		  
         </div>
