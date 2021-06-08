@@ -240,8 +240,8 @@
             </div>
           </div>
 		  <div class="col-lg-4 col-md-6">
-            <div class="review-box">
-              <a href="https://www.hup.life/" target="_blank"><img :src='"../assets/images/etho/huplife.png"' alt="huplife" class="img-fluid"></a>
+            <div class="review-box" style="padding-top: 0px; padding-bottom: 0px;">
+              <a href="https://www.hup.life/" target="_blank"><img :src='"../assets/images/etho/hup1.png"' alt="huplife" class="img-fluid" style="height:120px;"></a>
             </div>
           </div>		  
         </div>
