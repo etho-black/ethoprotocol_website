@@ -140,9 +140,9 @@
                 <h3>Liquidity Pools</h3>
                 <h6>ETHO/USDT</h6>
               </div>
-              
+
                 <a href="https://etherscan.io/token/0x99676c9fa4c77848aeb2383fcfbd7e980dc25027" target="_blank"><img :src='"../assets/images/etho/etherscan-logo.png"' alt="review" class="img-fluid" style="height:35px; padding-top: 10px;"></a>
-              
+
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
@@ -154,7 +154,7 @@
                 <h6>ETHO/USDT</h6>
                 <h6>ETHO/BNB</h6>
               </div>
-         
+
                 <a href="https://bscscan.com/token/0x0e900aa6ed4244c43d597e6d2f8fb3994303ed99" target="_blank"><img :src='"../assets/images/etho/bscscan.svg"' height="30px" alt="review" class="img-fluid" style="height:35px; padding-top: 10px;"></a>
 
             </div>
@@ -168,9 +168,9 @@
                 <h6>ETHO/HNY</h6>
                 <h6>ETHO/xDai</h6>
               </div>
-   
+
                 <a href="https://blockscout.com/xdai/mainnet/address/0xB17d999E840e0c1B157Ca5Ab8039Bd958b5fA317/" target="_blank"><img :src='"../assets/images/etho/xdai_logo.svg"' height="30px" alt="review" class="img-fluid" style="height:35px; padding-top: 10px;"></a>
-  
+
             </div>
           </div>
 
@@ -243,7 +243,12 @@
             <div class="review-box" style="padding-top: 0px; padding-bottom: 0px;">
               <a href="https://www.hup.life/" target="_blank"><img :src='"../assets/images/etho/hup1.png"' alt="huplife" class="img-fluid" style="height:120px;"></a>
             </div>
-          </div>		  
+          </div>
+     <div class="col-lg-4 col-md-6">
+          <div class="review-box" style="padding-top: 0px; padding-bottom: 0px;">
+            <a href="https://www.thecollectivegroup.org/" target="_blank"><img :src='"../assets/images/etho/collective.png"' alt="thecollective" class="img-fluid" style="height:120px;"></a>
+          </div>
+        </div>
         </div>
       </div>
     </div>
