@@ -7,13 +7,15 @@
       <div class="container">
 
         <h2 class="title"><span> ETHO</span> Exchanges</h2>
-		<div class="row margin-bottom">
+        <div class="row margin-bottom">
           <div class="col-lg-4 col-md-6">
             <div class="review-box">
               <a href="https://www.kucoin.com/" target="_blank"><img :src='"../assets/images/etho/kucoin.png"' alt="review" class="img-fluid"></a>
               <p>Centralized Exchange</p>
               <p>Ethereum/ERC20 Network</p>
-              <a href="https://bridge.ethoprotocol.com"><p style="color:red;">Bridging Required</p></a>
+              <a href="https://bridge.ethoprotocol.com">
+                <p style="color:red;">Bridging Required</p>
+              </a>
               <div class="team-text">
                 <h3>Markets</h3>
                 <h6>Wrapped ETHO/BTC (ERC20)</h6>
@@ -98,7 +100,7 @@
               </div>
             </div>
           </div>
-		  <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="review-box">
               <a href="" target="_blank"><img :src='"../assets/images/etho/comingsoon.jpg"' alt="review" class="img-fluid"></a>
               <p>Upcoming Exchange</p>
@@ -110,7 +112,7 @@
               </div>
             </div>
           </div>
-		  <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="review-box">
               <a href="" target="_blank"><img :src='"../assets/images/etho/comingsoon.jpg"' alt="review" class="img-fluid"></a>
               <p>Upcoming Exchange</p>
@@ -141,7 +143,7 @@
                 <h6>ETHO/USDT</h6>
               </div>
 
-                <a href="https://etherscan.io/token/0x99676c9fa4c77848aeb2383fcfbd7e980dc25027" target="_blank"><img :src='"../assets/images/etho/etherscan-logo.png"' alt="review" class="img-fluid" style="height:35px; padding-top: 10px;"></a>
+              <a href="https://etherscan.io/token/0x99676c9fa4c77848aeb2383fcfbd7e980dc25027" target="_blank"><img :src='"../assets/images/etho/etherscan-logo.png"' alt="review" class="img-fluid" style="height:35px; padding-top: 10px;"></a>
 
             </div>
           </div>
@@ -155,7 +157,7 @@
                 <h6>ETHO/BNB</h6>
               </div>
 
-                <a href="https://bscscan.com/token/0x0e900aa6ed4244c43d597e6d2f8fb3994303ed99" target="_blank"><img :src='"../assets/images/etho/bscscan.svg"' height="30px" alt="review" class="img-fluid" style="height:35px; padding-top: 10px;"></a>
+              <a href="https://bscscan.com/token/0x0e900aa6ed4244c43d597e6d2f8fb3994303ed99" target="_blank"><img :src='"../assets/images/etho/bscscan.svg"' height="30px" alt="review" class="img-fluid" style="height:35px; padding-top: 10px;"></a>
 
             </div>
           </div>
@@ -169,7 +171,8 @@
                 <h6>ETHO/xDai</h6>
               </div>
 
-                <a href="https://blockscout.com/xdai/mainnet/address/0xB17d999E840e0c1B157Ca5Ab8039Bd958b5fA317/" target="_blank"><img :src='"../assets/images/etho/xdai_logo.svg"' height="30px" alt="review" class="img-fluid" style="height:35px; padding-top: 10px;"></a>
+              <a href="https://blockscout.com/xdai/mainnet/address/0xB17d999E840e0c1B157Ca5Ab8039Bd958b5fA317/" target="_blank"><img :src='"../assets/images/etho/xdai_logo.svg"' height="30px" alt="review" class="img-fluid"
+                  style="height:35px; padding-top: 10px;"></a>
 
             </div>
           </div>
@@ -229,32 +232,41 @@
               <a href="https://ledger.com" target="_blank"><img :src='"../assets/images/etho/ledger.png"' alt="review" class="img-fluid"></a>
             </div>
           </div>
-		  <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="review-box">
               <a href="https://cryptocurrencycheckout.com/coin/etho" target="_blank"><img :src='"../assets/images/etho/ccc.png"' alt="review" class="img-fluid"></a>
             </div>
           </div>
-		  <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="review-box">
               <a href="https://wallet.vidulum.app/wallet" target="_blank"><img :src='"../assets/images/etho/Vidulum.png"' alt="review" class="img-fluid"></a>
             </div>
           </div>
-		  <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="review-box" style="padding-top: 0px; padding-bottom: 0px;">
               <a href="https://www.hup.life/" target="_blank"><img :src='"../assets/images/etho/hup1.png"' alt="huplife" class="img-fluid" style="height:120px;"></a>
             </div>
           </div>
-     <div class="col-lg-4 col-md-6">
-          <div class="review-box" style="padding-top: 0px; padding-bottom: 0px;">
-            <a href="https://www.thecollectivegroup.org/" target="_blank"><img :src='"../assets/images/etho/collective.png"' alt="thecollective" class="img-fluid" style="height:120px;"></a>
+          <div class="col-lg-4 col-md-6">
+            <div class="review-box" style="padding-top: 0px; padding-bottom: 0px;">
+              <a href="https://www.thecollectivegroup.org/" target="_blank"><img :src='"../assets/images/etho/collective.png"' alt="thecollective" class="img-fluid" style="height:120px;"></a>
+            </div>
           </div>
-        </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="review-box" style="padding-top: 0px; padding-bottom: 0px;">
+              <a href="https://pinable.io" target="_blank"><img :src='"../assets/images/etho/pinable.png"' alt="pinable" class="img-fluid" style="height:120px;"></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="review-box" style="padding-top: 0px; padding-bottom: 0px;">
+              <a href="" target="_blank"><img :src='"../assets/images/etho/comingsoon.jpg"' alt="comingsoon" class="img-fluid" style="height:120px;"></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 </div>
-
 </template>
 <script>
 export default {
